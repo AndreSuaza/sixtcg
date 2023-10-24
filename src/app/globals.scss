@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+
+.btn { 
+  @apply bg-indigo-500 text-white px-5 py-1 rounded uppercase hover:bg-indigo-600
+}
+
+.btn-lg{
+  @apply lg:px-40 px-20 
+}
+
+.bt-xl {
+  @apply text-xl py-2
+}
+
+.stroke {
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.stroke-demons {
+  text-shadow:
+   -1px -1px 0 #c002ff,  
+    1px -1px 0 #c002ff,
+    -1px 1px 0 #c002ff,
+     1px 1px 0 #c002ff;
+}
+
+.stroke-angels {
+  text-shadow:
+   -1px -1px 0 #c5c302,  
+    1px -1px 0 #c5c302,
+    -1px 1px 0 #c5c302,
+     1px 1px 0 #c5c302;
+}
+
+.stroke-spirits {
+  text-shadow:
+   -1px -1px 0 #04c6e9,  
+    1px -1px 0 #04c6e9,
+    -1px 1px 0 #04c6e9,
+     1px 1px 0 #04c6e9;
+}
+
+.stroke-humans {
+  text-shadow:
+   -1px -1px 0 #ff02c6,  
+    1px -1px 0 #ff02c6,
+    -1px 1px 0 #ff02c6,
+     1px 1px 0 #ff02c6;
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.scroll-style::-webkit-scrollbar-track {
+  background: rgb(99, 102, 241, 0.5);  /* color of the tracking area */
+  opacity: 0.7;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(99, 102, 241, 0.5);  /* creates padding around scroll thumb */
+}

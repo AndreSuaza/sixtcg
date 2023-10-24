@@ -1,113 +1,83 @@
-import Image from 'next/image'
+import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className={'bg-[url("/events/rey-rashomon.jpg")] w-full h-screen bg-black bg-no-repeat bg-cover relative md:bg-contain lg:bg-right bg-center'}>
+        <div className="absolute top-1/3 w-full text-center lg:w-1/2 lg:mx-20">
+          <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span>
+          <h1 className="uppercase mb-2 text-6xl stroke lg:text-8xl">Rey del Rashomon</h1>
+          <p className="uppercase text-2xl stroke lg:text-4xl">Inicia el competitivo de six lucha y gana</p>
+          <button className="btn bt-xl mt-5 font-medium">CONOCE MAS!</button>
+        </div>
+      </section>
+      <div className="bg-indigo-500 text-center py-4 text-white">
+        <div className="grid grid-cols-5 w-96 mx-auto">
+          <Image width={39} height={39} src='/redes/facebook.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          <Image width={35} height={35} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          <Image width={35} height={35} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          <Image width={40} height={40} src='/redes/youtube.svg' alt="youtube" title="Siguenos en Youtube" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      
+      <div className="text-center mt-14 mb-2">
+        <h1 className="text-5xl uppercase">Lucha al lado de los mejores</h1>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 px-20 mb-20">
+        <div className="relative flex justify-center">
+          <Image width={380} height={300} src='/products/me-demonios.jpg' alt="Mazo Estructurado Demonios" className="border-1"/>
+          <h1 className="absolute bottom-3 text-3xl uppercase font-medium stroke-demons text-white">Demonios</h1>
+        </div>
+        <div className="relative flex justify-center">
+          <Image width={380} height={300} src='/products/me-angeles.jpg' alt="Mazo Estructurado Angeles" className=""/>
+          <h1 className="absolute bottom-3 text-3xl uppercase font-medium stroke-angels text-white">Angeles</h1>
+        </div>
+        <div className="relative flex justify-center">
+          <Image width={380} height={300} src='/products/me-espiritus.jpg' alt="Mazo Estructurado Espiritus" className=""/>
+          <h1 className="absolute bottom-3 text-3xl uppercase font-medium stroke-spirits text-white">Espiritus</h1>
+        </div>
+        <div className="relative flex justify-center">
+          <Image width={380} height={300} src='/products/me-humanos.jpg' alt="Mazo Estructurado Humanos" className=""/>
+          <h1 className="absolute bottom-3 text-3xl uppercase font-medium stroke-humans text-white">Humanos</h1>
+        </div>
       </div>
-    </main>
+      {/* <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="bg-[url(/home/angeles.jpg)] bg-blend-darken bg-cover bg-center bg-black bg-opacity-50 h-96 relative hover:bg-opacity-10 cursor-pointer">
+          <div className="absolute bottom-0 px-6 mb-10 text-center w-full ">
+            <Image width={50} height={50} src={'/iconos/angeles.svg'} alt="incono angeles" className="mx-auto mb-2  "/>
+            <span className="text-4xl uppercase">Angeles</span>
+            <p className="text-3xl mt-2 pt-2">Controla las vidas de tus adversarios</p>
+            <p className="text-3xl pb-2">y no nunca tendras que impartir justicia.</p>
+          </div>
+        </div>
+        <div className="bg-[url(/home/demonios.jpg)] bg-blend-darken bg-cover bg-center bg-black bg-opacity-50 h-96 relative hover:bg-opacity-10 cursor-pointer">
+          <div className="absolute bottom-0 px-6 mb-10 text-center w-full ">
+            <Image width={55} height={55} src={'/iconos/demonios.svg'} alt="incono demonios" className="mx-auto mb-2"/>
+            <span className="text-4xl uppercase">Demonios</span>
+            <p className="text-3xl mt-2 pt-2">Todas las almas deben ser libres y</p>
+            <p className="text-3xl pb-2"> disfrutar el CAOS!.</p>
+          </div>
+        </div>
+        <div className="bg-[url(/home/espiritus.jpg)] bg-blend-darken bg-cover bg-center bg-black bg-opacity-50 h-96 relative hover:bg-opacity-10 cursor-pointer">
+          <div className="absolute bottom-0 px-6 mb-10 text-center w-full ">
+            <Image width={60} height={60} src={'/iconos/espiritus.svg'} alt="incono espiritus" className="mx-auto mb-2"/>
+            <span className="text-4xl uppercase">Espiritus</span>
+            <p className="text-3xl mt-2 pt-2">Todo el que quiera alterar la paz del mundo </p>
+            <p className="text-3xl pb-2">es para su beneficio.</p>
+          </div>
+        </div>
+        <div className="bg-[url(/home/humanos.jpg)] bg-blend-darken bg-cover bg-center bg-black bg-opacity-50 h-96 relative hover:bg-opacity-10 cursor-pointer">
+          <div className="absolute bottom-0 px-6 mb-10 text-center w-full ">
+            <Image width={50} height={50} src={'/iconos/humanos.svg'} alt="incono humanos" className="mx-auto mb-2"/>
+            <span className="text-4xl uppercase">Humanos</span>
+            <p className="text-3xl mt-2 pt-2">Sobrevive, Adaptate y</p>
+            <p className="text-3xl pb-2">Gana!.</p>
+          </div>
+        </div>
+      </div> */}
+    </>
   )
 }

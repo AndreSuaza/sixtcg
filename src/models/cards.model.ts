@@ -1,0 +1,41 @@
+export interface Card {
+    id: number;
+    name: string;
+    code: string;
+    cost: string;
+    force: string;
+    defence: string;
+    effect: string;
+    img: string;
+    deleteAt?: any;
+    types: string[];
+    products: Product[];
+    archetypes: string[];
+    keywords: string[];
+  }
+  
+export interface Product {
+    id: number;
+    name: string;
+    code: string;
+    price: string;
+    discount?: any;
+    releaseDate: string;
+    logo?: any;
+    description: string;
+    deleteAt?: any;
+    images: any[];
+}
+
+export interface Properties {
+  types: Other[];
+  products: Other[];
+  archetypes: Other[];
+  keywords: Other[];
+  others: Other[];
+}
+
+export interface Other {
+  label: string;
+  value: string;
+}
