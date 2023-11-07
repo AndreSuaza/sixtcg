@@ -94,10 +94,10 @@ export const CardsList = ({initialState} : Props) => {
   
   return (
     <>
-        <div className="mx-24 px-8 py-5 bg-white mb-4 rounded">
+        <div className="md:mx-24 mx-4 px-8 py-5 bg-white mb-4 rounded">
           <CardFinder submit={(filters:any) => searchCards(filters)}/>
         </div>
-        <div className="mx-24 mb-4">
+        <div className="md:mx-24 mx-4 mb-4">
           <Pagination totalCount={cardsTotal} limit={limit} pageChangeMethod={getCards}>
             <section className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-5 my-8 justify-items-center">
             {cards.map((card, i) => 

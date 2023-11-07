@@ -38,50 +38,50 @@ export const CardDetail = ({cards, close, index}: Props) => {
           <div className="text-center bg-indigo-500 p-3 mb-4"> 
               <h1 className="text-white font-bold text-4xl">{cards[indexCards].name}</h1>
           </div>
-          <div className="pl-10 flex gap-1">
-            <div className="w-3/5 m-0">
+          <div className="md:pl-10 px-4 md:flex gap-1">
+            <div className="md:w-3/5 mb-4">
               <CardView img={`/cards/${cards[indexCards].code}-${cards[indexCards].id}.jpg`} alt={cards[indexCards].name} title={`Detalle de ${cards[indexCards].name}`} zoom={false}/>
             </div>
-          <div className="w-3/5 pr-10">
-          <table className="table-auto text-left w-full">
-              <tbody>
-                <tr className="border-b border-indigo-500">
-                  <th className="py-3">Tipo</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.types.map((type: string, i: any) => {return i > 0 ? ', '+type : type})}</td>
-                  <th className="py-3">Coste</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.cost}</td>
-                </tr>
-                <tr className="border-b border-indigo-500">
-                  <th className="py-3">Fuerza</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.force}</td>
-                  <th className="py-3">Defensa</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.defence}</td>
-                </tr>
-                <tr className="border-b border-indigo-500">
-                  <th className="py-3">Arqueotipo</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.archetypes.map((archetype: string, i: any) => {return i > 0 ? ', '+archetype : archetype})}</td>
-                  <th className="py-3">Palabras Clave</th>
-                  <td className="py-3 font-light">{cards[indexCards]?.keywords.map((keyword: string, i: any) => {return i > 0 ? ', '+keyword : keyword})}</td>
-                </tr>
-                <tr>
-                  <th className="pt-2">Efecto</th>
-                </tr>
-                <tr className="border-b border-indigo-500">
-                  <td colSpan={4} className="pb-6 font-light">{cards[indexCards]?.effect}</td>
-                </tr>
-                <tr>
-                  <th className="pt-2">Productos</th>
-                </tr>
-                <tr>
-                  {/* <td className="w-full py-3 max-h-40" colSpan={4}>
-                    {cards[indexCards]?.products.map((product: Product, i: any) => 
-                      <div key={product.id} className="w-full grid lg:grid-cols-2 grid-cols-1 gap-2 justify-items-center">
-                        <ProductView data={product} detail={true} />
-                      </div>)}</td> */}
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div className="md:w-3/5 md:pr-10">
+              <table className="table-auto text-left w-full">
+                  <tbody>
+                    <tr className="border-b border-indigo-500">
+                      <th className="py-3">Tipo</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.types.map((type: string, i: any) => {return i > 0 ? ', '+type : type})}</td>
+                      <th className="py-3">Coste</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.cost}</td>
+                    </tr>
+                    <tr className="border-b border-indigo-500">
+                      <th className="py-3">Fuerza</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.force}</td>
+                      <th className="py-3">Defensa</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.defence}</td>
+                    </tr>
+                    <tr className="border-b border-indigo-500">
+                      <th className="py-3">Arqueotipo</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.archetypes.map((archetype: string, i: any) => {return i > 0 ? ', '+archetype : archetype})}</td>
+                      <th className="py-3">Palabras Clave</th>
+                      <td className="py-3 font-light">{cards[indexCards]?.keywords.map((keyword: string, i: any) => {return i > 0 ? ', '+keyword : keyword})}</td>
+                    </tr>
+                    <tr>
+                      <th className="pt-2">Efecto</th>
+                    </tr>
+                    <tr className="border-b border-indigo-500">
+                      <td colSpan={4} className="pb-6 font-light">{cards[indexCards]?.effect}</td>
+                    </tr>
+                    <tr>
+                      <th className="pt-2">Productos</th>
+                    </tr>
+                    <tr>
+                      {/* <td className="w-full py-3 max-h-40" colSpan={4}>
+                        {cards[indexCards]?.products.map((product: Product, i: any) => 
+                          <div key={product.id} className="w-full grid lg:grid-cols-2 grid-cols-1 gap-2 justify-items-center">
+                            <ProductView data={product} detail={true} />
+                          </div>)}</td> */}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
   
           </div>
           <div className="absolute top-0 right-0 mr-1 mt-1 bg-indigo-500 hover:bg-indigo-300 p-2 cursor-pointer ease-out duration-300" onClick={close}>

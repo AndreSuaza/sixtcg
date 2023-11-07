@@ -22,9 +22,19 @@ const DemoDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-20 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-20 md:px-20 px-2 md:text-2xl text-xl text-gray-700 bg-white">
 
-            <p className="mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+            <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
+                <p className="mb-6 leading-10">
+                El <b><i>Mazo de Demostración - Primer estallido</i></b> contiene todos los tipos de cartas, mecánicas y la mayoría de arquetipos de la primera temporada de <b><i>Souls In Xtinction</i></b>, además, viene con cartas extremadamente útiles y versátiles para armar cualquier tipo de estrategia que se te ocurra, no te pierdas la oportunidad de entrar en este maravilloso y competitivo universo de <b><i>Souls In Xtinction</i></b>.
+                </p>
+
+                <h4 className="text-gray-900 font-semibold">Mazo Primer Estallido contiene 27 Cartas:</h4>
+                <ul className="py-2 px-4">
+                    <li>27 Comunes</li>
+                    <li>1 Manual de inicio - Tablero</li>
+                </ul>
+            </div>
             <h2 className="text-4xl text-gray-900">Contenido:</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 my-6">
                 <div className="mx-4">

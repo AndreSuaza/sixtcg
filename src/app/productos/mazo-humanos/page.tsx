@@ -12,7 +12,7 @@ const HumansDeck = async () => {
     const cards = await fetchDeck();
 
     return (
-        <div className="container lg:px-20 md:px-20 py-20">
+        <div className="lg:px-20 md:px-20 py-20">
         <section className={'bg-[url("/products/me-humano.jpg")] bg-black bg-no-repeat bg-cover relative bg-center mx-10'}
                  style={{minHeight: 600}}
                 
@@ -22,7 +22,7 @@ const HumansDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-10 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-10 md:px-20 px-2 md:text-2xl text-xl text-gray-700 bg-white">
 
             <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
                 <p className="mb-4 leading-10">
