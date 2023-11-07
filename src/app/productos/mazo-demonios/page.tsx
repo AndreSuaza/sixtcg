@@ -22,9 +22,23 @@ const DemonsDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-20 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-10 md:px-20 px-2 text-2xl text-gray-700 bg-white">
 
-            <p className="mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+            <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
+                <p className="mb-4 leading-10">
+                    El Mazo <b><i>Arte de la Destrucción</i></b> está basado en el arquetipo de los Demonios, estos pequeños diablillos impacientes, solo quieren terminar los duelos de manera rápida y eficaz, al multiplicarse e invitar a otros a su juego de destrucción. Escasos de mecánicas pero capaces de regarse por todo el campo de juego y reducir las vidas oponentes a 0 en un par de turnos.
+                </p>
+                <p className="mb-6 leading-10">
+                    Los Demonios son grandes amigos de los Sátiros los cuales pueden ser invocados al controlar ciertas cantidades de Demonios en particular y si esto sucede será el fin para tu oponente. Enfócate en ser lo suficientemente agresivo o lo suficientemente organizado para <b><i>Bahamoot Aniquilador</i></b> llegue y haga su trabajo correctamente.
+                </p>
+
+                <h4 className="text-gray-900 font-semibold">Mazo Arte de la Destrucción contiene 49 cartas:</h4>
+                <ul className="py-2 px-4">
+                    <li>47 Comunes</li>
+                    <li>2 Cartas Secretas</li>
+                    <li>1 Manual de inicio - Tablero</li>
+                </ul>
+            </div>
             <h2 className="text-4xl text-gray-900">Contenido:</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 my-6">
                 <div className="mx-4">

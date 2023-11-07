@@ -22,9 +22,24 @@ const AngelsDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-20 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-10 md:px-20 px-2 text-2xl text-gray-700 bg-white">
 
-            <p className="mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+            <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
+                <p className="mb-4 leading-10">
+                    El Mazo <b><i>Amanecer Celestial</i></b> está basado en el arquetipo de los Ángeles, los cuales tienen las habilidades y conjuros más poderosos de Souls In Xtinction. Usa sus habilidades para Retornar a las unidades más problemáticas de tu oponente y si no es suficiente, destruirlas fácilmente.
+                </p>
+                <p className="mb-6 leading-10">
+                    Los Ángeles son un arquetipo con grandes habilidades y poderosos conjuros. Tienen una mecánica muy especial como es Retornar cartas de cualquier parte del juego a la mano o tu mazo Limbo y si sabes combinar su estrategia puedes desintegrar lo que desees, mientras logras bajar al uno de los ángeles más enigmáticos como lo es <b><i>Zadkiel Misericordioso</i></b>, el cual pondrá un fin a los duelos.
+                </p>
+
+                <h4 className="text-gray-900 font-semibold">Mazo Amanecer Celestial contiene 48 cartas:</h4>
+                <ul className="py-2 px-4">
+                    <li>46 Comunes</li>
+                    <li>2 Cartas Secretas</li>
+                    <li>1 Manual de inicio - Tablero</li>
+                </ul>
+            </div>
+            
             <h2 className="text-4xl text-gray-900">Contenido:</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 my-6">
                 <div className="mx-4">

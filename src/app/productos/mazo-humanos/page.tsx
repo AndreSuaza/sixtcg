@@ -22,9 +22,24 @@ const HumansDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-20 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-10 md:px-20 px-2 text-2xl text-gray-700 bg-white">
 
-            <p className="mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+            <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
+                <p className="mb-4 leading-10">
+                    El Mazo <b><i>Despliegue de la Armada</i></b> está basado en el arquetipo de los Humanos y el mas completo set de Armas para que tomes ventaja de tus oponentes, al usar mecánicas como equipar Armas y usar sus efectos instantáneos, también deberás saber administrar tus recursos para alzarte con la victoria. 
+                </p>
+                <p className="mb-6 leading-10">
+                    Los Humanos son seres con poca fuerza pero bastante hábiles para tener un arsenal de Armas a su disposición, con las cuales tomarán ventaja sobre otras cartas en Souls In Xtinction, demuestra que sabes dominar el rumbo del duelo para que puedas empezar a equipar tus Armas más poderosas, este es el único Mazo que te trae 14 Armas para que puedas empaparte de esta mecánica que requiere un nivel de habilidad superior. 
+                </p>
+
+                <h4 className="text-gray-900 font-semibold">Mazo Despliegue de la Armada contiene 48 cartas:</h4>
+                <ul className="py-2 px-4">
+                    <li>46 Comunes</li>
+                    <li>2 Cartas Secretas</li>
+                    <li>1 Manual de inicio - Tablero</li>
+                </ul>
+            </div>
+
             <h2 className="text-4xl text-gray-900">Contenido:</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 my-6">
                 <div className="mx-4">

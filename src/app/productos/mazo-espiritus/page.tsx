@@ -22,9 +22,23 @@ const SpiritsDeck = async () => {
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 
-        <article className="mx-10 py-20 md:px-20 px-2 text-2xl text-gray-700 bg-white">
+        <article className="mx-10 py-10 md:px-20 px-2 text-2xl text-gray-700 bg-white">
 
-            <p className="mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+            <div className="px-4 py-6 bg-indigo-100 rounded mb-10">
+                <p className="mb-4 leading-10">
+                    El Mazo <b><i>El Árbol de la vida</i></b> está basado en el arquetipo de los Espíritus, son los guardianes del bosque encantado, que esconde los más grandes secretos de magia y poder entre sus increibles y raras criaturas con habilidades fenomenales que son capaces de devorar a quienes intenten entrometerse en el bosque sin ser invitados o hacerlos caer en profundos sueños de perdición y locura.
+                </p>
+                <p className="mb-6 leading-10">
+                    Los Espíritus cuentan con el apoyo de cartas Ente como el <b><i>Árbol Mágico</i></b>, poderosas estrategias basadas en tener a tus Entes con vida y así poder jugar cartas como <b><i>Furia de la Naturaleza</i></b>, la carta de limpieza masiva más imponente del juego. No dudes en combatir con tus Espíritus ya que si los juegas con gran habilidad, pueden invocarse cada turno!
+                </p>
+
+                <h4 className="text-gray-900 font-semibold">Mazo El Árbol de la vida contiene 50 cartas:</h4>
+                <ul className="py-2 px-4">
+                    <li>47 Comunes</li>
+                    <li>3 Cartas Secretas</li>
+                    <li>1 Manual de inicio - Tablero</li>
+                </ul>
+            </div>
             <h2 className="text-4xl text-gray-900">Contenido:</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 my-6">
                 <div className="mx-4">
