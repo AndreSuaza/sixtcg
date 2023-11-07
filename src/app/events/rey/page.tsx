@@ -1,6 +1,4 @@
-import { CardDetail } from "@/app/cards/components/CardDetail/CardDetail";
 import { CardView } from "@/components";
-import Image from "next/image";
 
 export default function Rey() {
   return (
