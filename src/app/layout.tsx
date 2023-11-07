@@ -54,16 +54,17 @@ export default function RootLayout({
               <div className=''>
                 <h2 className='text-xl uppercase'>Redes</h2>
                 <ul>
-                  <li className='mt-1'>Twitter</li>
-                  <li className='mt-1'>Facebook</li>
-                  <li className='mt-1'>Tik Tok</li>
-                  <li className='mt-1'>Instagram</li>
-                  <li className='mt-1'>Youtube</li>
+
+                  <li className='mt-1'><Link href={'https://twitter.com/soulsinxti0'} target="_blank">Twitter</Link></li>
+                  <li className='mt-1'><Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">Facebook</Link></li>
+                  <li className='mt-1'><Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">Tik Tok</Link></li>
+                  <li className='mt-1'><Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">Instagram</Link></li>
+                  <li className='mt-1'><Link href={'https://www.youtube.com/@SoulsInXtinction'} target="_blank">Youtube</Link></li>
                 </ul>
               </div>
             </div>
 
-            <div className='ml-10 text-justify mt-7 mx-6'>
+            <div className='text-justify mt-7 lg:text-lg text-xs'>
               <p>Todas las imágenes, textos y datos de este sitio web no pueden reproducirse sin permiso.
 Tenga en cuenta que las imágenes utilizadas en este sitio web pueden diferir del producto real, ya que aún está en desarrollo.</p>
             </div>

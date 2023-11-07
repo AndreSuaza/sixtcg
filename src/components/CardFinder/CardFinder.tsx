@@ -38,11 +38,11 @@ export const CardFinder = ({submit}: Props) => {
   return (
     <Formik 
         initialValues={{
-            term: '',
+            text: '',
             types: [],
             cost: [],
             force: [],
-            defence: [],
+            defense: [],
             archetypes: [],
             keywords: [],
             products: [],
@@ -54,51 +54,45 @@ export const CardFinder = ({submit}: Props) => {
 
         { formik => (
         <Form>
-        <div className="grid grid-cols-6 gap-4">
-            <div style={{marginTop: '0.7rem'}} className='col-span-3'>
+        <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+            
+              <div className='lg:col-span-3 md:col-span-3'>  
               <TextInput 
-                  name="term"
+                  name="text"
                   placeholder="Nombre, Codigo o Efecto de la carta"
                   className="w-full placeholder:text-neutral-500 text-indigo-500 px-2 rounded border-solid border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-600"
                   style={{paddingTop: '0.5rem', paddingBottom: '0.35rem'}}
               />
-            </div>
-            
-            <div className='col-span-3'>
+              </div>
+
               <MultiSelect
                   name="products"
                   options={products}
                   placeholder="Productos"
                   className="text-indigo-500 mt-3"
               />
-            </div>
 
-            <div className='col-span-2'>
               <MultiSelect
                   name="types"
                   options={types}
                   placeholder="Tipo"
                   className="text-indigo-500 mt-3"
               />
-            </div>
 
-            <div className='col-span-2'>
               <MultiSelect
                   name="archetypes"
                   options={archetypes}
                   placeholder="Arqueotipo"
                   className="text-indigo-500 mt-3"
               />
-            </div>
 
-            <div className='col-span-2'>
               <MultiSelect
                   name="keywords"
                   options={keywords}
                   placeholder="Palabras Clave"
                   className="text-indigo-500 mt-3"
               />
-            </div>
+
 
             <MultiSelect
                 name="cost"
@@ -115,7 +109,7 @@ export const CardFinder = ({submit}: Props) => {
             />
 
             <MultiSelect
-                name="defence"
+                name="defense"
                 options={others}
                 placeholder="Defensa"
                 className="text-indigo-500 mt-3"
@@ -128,18 +122,18 @@ export const CardFinder = ({submit}: Props) => {
                 className="text-indigo-500 mt-3"
             />
 
-            <div className='col-span-2'>
-              <MultiSelect
-                  name="rarities"
-                  options={rarities}
-                  placeholder="Rareza"
-                  className="text-indigo-500 mt-3"
-              />
-            </div>
+
+            <MultiSelect
+                name="rarities"
+                options={rarities}
+                placeholder="Rareza"
+                className="text-indigo-500 mt-3"
+            />
+
 
         </div>
         <div className='w-full mt-5 text-center'>
-          <button type="submit" className='btn btn-lg'>
+          <button type="submit" className='btn'>
             <MagnifyingGlassIcon className="h-6 w-5 float-left mr-1"/>
             Buscar
           </button>

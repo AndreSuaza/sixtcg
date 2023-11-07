@@ -4,20 +4,20 @@ export interface Route {
 }
 
 export const Routes = [
+    // {
+    //     path: "/how-to-play",
+    //     name: "¿Como Jugar?"
+    // },
     {
-        path: "/how-to-play",
-        name: "¿Como Jugar?"
-    },
-    {
-        path: "/cards",
+        path: "/cartas",
         name: "Listado De Cartas"
     },
     {
-        path: "/products",
+        path: "/productos",
         name: "Productos"
     },
-    {
-        path: "/events",
-        name: "Eventos"
-    }
+    // {
+    //     path: "/events",
+    //     name: "Eventos"
+    // }
 ]

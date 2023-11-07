@@ -16,11 +16,13 @@ export interface Card {
   
 export interface Product {
     id: number;
+    url: string;
     name: string;
     code: string;
     price: string;
     discount?: any;
     releaseDate: string;
+    numberCards: string;
     logo?: any;
     description: string;
     deleteAt?: any;

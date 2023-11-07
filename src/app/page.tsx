@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -14,15 +15,25 @@ export default function Home() {
       </section>
       <div className="bg-indigo-500 text-center py-4 text-white">
         <div className="grid grid-cols-5 w-96 mx-auto">
-          <Image width={39} height={39} src='/redes/facebook.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-          <Image width={35} height={35} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          <Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">
+            <Image width={39} height={39} src='/redes/facebook.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          </Link>
+          <Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">
+            <Image width={35} height={35} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          </Link>
+            <Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">
           <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-          <Image width={35} height={35} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-          <Image width={40} height={40} src='/redes/youtube.svg' alt="youtube" title="Siguenos en Youtube" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+            </Link>
+          <Link href={'https://twitter.com/soulsinxti0'} target="_blank">
+            <Image width={35} height={35} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          </Link>
+          <Link href={'https://www.youtube.com/@SoulsInXtinction'} target="_blank">
+            <Image width={40} height={40} src='/redes/youtube.svg' alt="youtube" title="Siguenos en Youtube" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          </Link>
         </div>
       </div>
       
-      <div className="text-center mt-14 mb-2">
+      {/* <div className="text-center mt-14 mb-2">
         <h1 className="text-5xl uppercase">Lucha al lado de los mejores</h1>
       </div>
 
@@ -43,7 +54,7 @@ export default function Home() {
           <Image width={380} height={300} src='/products/me-humanos.jpg' alt="Mazo Estructurado Humanos" className=""/>
           <h1 className="absolute bottom-3 text-3xl uppercase font-medium stroke-humans text-white">Humanos</h1>
         </div>
-      </div>
+      </div> */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-[url(/home/angeles.jpg)] bg-blend-darken bg-cover bg-center bg-black bg-opacity-50 h-96 relative hover:bg-opacity-10 cursor-pointer">
           <div className="absolute bottom-0 px-6 mb-10 text-center w-full ">
