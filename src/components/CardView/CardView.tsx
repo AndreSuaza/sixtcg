@@ -32,7 +32,7 @@ const CardView = ({ img, alt, title, zoom = true }: Props) => {
     </div>
     {cardDetail && <div className="fixed z-20 left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 py-10">
       <div className="bg-white p-2 relative">
-        <Image width={400} height={800} src={img} alt={alt} className="border border-zinc-500"/>
+        <Image width={380} height={400} src={img} alt={alt} className="border border-zinc-500" placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNcyvC/HgAFGwIlHWlhOQAAAABJRU5ErkJggg=="/>
         <div className="absolute -top-1 -right-1 mr-1 mt-1 bg-indigo-500 hover:bg-indigo-300 p-2 cursor-pointer ease-out duration-300" onClick={handlerCardDetail}>
             <XMarkIcon className="h-6 w-6 text-white"/>
         </div>

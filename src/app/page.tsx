@@ -1,6 +1,12 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
+export const metadata: Metadata = {
+  title: 'Soul In Xtinction - Home',
+  description: 'Página oficial del juego de cartas Souls In Xtinction',
+}
 
 export default function Home() {
   return (
@@ -8,9 +14,10 @@ export default function Home() {
       <section className={'bg-[url("/events/rey-rashomon.jpg")] w-full h-screen bg-black bg-no-repeat bg-cover relative md:bg-contain lg:bg-right bg-center'}>
         <div className="absolute top-1/3 w-full text-center lg:w-1/2 lg:mx-20">
           <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span>
-          <h1 className="uppercase mb-2 text-6xl stroke lg:text-8xl">Rey del Rashomon</h1>
-          <p className="uppercase text-2xl stroke lg:text-4xl">Inicia el competitivo de six lucha y gana</p>
-          <button className="btn bt-xl mt-5 font-medium">CONOCE MAS!</button>
+          <h1 className="uppercase mb-2 text-6xl stroke lg:text-8xl">Souls Master Series</h1>
+          <p className="uppercase text-2xl stroke lg:text-4xl">Inicia el competitivo, lucha y gana</p>
+          <p className="uppercase text-4xl stroke lg:text-6xl stroke text-indigo-500">Marzo 1</p>
+          {/* <button className="btn bt-xl mt-5 font-medium">CONOCE MAS!</button> */}
         </div>
       </section>
       <div className="bg-indigo-500 text-center py-4 text-white">

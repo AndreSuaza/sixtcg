@@ -1,9 +1,14 @@
 import { ProductView } from "@/components/ProductView/ProductView"
 import { findProducts } from "./Services/Products.services";
-import Image from "next/image";
+import { Metadata } from "next";
 
 async function fetchProducts() {
   return await findProducts();
+}
+
+export const metadata: Metadata = {
+  title: 'Soul In Xtinction - Productos',
+  description: 'Encuentra todos los productos de Souls In Xtinction',
 }
 
 const Products = async () => {

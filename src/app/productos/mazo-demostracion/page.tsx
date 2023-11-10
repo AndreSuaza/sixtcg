@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { fetchDataDeck } from "./Service/findDemoDeck.service";
 import { CardView } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Mazo De Demostración - Primer Estallido',
+    description: 'Primer Estallido mazo de demostración del juego Soul In Xtinction',
+}
 
 async function fetchDeck() {
     const data = await fetchDataDeck();

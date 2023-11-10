@@ -23,10 +23,10 @@ export const ProductView = ({data, detail=false}: Props) => {
   }
   return (
     <div className="justify-items-center mx-2 my-2 cursor-pointer relative" onClick={() => goToProductDetail(data.url)}>
-      <div className="absolute right-0 p-2">
+      {/* <div className="absolute right-0 p-2">
         <ArrowUpTrayIcon className=" h-6 w-5 text-indigo-500 mb-2 mr-1 opacity-60 hover:opacity-100 transition delay-100"/>
         <HeartIcon className=" h-6 w-5 text-indigo-500 mr-1 opacity-60 hover:opacity-100 transition delay-100"/>
-      </div>
+      </div> */}
       <Image width={300} height={300} src={ data.images?.length > 0 ? `/products/${data.images[0].url}` : `/estructur-1.jpg`} alt={data.name} className="rounded-t"/>
       {detail && 
       <div className="border-b border-b-white mx-2 py-2">

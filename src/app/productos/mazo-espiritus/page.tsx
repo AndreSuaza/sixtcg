@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { fetchDataDeck } from "./Service/findSpiritsDeck.service";
 import { CardView } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Mazo Espíritus - El Árbol de la Vida',
+    description: 'El Árbol de la Vida mazo de espíritus del juego Soul In Xtinction',
+}
 
 async function fetchDeck() {
     const data = await fetchDataDeck();
@@ -18,7 +24,7 @@ const SpiritsDeck = async () => {
                 
         >
             <Image width={200} height={200} src={'/products/ME3.png'} alt="Mazo Angeles" className="absolute lg:bottom-20 md:bottom-32 bottom-40 -left-10"/>
-            <h1 className="absolute bottom-0 text-4xl py-4 w-full bg-indigo-500 text-center px-10">Mazo Espiritus - El Árbol de la Vida</h1>
+            <h1 className="absolute bottom-0 text-4xl py-4 w-full bg-indigo-500 text-center px-10">Mazo Espirítus - El Árbol de la Vida</h1>
             <span className="absolute top-10 text-2xl py-2 bg-white text-indigo-500 px-4 text-center">Nov 2023</span>
         </section>
 

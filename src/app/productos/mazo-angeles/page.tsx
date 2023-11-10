@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { fetchDataDeck } from "./Service/findAngelsDeck.service";
 import { CardView } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Mazo Angeles - Amanecer Celestial',
+    description: 'Amanecer Celestial mazo de angeles del juego Soul In Xtinction',
+}
 
 async function fetchDeck() {
     const data = await fetchDataDeck();

@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { fetchDataDeck } from "./Service/findHumansDeck.service";
 import { CardView } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Mazo Humanos - Depliegue de la Armada',
+    description: 'Depliegue de la Armada mazo de humanos del juego Soul In Xtinction',
+}
 
 async function fetchDeck() {
     const data = await fetchDataDeck();

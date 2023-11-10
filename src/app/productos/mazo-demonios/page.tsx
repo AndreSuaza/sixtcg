@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { fetchDataDeck } from "./Service/findDemonsDeck.service";
 import { CardView } from "@/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Mazo Demonios - Arte de la Destrucción',
+    description: 'Arte de la Destrucción mazo de demonios del juego Soul In Xtinction',
+}
 
 async function fetchDeck() {
     const data = await fetchDataDeck();

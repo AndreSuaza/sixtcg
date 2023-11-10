@@ -2,6 +2,13 @@
 import { CardsList } from "./components/CardList/CardsList";
 import { Title } from "@/components/Title/Title";
 import { Card } from "@/models";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: 'Soul In Xtinction - Cartas',
+  description: 'Buscador de todas las cartas de Souls In Xtinction',
+}
 
 async function Cards () {
 
