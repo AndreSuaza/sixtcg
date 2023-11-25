@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -166,6 +167,11 @@ nav{
 }
 
 @media (max-width: 1000px) { 
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .banner {
     height: 400px;
     grid-template-columns: repeat(2, 1fr);
@@ -197,6 +203,9 @@ nav{
 
   .sds { 
     grid-template-columns: repeat(1, 1fr);
+    img {
+      margin: 10px auto;
+    }
     div {
       grid-column: 1/2;
       text-align: center;

@@ -104,7 +104,7 @@ export default function Home() {
       <section className={'bg-[url("/events/rey-rashomon.jpg")] banner bg-no-repeat bg-contain lg:bg-right bg-center'}>
         <div>
           <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span>
-          <h2 className="uppercase mb-2 md:text-6xl stroke lg:text-8xl">Souls Master Series</h2>
+          <h2 className="uppercase mb-2 md:text-4xl stroke lg:text-8xl">Souls Master Series</h2>
           <p className="uppercase text-2xl stroke lg:text-4xl">Inicia el competitivo, lucha y gana</p>
           <p className="uppercase text-4xl stroke lg:text-6xl stroke text-indigo-500">Marzo 1</p>
         </div>
