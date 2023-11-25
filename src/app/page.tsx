@@ -6,6 +6,22 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: 'Soul In Xtinction - Home',
   description: 'Página oficial del juego de cartas Souls In Xtinction',
+  openGraph: {
+    title: 'Souls In Xtinction',
+    description: 'Página oficial del juego de cartas Souls In Xtinction',
+    url: 'https://soulsinxtinction.com/',
+    siteName: 'Souls In Xtinction',
+    images: [
+      {
+        url: 'https://soulsinxtinction.com/og.png',
+        width: 800,
+        height: 600,
+        alt: 'Souls In Xtinction TCG',
+      }
+    ],
+    locale: 'en_ES',
+    type: 'website',
+  },
 }
 
 export default function Home() {
