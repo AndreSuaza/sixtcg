@@ -42,6 +42,13 @@ nav{
     margin-left: calc(50% - 200px);
     margin-top: 20px;
     z-index: 1;
+    text-align: center;
+    p {
+      color: $indigo;
+      font-size: 2rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
 
     img { 
       margin: auto;

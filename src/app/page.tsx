@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <main>
       <section className="card-animation">
-        <div className="content">
-          <Image className="animate-img" width={400} height={300} src='/logo-six.png' alt="carticas"/>
+        <div className="content stroke">
+          <Image className="animate-img" width={300} height={300} src='/logo-six.png' alt="Logo Souls In Xtinction" title="Souls In Xtinction"/>
+          <h1>Nuevo Juego de Cartas</h1>
+          <p>Crear tu estrategia y ganar!</p>
         </div>
         <div className="column-animation">
             <Image className="animate-img" width={200} height={300} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>
@@ -58,7 +60,7 @@ export default function Home() {
             <Image width={40} height={40} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
             <Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">
-          <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer"/>
+          <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
             </Link>
           <Link href={'https://twitter.com/soulsinxti0'} target="_blank">
             <Image width={40} height={40} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
@@ -91,12 +93,12 @@ export default function Home() {
       </section>
 
       <aside className="races">
-        <Image width={40} height={300} src='/iconos/aliens.svg' alt="a" title="a"/>
-        <Image width={40} height={300} src='/iconos/angeles.svg' alt="a" title="a"/>
-        <Image width={40} height={300} src='/iconos/demonios.svg' alt="a" title="a"/>
-        <Image width={40} height={300} src='/iconos/entes.svg' alt="a" title="a"/>
-        <Image width={40} height={300} src='/iconos/espiritus.svg' alt="a" title="a"/>
-        <Image width={40} height={300} src='/iconos/humanos.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/aliens.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/angeles.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/demonios.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/entes.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/espiritus.svg' alt="a" title="a"/>
+        <Image width={40} height={40} src='/iconos/humanos.svg' alt="a" title="a"/>
       </aside>
 
       <section className={'bg-[url("/events/rey-rashomon.jpg")] banner bg-no-repeat bg-contain lg:bg-right bg-center'}>
