@@ -63,9 +63,9 @@ export default function RootLayout({
 Tenga en cuenta que las imágenes utilizadas en este sitio web pueden diferir del producto real, ya que aún está en desarrollo.</p>
             </div>
           </div>
-          <div className='h-10 bg-zinc-800 md:text-right text-center px-20'>
+          {/* <div className='h-10 bg-zinc-800 md:text-right text-center px-20'>
             <p className='py-2 px-4'>© Copyright</p>
-          </div>
+          </div> */}
         </footer>
       </body>
     </html>

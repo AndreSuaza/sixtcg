@@ -16,10 +16,10 @@ async function Cards () {
 
   return (
 
-    <div className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat mb-10">
+    <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat mb-10">
       <Title title="Listado de Cartas" subtitle="Encuentra aqui todo lo que necesitas para controlar el mundo de six"/>  
       <CardsList initialState={cards}/>
-    </div>
+    </main>
 
   )
 }

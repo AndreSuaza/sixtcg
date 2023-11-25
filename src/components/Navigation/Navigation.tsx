@@ -9,7 +9,7 @@ interface Props{
 
 export const Navigation = ({pathNames}:Props) => {
   return (
-    <nav className="fixed top-0 z-10 w-full lg:px-24 px-6 bg-black shadow-md flex flex-wrap items-center py-2 border-b border-indigo-500">
+    <nav className="stiky top-0 z-10 w-full lg:px-24 px-6 shadow-md flex flex-wrap items-center py-2 border-b border-indigo-500">
     <div className="flex-1 flex justify-between items-center">
       <Link href="/" className="flex text-lg font-semibold">
         <Image
