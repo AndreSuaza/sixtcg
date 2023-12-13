@@ -9,13 +9,13 @@ interface Props{
 
 export const Navigation = ({pathNames}:Props) => {
   return (
-    <nav className="stiky top-0 z-10 w-full lg:px-24 px-6 shadow-md flex flex-wrap items-center py-2 border-b border-indigo-500">
+    <nav className="stiky top-0 z-10 w-full lg:px-24 px-6 shadow-md flex flex-wrap items-center py-2 border-b">
     <div className="flex-1 flex justify-between items-center">
       <Link href="/" className="flex text-lg font-semibold">
         <Image
           src="/logo.png"
           width={300}
-          height={40}
+          height={58}
           alt="Sinister in Xtincion logo"   
         />
       </Link>
@@ -40,7 +40,7 @@ export const Navigation = ({pathNames}:Props) => {
           {pathNames.map((pathName) => (
             <li className="py-2 lg:py-0 ">
             <Link
-              className="mr-4 uppercase text-lg font-medium transition hover:text-violet-700 duration-300"
+              className="mr-4 uppercase text-lg font-medium transition text-secondary duration-300"
               href={pathName.path}
             >
               {pathName.name}

@@ -20,12 +20,12 @@ export default function RootLayout({
         </header>
         {children}
         <footer>
-          <div className='bg-indigo-500 pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1'>
+          <div className='bg-primary pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1'>
             <div className='items-center mt-6'>
               <Image
                 src="/logo.png"
                 width={500}
-                height={40}
+                height={96}
                 alt="Sinister in Xtincion logo"  
               />
             </div>

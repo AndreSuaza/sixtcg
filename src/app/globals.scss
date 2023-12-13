@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 $black: #000;
-$white: #eee;
-$indigo: #6366f1;
+$white: #ffffff;
+$indigo: #6366f1; // rgb(255, 138, 5);
 
 body {
   background-color: $black;
@@ -28,6 +28,30 @@ nav{
 .border-b {
   border-bottom: solid 2px $indigo;
 }
+
+.bg-primary {
+  background-color: $indigo;
+}
+
+.text-primary {
+  color: $indigo;
+}
+
+.bg-light-primary {
+  background-color: lighten($indigo, 28%);
+}
+
+.text-primary:hover { 
+ color:  darken($indigo, 10%);
+}
+
+.text-secondary { 
+  color: $white;
+}
+
+.text-secondary:hover { 
+  color:  darken($indigo, 10%);
+ }
 
 //Animacion cartas
 
@@ -240,7 +264,11 @@ body {
 
 
 .btn { 
-  @apply bg-indigo-500 text-white px-5 py-1 rounded uppercase hover:bg-indigo-600
+  @apply bg-primary text-white px-5 py-1 rounded uppercase
+}
+
+.hover-primary:hover { 
+  background-color:  darken($indigo, 10%);
 }
 
 .btn-lg{

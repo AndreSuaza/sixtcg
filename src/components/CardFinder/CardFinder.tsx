@@ -60,7 +60,7 @@ export const CardFinder = ({submit}: Props) => {
               <TextInput 
                   name="text"
                   placeholder="Nombre, Codigo o Efecto de la carta"
-                  className="w-full placeholder:text-neutral-500 text-indigo-500 px-2 rounded border-solid border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-600"
+                  className="w-full placeholder:text-neutral-500 text-primary px-2 rounded border-solid border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-600"
                   style={{paddingTop: '0.5rem', paddingBottom: '0.35rem'}}
               />
               </div>
@@ -69,28 +69,29 @@ export const CardFinder = ({submit}: Props) => {
                   name="products"
                   options={products}
                   placeholder="Productos"
-                  className="text-indigo-500 mt-3"
+                  className="text-primary mt-3"
+                  value={['MD1', 'ME1']}
               />
 
               <MultiSelect
                   name="types"
                   options={types}
                   placeholder="Tipo"
-                  className="text-indigo-500 mt-3"
+                  className="text-primary mt-3"
               />
 
               <MultiSelect
                   name="archetypes"
                   options={archetypes}
                   placeholder="Arqueotipo"
-                  className="text-indigo-500 mt-3"
+                  className="text-primary mt-3"
               />
 
               <MultiSelect
                   name="keywords"
                   options={keywords}
                   placeholder="Palabras Clave"
-                  className="text-indigo-500 mt-3"
+                  className="text-primary mt-3"
               />
 
 
@@ -98,28 +99,28 @@ export const CardFinder = ({submit}: Props) => {
                 name="cost"
                 options={others}
                 placeholder="Costo"
-                className="text-indigo-500 mt-3"
+                className="text-primary mt-3"
             />
 
             <MultiSelect
                 name="force"
                 options={others}
                 placeholder="Fuerza"
-                className="text-indigo-500 mt-3"
+                className="text-primary mt-3"
             />
 
             <MultiSelect
                 name="defense"
                 options={others}
                 placeholder="Defensa"
-                className="text-indigo-500 mt-3"
+                className="text-primary mt-3"
             />
 
             <MultiSelect
                 name="limits"
                 options={limits}
                 placeholder="Limite"
-                className="text-indigo-500 mt-3"
+                className="text-primary mt-3"
             />
 
 
@@ -127,7 +128,7 @@ export const CardFinder = ({submit}: Props) => {
                 name="rarities"
                 options={rarities}
                 placeholder="Rareza"
-                className="text-indigo-500 mt-3"
+                className="text-primary mt-3"
             />
 
 

@@ -8,6 +8,7 @@ import { CardDetail } from "../CardDetail/CardDetail";
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useRouter } from "next/navigation";
 import { Pagination } from "@/components/Pagination/Pagination";
+import { CardListComponent } from "@/components/CardList/CardListComponent";
 
 interface Props {
     initialState: Card[];
@@ -16,8 +17,6 @@ interface Props {
 export const CardsList = ({initialState} : Props) => {
 
   const [cards, setCards] = useState<Card[]>(initialState);
-  const [showCardDetail, setShowCardDetail] = useState(false);
-  const [indexCards, setIndexCards] = useState(0);
   const [cardsTotal, setCardsTotal] = useState(0);
   const limit = 20; //cambiar por variable global .env
   const searchParams = useSearchParams();
@@ -25,16 +24,24 @@ export const CardsList = ({initialState} : Props) => {
   const path = usePathname();
 
   const formatParameters = () => {
-
     let parameters = '';
     for (const key of searchParams.keys()) {
-      parameters = parameters+'&'+key+'='+searchParams.getAll(key)
+      parameters = parameters+'&'+key+'='+searchParams.getAll(key);
     }
     return parameters;
-
   }
 
   const [queryParams, setQueryParams] = useState(formatParameters());
+
+  const initialParameters = () => {
+    let objetParameters:any = {};
+    for (const key of searchParams.keys()) {
+      objetParameters[key] = searchParams.getAll(key);
+    }
+    return objetParameters;
+  }
+
+  const [searchParameters, setSearchParameters] = useState(initialParameters());
 
   const getCards = async (limit: number, offset: number) => {
     const data = await fetchDataCards(limit, offset, queryParams);
@@ -81,37 +88,17 @@ export const CardsList = ({initialState} : Props) => {
 
   };
 
-  const handlerCardDetail = () => {
-    setShowCardDetail(!showCardDetail);
-  }
-
-  const setCardDetailData = (index: number) => {
-    handlerCardDetail();
-    setIndexCards(index);
-  }
-
-  
-  
   return (
     <>
-        <div className="md:mx-24 mx-4 px-8 py-5 bg-white mb-4 rounded">
+        <div id="cards" className="md:mx-24 mx-4 px-8 py-5 bg-white mb-4 rounded">
           <CardFinder submit={(filters:any) => searchCards(filters)}/>
         </div>
+
         <div className="md:mx-24 mx-4 mb-4">
           <Pagination totalCount={cardsTotal} limit={limit} pageChangeMethod={getCards}>
-            <section className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-5 my-8 justify-items-center">
-            {cards.map((card, i) => 
-              <div key={card.id} className="cursor-pointer" onClick={() => setCardDetailData(i)}>
-                <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={false}/>
-              </div>  
-            )}
-            </section>
+            <CardListComponent cards={cards}/>
           </Pagination>
         </div>
-        
-        {showCardDetail && 
-          <CardDetail cards={cards} close={handlerCardDetail} index={indexCards}/>
-        }
     </>
   )
 }

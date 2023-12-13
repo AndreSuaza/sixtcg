@@ -35,9 +35,20 @@ export interface Properties {
   archetypes: Other[];
   keywords: Other[];
   others: Other[];
+  rarities?: Other[];
+  limits?: Other[];
 }
 
 export interface Other {
   label: string;
   value: string;
+}
+
+
+export interface PropertiesFilter {
+  types?: string[];
+  products?: string[];
+  archetypes?: string[];
+  keywords?: string[];
+  others?: string[];
 }

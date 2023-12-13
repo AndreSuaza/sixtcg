@@ -3,7 +3,6 @@ import CustomSelect from './CustomSelect';
 
 interface Props {
     name: string;
-    type?: 'text' | 'email' | 'password';
     placeholder?: string;
     [x:string]: any;
 }
