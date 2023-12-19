@@ -39,7 +39,7 @@ export default function Home() {
             placeholder="blur"
           />
           <h1>Nuevo Juego de Cartas</h1>
-          <p>Crear tu estrategia y ganar!</p>
+          <p>Crear tu estrategia y gana!</p>
         </div>
         <div className="column-animation">
             <Image className="animate-img" width={200} height={287} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>

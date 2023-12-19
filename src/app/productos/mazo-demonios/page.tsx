@@ -131,7 +131,7 @@ const DemonsDeck = async () => {
                     <section className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-1 gap-5 my-16">
                         <h2 className="text-4xl text-gray-900 lg:col-span-6 md:col-span-4 sm:col-span-1">Cartas:</h2>
                         <Link className="lg:col-span-6 md:col-span-4 sm:col-span-1 w-96 m-auto" href={'/cartas?&products=ME1#cards'}>
-                            <button className="btn w-96 ">Ver detalle de la lista de cartas</button>
+                            <button className="btn hover-primary w-96">Ver detalle de la lista de cartas</button>
                         </Link>
                         {cards.map((card, i) => 
                         <div key={card.id} className="cursor-pointer">
