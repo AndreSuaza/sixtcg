@@ -14,7 +14,7 @@ export const Navigation = ({pathNames}:Props) => {
       <Link href="/" className="flex text-lg font-semibold">
         <Image
           src="/logo.png"
-          width={300}
+          width={250}
           height={58}
           alt="Sinister in Xtincion logo"   
         />

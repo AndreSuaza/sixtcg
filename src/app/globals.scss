@@ -64,7 +64,7 @@ nav{
 
   .content {
     position: absolute;
-    margin-left: calc(50% - 200px);
+    margin-left: calc(50% - 150px);
     margin-top: 20px;
     z-index: 1;
     text-align: center;
@@ -77,6 +77,22 @@ nav{
 
     img { 
       margin: auto;
+    }
+
+  }
+
+  .content-text {
+    position: absolute;
+    margin-left: calc(50% - 150px);
+    margin-top: 20px;
+    z-index: 1;
+    text-align: center;
+    bottom: 40px;
+    p {
+      color: $indigo;
+      font-size: 1.5rem;
+      line-height: 1;
+      text-transform: uppercase;
     }
 
   }
@@ -182,12 +198,10 @@ nav{
 
 .races {
   background-color: $indigo;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
   color: $white;
-  justify-content: center;
-  gap: 30px;
+  justify-items: center;
+  margin: auto;
+  margin-top: 10px;
 }
 
 @media (max-width: 1000px) { 

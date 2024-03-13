@@ -38,7 +38,9 @@ export default function Home() {
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
             placeholder="blur"
           />
-          <h1>Nuevo Juego de Cartas</h1>
+        </div>
+        <div className="content-text">
+          <h2>Nuevo Juego de Cartas</h2>
           <p>Crear tu estrategia y gana!</p>
         </div>
         <div className="column-animation">
@@ -76,7 +78,7 @@ export default function Home() {
       
     
       <aside className="bg-primary text-center py-4 text-white">
-        <div className="grid grid-cols-5 w-96 mx-auto">
+        <div className="grid lg:grid-cols-5 md:grid-cols-5 grid-cols-3 w-96 mx-auto">
           <Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/facebook.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
@@ -116,7 +118,7 @@ export default function Home() {
 
       </section>
 
-      <aside className="races">
+      <aside className="races py-2 grid lg:grid-cols-6 md:grid-cols-6 grid-cols-3">
         <Image width={40} height={40} src='/iconos/aliens.svg' alt="icono aliens souls in xtinction" title="Icono Aliens souls in xtinction"/>
         <Image width={40} height={40} src='/iconos/angeles.svg' alt="icono angeles souls in xtinction" title="Icono Angeles souls in xtinction"/>
         <Image width={40} height={40} src='/iconos/demonios.svg' alt="icono demonios souls in xtinction" title="Icono Demonios souls in xtinction"/>

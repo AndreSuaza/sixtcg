@@ -59,8 +59,7 @@ export default function RootLayout({
             </div>
 
             <div className='text-justify mt-7 lg:text-lg text-xs'>
-              <p>Todas las imágenes, textos y datos de este sitio web no pueden reproducirse sin permiso.
-Tenga en cuenta que las imágenes utilizadas en este sitio web pueden diferir del producto real, ya que aún está en desarrollo.</p>
+              <p>La reproducción de imágenes, textos y datos de este sitio web está prohibida sin autorización. Es importante tener en cuenta que las imágenes aquí mostradas pueden no reflejar fielmente el producto final, dado que este aún se encuentra en fase de desarrollo.</p>
             </div>
           </div>
           {/* <div className='h-10 bg-zinc-800 md:text-right text-center px-20'>
