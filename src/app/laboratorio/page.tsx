@@ -29,13 +29,13 @@ const Lab = () => {
     },[]);
 
     return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-2 min-h-screen">
+    <div className="lg:mx-6 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-2 min-h-screen">
 
-        <div className="px-2 pt-3">
+        <div className="px-2 pt-3 mb-6">
             <CardFinderLab setCardsFilters={setCardsFilters}/>
            
             <Pagination totalCount={cardsTotal} limit={limit} pageChangeMethod={getCards}>
-                <CardListComponent cards={cards}/>
+                <CardListComponent cards={cards} detail={false} grid="3"/>
             </Pagination>
         </div>
         <div className="bg-blue">Deck</div>

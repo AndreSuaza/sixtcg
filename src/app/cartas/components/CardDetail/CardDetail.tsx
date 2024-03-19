@@ -42,7 +42,7 @@ export const CardDetail = ({cards, close, index}: Props) => {
               <h1 className="text-white font-bold text-4xl">{card.name}</h1>
           </div>
           <div className="md:pl-10 px-4 md:flex gap-1">
-            <div className="md:w-3/5 mb-4">
+            <div className="md:w-3/5">
               <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Detalle de ${card.name}`} zoom={false}/>
             </div>
             <div className="md:w-3/5 md:pr-10 ml-2">

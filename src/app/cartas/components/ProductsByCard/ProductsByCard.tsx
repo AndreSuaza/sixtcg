@@ -16,7 +16,6 @@ export const ProductsByCard = ({productsByCard}: Props) => {
 
     const getProductsByCodes = async (productCodes: string) => {
         const data = await fetchDataProducts(productCodes);
-        console.log(data);
         setProducts( data );
     }
 
@@ -28,8 +27,8 @@ export const ProductsByCard = ({productsByCard}: Props) => {
   return (
     <div className="grid grid-cols-2 gap-2 ml-2">
          {products && products.map((product) =>
-            <Link href={`/productos/${product.url}`} target="_blank">
-            <div key={product.code}>
+            <Link key={product.code} href={`/productos/${product.url}`} target="_blank">
+
                 <Image 
                     width={300} 
                     height={300} 
@@ -40,7 +39,7 @@ export const ProductsByCard = ({productsByCard}: Props) => {
                     placeholder="blur"
                 />
                 <h3>{product.name}</h3>
-            </div>
+
             </Link>
          )}
     </div>
