@@ -33,16 +33,6 @@ export const CardsList = ({initialState} : Props) => {
 
   const [queryParams, setQueryParams] = useState(formatParameters());
 
-  const initialParameters = () => {
-    let objetParameters:any = {};
-    for (const key of searchParams.keys()) {
-      objetParameters[key] = searchParams.getAll(key);
-    }
-    return objetParameters;
-  }
-
-  const [searchParameters, setSearchParameters] = useState(initialParameters());
-
   const getCards = async (limit: number, offset: number) => {
     const data = await fetchDataCards(limit, offset, queryParams);
     setCards( data.cards );
@@ -50,9 +40,7 @@ export const CardsList = ({initialState} : Props) => {
   }
 
   useEffect(() => {  
-
-    getCards(20, 0);
-   
+    getCards(limit, 0);
   },[queryParams]);
 
   const getFilterValues = (filter: any[]) => {
@@ -67,8 +55,6 @@ export const CardsList = ({initialState} : Props) => {
 
 
   const searchCards = async (filters: any) => { 
-
-    
 
     let query = "";
 

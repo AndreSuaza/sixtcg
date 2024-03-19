@@ -4,7 +4,7 @@ import { Formik, Form } from 'formik';
 import { MultiSelect, TextInput } from '../Form';
 import { useEffect, useState } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
-import { fetchData } from './Service/cardfinder.service';
+import { getCardProperties } from '../../services/cardfinder.service';
 
 interface Props {
   submit: (filters: any) => Promise<void>;
@@ -28,7 +28,7 @@ export const CardFinder = ({submit}: Props) => {
   useEffect(() => {  
 
     const setCardProperties = async () => {
-      setProperties( await fetchData() );
+      setProperties( await getCardProperties() );
     }
 
     setCardProperties()
@@ -69,29 +69,32 @@ export const CardFinder = ({submit}: Props) => {
                   name="products"
                   options={products}
                   placeholder="Productos"
-                  className="text-primary mt-3"
-                  value={['MD1', 'ME1']}
+                  className="text-primary"
+                  multi={true}
               />
 
               <MultiSelect
                   name="types"
                   options={types}
                   placeholder="Tipo"
-                  className="text-primary mt-3"
+                  className="text-primary"
+                  multi={true}
               />
 
               <MultiSelect
                   name="archetypes"
                   options={archetypes}
                   placeholder="Arqueotipo"
-                  className="text-primary mt-3"
+                  className="text-primary"
+                  multi={true}
               />
 
               <MultiSelect
                   name="keywords"
                   options={keywords}
                   placeholder="Palabras Clave"
-                  className="text-primary mt-3"
+                  className="text-primary"
+                  multi={true}
               />
 
 
@@ -99,28 +102,32 @@ export const CardFinder = ({submit}: Props) => {
                 name="cost"
                 options={others}
                 placeholder="Costo"
-                className="text-primary mt-3"
+                className="text-primary"
+                multi={true}
             />
 
             <MultiSelect
                 name="force"
                 options={others}
                 placeholder="Fuerza"
-                className="text-primary mt-3"
+                className="text-primary"
+                multi={true}
             />
 
             <MultiSelect
                 name="defense"
                 options={others}
                 placeholder="Defensa"
-                className="text-primary mt-3"
+                className="text-primary"
+                multi={true}
             />
 
             <MultiSelect
                 name="limits"
                 options={limits}
                 placeholder="Limite"
-                className="text-primary mt-3"
+                className="text-primary"
+                multi={true}
             />
 
 
@@ -128,7 +135,8 @@ export const CardFinder = ({submit}: Props) => {
                 name="rarities"
                 options={rarities}
                 placeholder="Rareza"
-                className="text-primary mt-3"
+                className="text-primary"
+                multi={true}
             />
 
 

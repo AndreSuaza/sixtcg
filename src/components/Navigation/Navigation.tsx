@@ -15,7 +15,7 @@ export const Navigation = ({pathNames}:Props) => {
         <Image
           src="/logo.png"
           width={250}
-          height={58}
+          height={60}
           alt="Sinister in Xtincion logo"   
         />
       </Link>

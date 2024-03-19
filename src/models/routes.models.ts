@@ -17,6 +17,10 @@ export const Routes = [
         name: "Productos"
     },
     // {
+    //     path: "/laboratorio",
+    //     name: "Laboratorio"
+    // },
+    // {
     //     path: "/events",
     //     name: "Eventos"
     // }
