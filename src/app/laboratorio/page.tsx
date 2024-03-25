@@ -158,7 +158,7 @@ const Lab = () => {
     return (
     <div className="bg-white grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
 
-        <div className="bg-white pt-3 mb-6 lg:px-10 md:px-10 px-6 border-r-2 border-indigo-500">
+        <div className="bg-white pt-3 mb-6 lg:px-10 md:px-10 px-6 border-r-2 border-indigo-500 min-h-screen">
             <CardFinderLab setCardsFilters={setCardsFilters}/>
            
             <Pagination totalCount={cardsTotal} limit={limit} pageChangeMethod={getCards}>
