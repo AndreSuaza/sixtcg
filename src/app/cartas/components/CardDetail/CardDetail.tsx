@@ -94,7 +94,7 @@ export const CardDetail = ({cards, close, index}: Props) => {
           <div className="absolute top-72 right-0 bg-primary hover:bg-indigo-300 py-2 cursor-pointer ease-out duration-300" onClick={nextCard}>
             <ChevronRightIcon className="h-8 w-8 text-white font-bold"/>
           </div>
-      </div>
+        </div>
     </Modal>
   )
 }

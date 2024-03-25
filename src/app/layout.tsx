@@ -20,7 +20,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer>
-          <div className='bg-primary pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1'>
+          <div className='bg-primary pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1 bottom-0'>
             <div className='items-center mt-6'>
               <Image
                 src="/logo.png"

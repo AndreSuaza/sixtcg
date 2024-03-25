@@ -131,7 +131,7 @@ export default function Home() {
         <div>
           {/* <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span> */}
           <h2 className="uppercase mb-2 md:text-4xl stroke lg:text-8xl">Souls Master Series</h2>
-          <p className="uppercase text-2xl stroke lg:text-4xl">Inicia el competitivo, lucha y gana</p>
+          <p className="uppercase text-2xl stroke lg:-4xl">Inicia el competitivo, lucha y gana</p>
           <p className="uppercase text-4xl stroke lg:text-6xl stroke text-primary">Marzo 1</p>
         </div>
       </section>

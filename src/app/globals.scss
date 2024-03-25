@@ -5,6 +5,7 @@
 $black: #000;
 $white: #ffffff;
 $indigo: #6366f1; // rgb(255, 138, 5);
+$successes:  rgb(45 212 191);
 
 body {
   background-color: $black;
@@ -50,9 +51,13 @@ nav{
 }
 
 .text-secondary:hover { 
-  color:  darken($indigo, 10%);
+  background:  darken($indigo, 10%);
  }
 
+.bg-primary-h:hover {
+  background:  darken($indigo, 10%);
+}
+ 
 //Animacion cartas
 
 .card-animation {
@@ -346,4 +351,8 @@ body {
   background-color: black;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid rgb(99, 102, 241, 0.5);  /* creates padding around scroll thumb */
+}
+
+.btn-lab { 
+  @apply rounded-full w-6 h-6 text-center border-white border-2 align-middle font-bold text-white
 }

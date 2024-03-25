@@ -9,9 +9,10 @@ interface Props {
     alt: string;
     title: string;
     zoom?: boolean;
+    border?: boolean;
 }
 
-const CardView = ({ img, alt, title, zoom = false }: Props) => {
+const CardView = ({ img, alt, title, zoom = false, border = false }: Props) => {
 
   const [cardDetail, setCardDetail] = useState(false);
 
@@ -23,7 +24,7 @@ const CardView = ({ img, alt, title, zoom = false }: Props) => {
 
   return (
     <>
-    <div className="relative">
+    <div className={`relative ${border && 'border-2 border-white rounded-lg'}`}>
     <Image 
       width={500} 
       height={718} 

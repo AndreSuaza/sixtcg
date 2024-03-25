@@ -9,6 +9,7 @@ export interface Card {
     effect: string;
     img: string;
     deleteAt?: any;
+    copys?: number;
     types: string[];
     products: Product[];
     archetypes: string[];

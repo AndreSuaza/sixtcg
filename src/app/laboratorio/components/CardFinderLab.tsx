@@ -81,7 +81,7 @@ export const CardFinderLab = ({setCardsFilters}: Props) => {
                     
                 </div>
 
-                <MultiSelect
+                {/* <MultiSelect
                   name="products"
                   options={products}
                   placeholder="Productos"
@@ -108,7 +108,7 @@ export const CardFinderLab = ({setCardsFilters}: Props) => {
                     options={others}
                     placeholder="Costo"
                     className="text-primary"
-                />
+                /> */}
 
             </div>
             <div className='w-full mt-5 text-center'>
