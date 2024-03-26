@@ -77,7 +77,7 @@ export const CardFinderLab = ({setCardsFilters}: Props) => {
         <Form>
             <div className="grid gap-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 
-            <div className='lg:col-span-2 md:col-span-2 col-span-2'>  
+            <div className='lg:col-span-2 md:col-span-2 col-span-1'>  
                 <div className="grid grid-cols-6 gap-1">
                     <TextInput 
                         name="text"
