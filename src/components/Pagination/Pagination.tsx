@@ -6,9 +6,10 @@ interface Props {
     limit: number;
     pageChangeMethod: (limit: number, offset: number) => Promise<void>;
     children: JSX.Element;
+    extendedForm?: boolean;
 }
 
-export const Pagination = ({ children, totalCount, limit, pageChangeMethod }: Props) => {
+export const Pagination = ({ children, totalCount, limit, pageChangeMethod, extendedForm = true }: Props) => {
 
     const [pageNumber, setPageNumber] = useState([])
     const [actualPage, setActualPage] = useState(1);
@@ -35,22 +36,24 @@ export const Pagination = ({ children, totalCount, limit, pageChangeMethod }: Pr
         <>
             <ul className="list-none m-0 p-0 overflow-hidden">
                 <li className={`float-left px-3 py-1 text-white ${actualPage-1 > 0 ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage-1)}>{"<"}</li>
-                {pageNumber.map((index) => {
+                {extendedForm && pageNumber.map((index) => {
                         return <li className={`float-left px-3 py-1 cursor-pointer ${actualPage === index ? 'text-white  bg-primary' : 'text-black  bg-white'}`} key={index} onClick={() => pagePurn(index)}>
                             {index}
                         </li>
                 })}
                 <li className={`float-left px-3 py-1 text-white cursor-pointer ${actualPage+1 <= pageNumber.length ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage+1)}>{">"}</li>
+                {!extendedForm && <li className="bg-primary float-left px-3 py-1 text-white cursor-pointer ml-2">{actualPage}</li>}
             </ul>
             {children}
             <ul className="list-none m-0 p-0 overflow-hidden">
                 <li className={`float-left px-3 py-1 text-white ${actualPage-1 > 0 ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage-1)}>{"<"}</li>
-                {pageNumber.map((index) => {
+                {extendedForm && pageNumber.map((index) => {
                         return <li className={`float-left px-3 py-1 cursor-pointer ${actualPage === index ? 'text-white  bg-primary' : 'text-black  bg-white'}`} key={index} onClick={() => pagePurn(index)}>
                             {index}
                         </li>
                 })}
                 <li className={`float-left px-3 py-1 text-white cursor-pointer ${actualPage+1 <= pageNumber.length ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage+1)}>{">"}</li>
+                {!extendedForm && <li className="bg-primary float-left px-3 py-1 text-white cursor-pointer ml-2">{actualPage}</li>}
             </ul>
         </>
         

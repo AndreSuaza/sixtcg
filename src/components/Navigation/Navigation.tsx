@@ -1,13 +1,9 @@
-import { Route } from '@/models'
 import './Navigation.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { Routes } from '@/models'
 
-interface Props{
-  pathNames: Route[];
-}
-
-export const Navigation = ({pathNames}:Props) => {
+export const Navigation = () => {
   return (
     <nav className="bg-black stiky top-0 z-10 w-full lg:px-24 px-6 shadow-md flex flex-wrap items-center py-2 border-b">
     <div className="flex-1 flex justify-between items-center">
@@ -37,7 +33,7 @@ export const Navigation = ({pathNames}:Props) => {
       <nav>
         <ul className="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
 
-          {pathNames.map((pathName) => (
+          {Routes.map((pathName) => (
             <li className="py-2 lg:py-0 ">
             <Link
               className="mr-4 uppercase text-lg font-medium transition text-secondary duration-300"

@@ -8,6 +8,7 @@ export interface Card {
     defence: string;
     effect: string;
     img: string;
+    limit: string;
     deleteAt?: any;
     copys?: number;
     types: string[];

@@ -35,7 +35,7 @@ async function Cards () {
       <Title title="Listado de Cartas" subtitle="Encuentra aqui todo lo que necesitas para controlar el mundo de Souls In Xtinction"/>  
       <CardsList initialState={cards}/>
     </main>
-
+    
   )
 }
 
