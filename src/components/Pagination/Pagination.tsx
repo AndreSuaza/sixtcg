@@ -20,6 +20,7 @@ export const Pagination = ({ children, totalCount, limit, pageChangeMethod, exte
             pages = [...pages, i];
         }
         setPageNumber(pages);
+        setActualPage(1);
     }, [totalCount])
 
     const pagePurn = (page: number) => {
@@ -42,7 +43,7 @@ export const Pagination = ({ children, totalCount, limit, pageChangeMethod, exte
                         </li>
                 })}
                 <li className={`float-left px-3 py-1 text-white cursor-pointer ${actualPage+1 <= pageNumber.length ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage+1)}>{">"}</li>
-                {!extendedForm && <li className="bg-primary float-left px-3 py-1 text-white cursor-pointer ml-2">{actualPage}</li>}
+                {!extendedForm && <li className="bg-gray-200 float-left px-3 py-1 text-primary ml-2">Pag {actualPage} de {pageNumber.length}</li>}
             </ul>
             {children}
             <ul className="list-none m-0 p-0 overflow-hidden">
@@ -53,7 +54,7 @@ export const Pagination = ({ children, totalCount, limit, pageChangeMethod, exte
                         </li>
                 })}
                 <li className={`float-left px-3 py-1 text-white cursor-pointer ${actualPage+1 <= pageNumber.length ? 'bg-primary cursor-pointer' : 'bg-gray-200 cursor-default' }`} onClick={() => pagePurn(actualPage+1)}>{">"}</li>
-                {!extendedForm && <li className="bg-primary float-left px-3 py-1 text-white cursor-pointer ml-2">{actualPage}</li>}
+                {!extendedForm && <li className="bg-gray-200 float-left px-3 py-1 text-primary ml-2">Pag {actualPage} de {pageNumber.length}</li>}
             </ul>
         </>
         

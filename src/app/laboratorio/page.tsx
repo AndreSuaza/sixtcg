@@ -299,15 +299,15 @@ const Lab = () => {
             </Pagination>
         </div>
 
-        <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:lg:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
+        <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
             <div className="flex grid-cols-4 mt-6 mb-6 justify-end">
-                {/* <button 
+                <button 
                     className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
                     onClick={clearDeckList}
                     title="Crear Imagen del Mazo"
                 >
                     <PhotoIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button> */}
+                </button>
                 <button
                     className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
                     onClick={exportDeck}
@@ -396,23 +396,65 @@ const Lab = () => {
                 </div>}
                 </div>
                 : 
-                <div className="m-auto lg:w-1/3 md:w-1/2 w-full mt-28 px-2 text-center lg:text-2xl mb:text-2xl text-xl">
+                <div className="m-auto lg:w-2/3 md:w-2/3 w-full mt-16 px-2 text-lg text-gray-100">
                     <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
-                        <p className="">Puedes agregar cartas a tu mazo dando click sobre su imagen.</p>
+                        <p>Puedes agregar cartas a tu mazo dando click sobre su imagen.</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 lg:text-2xl mb:text-2xl text-xl bg-black bg-opacity-25">
-                        <p>También puedes pulsar en el botón</p>
-                        
-                        <button 
-                            className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6 rounded my-2"
-                            onClick={handlerImportDeckCode}
-                            title="Importar Mazo"
-                        >
-                            <ArrowDownTrayIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                        </button>
-                        <p>para cargar el código de tu Mazo.</p>
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                        <p>Puedes pulsar en el botón 
+                            <button 
+                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
+                                onClick={clearDeckList}
+                                title="Crear Imagen del Mazo"
+                            >
+                                <PhotoIcon className="w-4 m-auto"/>
+                            </button>
+                            para crear una Imagen de tu Mazo.</p>
                     </aside>
-                    
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                        <p>Puedes pulsar en el botón 
+                            <button
+                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
+                                onClick={exportDeck}
+                                title="Exportar Mazo"
+                            >
+                                <ArrowUpTrayIcon className="w-4 m-auto"/>
+                            </button>
+                             para Exportar el código de tu Mazo.</p>
+                    </aside>
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                        <p>Puedes pulsar en el botón 
+                            <button 
+                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
+                                onClick={handlerImportDeckCode}
+                                title="Importar Mazo"
+                            >
+                                <ArrowDownTrayIcon className="w-4 m-auto"/>
+                            </button>
+                            para Importar el código de tu Mazo.</p>
+                    </aside>
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                        <p>Puedes pulsar en el botón 
+                            <button 
+                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
+                                onClick={setSortListCards}
+                                title="Ordenar Mazo"
+                            >
+                                <ListBulletIcon className="w-4 m-auto"/>
+                            </button>
+                            para Ordenar tu mazo.</p>
+                    </aside>
+                    <aside className="p-3 border-dotted border-2 mb-10 border-indigo-500 bg-black bg-opacity-25">
+                        <p>Puedes pulsar en el botón 
+                            <button 
+                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
+                                onClick={clearDeckList}
+                                title="Borrar Mazo"
+                            >
+                                <TrashIcon className="w-4 m-auto"/>
+                            </button>
+                            para Limpiar tu mazo.</p>
+                    </aside>
                 </div>
             }
         </div>
