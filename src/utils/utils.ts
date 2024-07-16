@@ -7,3 +7,9 @@ export const transformIntoString = (array: any[], field: string) => {
 
     return values;
 }
+
+
+//Metodo para abrir y cerrar Modales
+export const handlerModals = (flag: boolean, showMethod: (show: boolean) => void) => {
+  showMethod(!flag);
+}

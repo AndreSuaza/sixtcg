@@ -32,16 +32,31 @@ export const CardFinderLab = ({setCardsFilters}: Props) => {
         setCardProperties()
        
     },[]);
+    
+    const getFilterValues = (filter: any[]) => {
+        let values = "";
+    
+        filter.forEach((value, index) => {
+          values += index < filter.length -1 ? value+"," : value
+        });
+    
+        return values;
+    }
 
     const searchCards = (filters: any) => { 
 
         let query = "";
-    
+
         if (filters.text && filters.text !== "") query += '&text='+filters.text;
-        if (filters.types && filters.types !== "") query += '&types='+filters.types;
-        if (filters.archetypes && filters.archetypes !== "") query += '&archetypes='+filters.archetypes;
-        if (filters.products && filters.products !== "") query += '&products='+filters.products;
-        if (filters.cost && filters.cost !== "") query += '&cost='+filters.cost;
+        if (filters.types.length > 0) query += '&types='+getFilterValues(filters.types);
+        if (filters.force.length > 0) query += '&force='+getFilterValues(filters.force);
+        if (filters.archetypes.length > 0) query += '&archetypes='+getFilterValues(filters.archetypes);
+        if (filters.products.length > 0) query += '&products='+getFilterValues(filters.products);
+        if (filters.cost.length > 0) query += '&cost='+getFilterValues(filters.cost);
+        if (filters.defense.length > 0) query += '&defense='+getFilterValues(filters.defense);
+        if (filters.keywords.length > 0) query += '&keywords='+getFilterValues(filters.keywords);
+        if (filters.rarities.length > 0) query += '&rarities='+getFilterValues(filters.rarities);
+        if (filters.limits.length > 0) query += '&limits='+getFilterValues(filters.limits);
         
        return query;
     

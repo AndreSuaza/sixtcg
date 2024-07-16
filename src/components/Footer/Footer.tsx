@@ -10,8 +10,9 @@ export const Footer = () => {
               <Image
                 src="/logo.png"
                 width={500}
-                height={96}
-                alt="Sinister in Xtincion logo"  
+                height={77}
+                alt="Souls in Xtincion"  
+                title="Souls in Xtincion logo"
               />
             </div>
             
@@ -34,11 +35,11 @@ export const Footer = () => {
                 <h2 className='text-xl uppercase'>Redes</h2>
                 <ul>
 
-                  <li className='mt-1'><Link href={'https://twitter.com/soulsinxti0'} target="_blank">Twitter</Link></li>
-                  <li className='mt-1'><Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">Facebook</Link></li>
-                  <li className='mt-1'><Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">Tik Tok</Link></li>
-                  <li className='mt-1'><Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">Instagram</Link></li>
-                  <li className='mt-1'><Link href={'https://www.youtube.com/@SoulsInXtinction'} target="_blank">Youtube</Link></li>
+                  <li className='mt-1'><Link href={'https://twitter.com/soulsinxti0'} target="_blank" title="Twitter Souls in Xtincion">Twitter</Link></li>
+                  <li className='mt-1'><Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank" title="Facebook Souls in Xtincion">Facebook</Link></li>
+                  <li className='mt-1'><Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank" title="Tik Tok Souls in Xtincion">Tik Tok</Link></li>
+                  <li className='mt-1'><Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank" title="Instagram Souls in Xtincion">Instagram</Link></li>
+                  <li className='mt-1'><Link href={'https://www.youtube.com/@SoulsInXtinction'} target="_blank" title="Youtube Souls in Xtincion">Youtube</Link></li>
                 </ul>
               </div>
             </div>

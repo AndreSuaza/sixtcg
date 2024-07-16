@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction Listado de Cartas',
     images: [
       {
-        url: 'https://soulsinxtinction.com/cardsList.jpg',
+        url: 'https://soulsinxtinction.com/og.jpg',
         width: 800,
         height: 600,
         alt: 'Listado de Cartas Souls In Xtinction TCG',

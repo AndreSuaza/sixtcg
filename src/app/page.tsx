@@ -4,16 +4,16 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: 'Soul In Xtinction - Home',
-  description: 'Página oficial del juego de cartas Souls In Xtinction',
+  title: 'Inicio Soul In Xtinction Nuevo juego de cartas intercambiables ',
+  description: 'Souls In Xtinction nuevo juego de cartas intercambiables con el que entrarás a un universo lleno de estrategia y emoción. Elige tu camino, escoge con cuidado tus cartas y forja tu propio destino hacia la victoria, enfrentándote a desafíos emocionantes y descubriendo nuevas formas de jugar con cada partida.',
   openGraph: {
     title: 'Souls In Xtinction',
-    description: 'Página oficial del juego de cartas Souls In Xtinction',
+    description: 'Entrarás a un universo lleno de estrategia y emoción',
     url: 'https://soulsinxtinction.com/',
     siteName: 'Souls In Xtinction',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.png',
+        url: 'https://soulsinxtinction.com/og.jpg',
         width: 800,
         height: 600,
         alt: 'Souls In Xtinction TCG',
@@ -41,42 +41,76 @@ export default function Home() {
         </div>
         <div className="content-text">
           <h2>Nuevo Juego de Cartas</h2>
-          <p>Crear tu estrategia y gana!</p>
+          <p>Crea tu estrategia y gana!</p>
         </div>
         <div className="column-animation">
-            <Image className="animate-img" width={200} height={287} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME2-025-6851.jpg' alt="Carta Zadkiel Misericordioso" title="Zadkiel Misericordioso"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME4-024-1331.jpg' alt="Carta Mark Ex-303" title="Mark Ex-303"/>
+            <Link href={"/cartas?&text=Prime%20wenddygo"} target="_blank" title="Prime Wenddygo">
+              <Image className="animate-img" width={200} height={287} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>
+              </Link>
+            <Link href={"/cartas?&text=Zadkiel%20Misericordioso"} target="_blank" title="Zadkiel Misericordioso">
+              <Image className="animate-img" width={200} height={287} src='/home/ME2-025-6851.jpg' alt="Carta Zadkiel Misericordioso" title="Zadkiel Misericordioso"/>
+            </Link>
+            <Link href={"/cartas?&text=Mark%20Exp-303"} target="_blank" title="Mark Ex-303">
+              <Image className="animate-img" width={200} height={287} src='/home/ME4-024-1331.jpg' alt="Carta Mark Ex-303" title="Mark Ex-303"/>
+            </Link>
         </div>
         <div className="column-animation animate-reverse">
-            <Image className="animate-img" width={200} height={287} src='/home/P-003-9340.jpg' alt="Carta Volviendo a Casa" title="Volviendo a Casa"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME1-025-7116.jpg' alt="Carta Bahamoot Aniquilador" title="Bahamoot Aniquilador"/>
-            <Image className="animate-img" width={200} height={287} src='/home/P-008-3720.jpg' alt="Carta Devora Cobardes" title="Devora Cobardes"/>
+            <Link href={"/cartas?&text=Volviendo%20a%20Casa"} target="_blank" title="Volviendo a Casa">
+              <Image className="animate-img" width={200} height={287} src='/home/P-008-3720.jpg' alt="Carta Volviendo a Casa" title="Volviendo a Casa"/>
+            </Link>
+            <Link href={"/cartas?&text=Bahamoot%20Aniquilador"} target="_blank" title="Bahamoot Aniquilador">
+              <Image className="animate-img" width={200} height={287} src='/home/ME1-025-7116.jpg' alt="Carta Bahamoot Aniquilador" title="Bahamoot Aniquilador"/>
+            </Link>
+            <Link href={"/cartas?&text=Devora%20Cobardes"} target="_blank" title="Devora Cobardes">
+              <Image className="animate-img" width={200} height={287} src='/home/P-003-9340.jpg' alt="Carta Devora Cobardes" title="Devora Cobardes"/>
+            </Link>
         </div>
         <div className="column-animation">
-            <Image className="animate-img" width={200} height={287} src='/home/P-004-8477.jpg' alt="Carta Aleksandra" title="Aleksandra"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME3-025-9620.jpg' alt="Carta Dionea Matamoscas" title="Dionea Matamoscas"/>
-            <Image className="animate-img" width={200} height={287} src='/home/P-010-8971.jpg' alt="Carta Ariete" title="Ariete"/>
+            <Link href={"/cartas?&text=Aleksandra"} target="_blank" title="Aleksandra">
+              <Image className="animate-img" width={200} height={287} src='/home/P-004-8477.jpg' alt="Carta Aleksandra" title="Aleksandra"/>
+            </Link>
+            <Link href={"/cartas?&text=Dionea%20Matamoscas"} target="_blank" title="Dionea Matamoscas">
+              <Image className="animate-img" width={200} height={287} src='/home/ME3-025-9620.jpg' alt="Carta Dionea Matamoscas" title="Dionea Matamoscas"/>
+            </Link>
+            <Link href={"/cartas?&text=Ariete"} target="_blank" title="Ariete">
+              <Image className="animate-img" width={200} height={287} src='/home/P-010-8971.jpg' alt="Carta Ariete" title="Ariete"/>
+            </Link>
         </div>
         <div className="column-animation animate-reverse hidden-sm">
-            <Image className="animate-img" width={200} height={287} src='/home/P-005-4137.jpg' alt="Carta Copito de Nieve" title="Copito de Nieve"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME4-025-5419.jpg' alt="Carta Sadhu Armormaster" title="Sadhu Armormaster"/>
-            <Image className="animate-img" width={200} height={287} src='/home/P-009-0009.jpg' alt="Carta Ficha Angel" title="Ficha Angel"/>
+            <Link href={"/cartas?&text=Copito"} target="_blank" title="Copito de Nieve">
+              <Image className="animate-img" width={200} height={287} src='/home/P-005-4137.jpg' alt="Carta Copito de Nieve" title="Copito de Nieve"/>
+            </Link>
+            <Link href={"/cartas?&text=Sadhu%20Armormaster"} target="_blank" title="Sadhu Armormaster">
+                <Image className="animate-img" width={200} height={287} src='/home/ME4-025-5419.jpg' alt="Carta Sadhu Armormaster" title="Sadhu Armormaster"/>
+            </Link>
+            <Link href={"/cartas?&text=Angel&types=Ficha"} target="_blank" title="Ficha Ángel">
+              <Image className="animate-img" width={200} height={287} src='/home/P-009-0009.jpg' alt="Carta Ficha Ángel" title="Ficha Ángel"/>
+            </Link>
         </div>
-        <div className="column-animation hidden-sm">
-            <Image className="animate-img" width={200} height={287} src='/home/P-006-0349.jpg' alt="Carta Purificador de almas" title="Purificador de almas"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME3-022-6438.jpg' alt="Carta Arbol Mágico" title="Arbol Mágico"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME2-009-3219.jpg' alt="Carta Expulsión Divina" title="Expulsión Divina"/>
+        <div className="column-animation hidden-sm" title="Purificador de almas">
+            <Link href={"/cartas?&text=purificador"} target="_blank">
+              <Image className="animate-img" width={200} height={287} src='/home/P-006-0349.jpg' alt="Carta Purificador de almas" title="Purificador de almas"/>
+            </Link>
+            <Link href={"/cartas?&text=Arbol%20Mágico"} target="_blank" title="Arbol Mágico">
+              <Image className="animate-img" width={200} height={287} src='/home/ME3-022-6438.jpg' alt="Carta Arbol Mágico" title="Arbol Mágico"/>
+            </Link>
+            <Link href={"/cartas?&text=Expulsión%20Divina"} target="_blank" title="Expulsión Divina">
+              <Image className="animate-img" width={200} height={287} src='/home/ME2-009-3219.jpg' alt="Carta Expulsión Divina" title="Expulsión Divina"/>
+            </Link>
         </div>
         <div className="column-animation animate-reverse hidden-sm">
-            <Image className="animate-img" width={200} height={287} src='/home/P-007-6618.jpg' alt="Carta Mammon" title="Mammon"/>
-            <Image className="animate-img" width={200} height={287} src='/home/ME1-026-5513.jpg' alt="Carta Sátiro de la Triada" title="Sátiro de la Triada"/>
-            <Image className="animate-img" width={200} height={287} src='/home/MD-022-0066.jpg' alt="Carta Mana Ente" title="Mana Ente"/>
+            <Link href={"/cartas?&text=Mammon"} target="_blank" title="Mammon">
+              <Image className="animate-img" width={200} height={287} src='/home/P-007-6618.jpg' alt="Carta Mammon" title="Mammon"/>
+            </Link>
+            <Link href={"/cartas?&text=Triada"} target="_blank" title="Sátiro de la Triada">
+              <Image className="animate-img" width={200} height={287} src='/home/ME1-026-5513.jpg' alt="Carta Sátiro de la Triada" title="Sátiro de la Triada"/>
+            </Link>
+            <Link href={"/cartas?&types=Mana"} target="_blank" title="Mana Ente">
+              <Image className="animate-img" width={200} height={287} src='/home/MD-022-0066.jpg' alt="Carta Mana Ente" title="Mana Ente"/>
+            </Link>
         </div>
       </section>
 
-      
-    
       <aside className="bg-primary text-center py-4 text-white">
         <div className="grid lg:grid-cols-5 md:grid-cols-5 grid-cols-3 w-96 mx-auto">
           <Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">
@@ -85,9 +119,9 @@ export default function Home() {
           <Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
-            <Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">
-          <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-            </Link>
+          <Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">
+            <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
+          </Link>
           <Link href={'https://twitter.com/soulsinxti0'} target="_blank">
             <Image width={40} height={40} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
@@ -96,6 +130,25 @@ export default function Home() {
           </Link>
         </div>
       </aside>
+
+      <section className='lg:p-10 md:p-10 p-2 text-2xl bg-[url("/home/wenddygo-descripcion.jpg")] bg-no-repeat lg:bg-contain md:bg-contain lg:bg-left md:bg-left bg-center grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 border-b-2 border-indigo-500'>
+        
+        <p className="col-start-2 text-gray-200 p-6 text-center leading-relaxed bg-black bg-opacity-75">
+
+          Bienvenido a <b> Souls In Xtinction </b> nuevo juego de cartas intercambiables con el que entrarás a un universo lleno de estrategia y emoción. Elige tu camino, escoge con cuidado tus cartas y forja tu propio destino hacia la victoria, enfrentándote a desafíos emocionantes y descubriendo nuevas formas de jugar con cada partida.
+          <video width="500" height="320" controls preload="none" className="mt-16 m-auto">
+            <source src="https://www.youtube.com/watch?v=a3pz0OOhfEk" type="video/mp4" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </p>
+
+      </section>
 
       <section className="sds">
 

@@ -7,12 +7,13 @@ export const Navigation = () => {
   return (
     <nav className="bg-black stiky top-0 z-10 w-full lg:px-24 px-6 shadow-md flex flex-wrap items-center py-2 border-b">
     <div className="flex-1 flex justify-between items-center">
-      <Link href="/" className="flex text-lg font-semibold">
+      <Link href="/" className="flex text-lg font-semibold" title='Ir al inicio de Souls in Xtincion'>
         <Image
           src="/logo.png"
           width={250}
-          height={60}
-          alt="Sinister in Xtincion logo"   
+          height={38}
+          alt="Souls in Xtincion"  
+          title='Souls in Xtincion logo' 
         />
       </Link>
     </div>
@@ -37,6 +38,7 @@ export const Navigation = () => {
             <li className="py-2 lg:py-0 ">
             <Link
               className="mr-4 uppercase text-lg font-medium transition text-secondary duration-300"
+              title={pathName.title}
               href={pathName.path}
             >
               {pathName.name}

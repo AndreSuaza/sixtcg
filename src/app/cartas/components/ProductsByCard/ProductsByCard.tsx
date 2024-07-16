@@ -21,7 +21,7 @@ export const ProductsByCard = ({productsByCard}: Props) => {
 
     useEffect(() => {
         getProductsByCodes(transformIntoString(productsByCard, "code"))
-    }, [])
+    }, [productsByCard])
     
 
   return (

@@ -6,11 +6,41 @@ import { fetchDataCards } from "../cartas/components/CardList/Services/cardsList
 import { CardFinderLab } from "./components/CardFinderLab";
 import { Card } from "@/models";
 import { CardView } from "@/components";
-import { ArrowDownTrayIcon, ArrowUpTrayIcon, EyeIcon, ListBulletIcon, MinusIcon, PhotoIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/solid";
+import { ArrowDownTrayIcon, ArrowUpTrayIcon, EyeIcon, ListBulletIcon, PhotoIcon, ShareIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { CardDetail } from "../cartas/components/CardDetail/CardDetail";
 import { ModalExportDecklist } from "./components/ModalExportDecklist";
 import { ModalImportDecklist } from "./components/ModalImportDecklist";
 import { fetchDataDecklist } from "./services/decklist.service";
+import { ModalImageDecklist } from "./components/ModalImageDecklist";
+import { useSearchParams } from 'next/navigation'
+import { formatParameters } from "@/utils/parametersurl";
+import { ModalShareDecklist } from "./components/ModalShareDecklist";
+import { addCardToList, createDeckList, reduceCardToList, sortListCards } from "./logic";
+import { handlerModals } from "@/utils/utils";
+import { ListCardsDeck } from "./components/ListCardsDeck";
+import { ButtonToolsLab } from "./components/ButtonToolsLab";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Soul In Xtinction - Laboratorio de Mazos',
+    description: 'Creador de Mazos de Souls In Xtinction',
+    openGraph: {
+      title: 'Souls In Xtinction Laboratorio de Mazos',
+      description: 'Encuentra aqui todo lo que necesitas para controlar el mundo de Souls In Xtinction',
+      url: 'https://soulsinxtinction.com/laboratorio',
+      siteName: 'Souls In Xtinction Laboratorio de Mazos',
+      images: [
+        {
+          url: 'https://soulsinxtinction.com/og.jpg',
+          width: 800,
+          height: 600,
+          alt: 'Laboratorio de Mazos Souls In Xtinction TCG',
+        }
+      ],
+      locale: 'en_ES',
+      type: 'website',
+    }
+  }
 
 const Lab = () => {
 
@@ -28,6 +58,13 @@ const Lab = () => {
     const [showExpDeckCode, setShowExpDeckCode] = useState(false);
     const [deckCode, setDeckCode] = useState("");
     const [showImpDeckCode, setShowImpDeckCode] = useState(false);
+    const [showImageDeckCode, setShowImageDeckCode] = useState(false);
+    const [showShareDeckCode, setShowShareDeckCode] = useState(false);
+
+    const searchParams = useSearchParams();
+
+    const [queryParams, setQueryParams] = useState(formatParameters(searchParams));
+
     const limit = 20;
 
     const getCards = async (limit: number, offset: number) => {
@@ -40,57 +77,17 @@ const Lab = () => {
         setQueryParamsCardFinder(filters);
     }
 
+    const listByQueryParams = (queryParams: string) => {
+        const list = queryParams.split("=", 2);
+        if(list[0] === "&decklist") {
+            importDeck(list[1]);
+        }
+    }
+
     useEffect(() => {  
         getCards(limit, 0);
+        listByQueryParams(queryParams);
     },[queryParamsCardFinder]);
-
-    const addCardToList = (
-            list:Card[], 
-            card:Card, 
-            methodSetList: (cards:Card[]) => void,
-            numberCardsPlusOne: (numberCards: number) => void,
-            numberOfCards: number,
-        ) => {
-        
-        let deckCard = list.find( cardInDeck => cardInDeck.id  === card.id );
-        
-        if( deckCard ) {
-            if (deckCard.copys && deckCard.copys < 2 && card.limit == "" ) {
-                deckCard.copys = deckCard.copys+1;
-                methodSetList([...list]);
-                numberCardsPlusOne(numberOfCards+1);
-            } 
-        } else {
-            deckCard = {...card, copys: 1};
-            methodSetList([...list, deckCard]);
-            numberCardsPlusOne(numberOfCards+1);
-        }
-
-    }
-
-    const reduceCardToList = (
-        list:Card[], 
-        card:Card, 
-        methodSetList: (cards:Card[]) => void,
-        numberCardsPlusOne: (numberCards: number) => void,
-        numberOfCards: number,
-        ) => {
-
-        let deck = [];
-        let deckCard = list.find( cardInDeck => cardInDeck.id  === card.id );
-
-        if( deckCard) {
-            if( deckCard.copys && deckCard.copys <= 1 ) {
-                [deckCard, ...deck] = list;
-                methodSetList(deck)
-            } else {
-                deckCard.copys = deckCard.copys ? deckCard.copys-1 : 0;
-                methodSetList([...list])
-            }
-            numberCardsPlusOne(numberOfCards-1);
-        }
-
-    }
 
     const addCardToDeck = (card:Card) => {
 
@@ -137,76 +134,33 @@ const Lab = () => {
         
     }
 
-    const handlerExportDeckCode = () => {
-        setShowExpDeckCode(!showExpDeckCode);
-    }
-
-    const handlerImportDeckCode = () => {
-        setShowImpDeckCode(!showImpDeckCode);
-    }
-
-    //Detalle
-    const handlerCardDetail = () => {
-        setShowCardDetail(!showCardDetail);
-    }
-
     const setCardDetailData = (index: number) => {
 
-        handlerCardDetail();
+        handlerModals(showCardDetail, setShowCardDetail);
         setIndexCards(index);
        
     }
 
+    const setDeckFromCode = ( decklist: any[], cards: Card[]) => {
+    
+        const deck = createDeckList(decklist, cards)
 
-    //funtions iconos
+        if(deck.limboNumberCardsDeck <= 6) {
+            setNumberOfCardsLimbo(deck.limboNumberCardsDeck);
+            setDecklistLimbo(deck.limboDeck);
+        }
 
-    const createDeckList = ( decklist: any[], cards: Card[]) => {
-        
-        let mainDeck:Card[] = [];
-        let limboDeck:Card[] = [];
-        let manaDeck:Card[] = [];
-        let mainNumberCardsDeck = 0;
-        let limboNumberCardsDeck = 0;
-        let manaNumberCardsDeck = 0;
-
-        cards.forEach((card, i) => {
-          for (let index = 0; index < decklist.length; index++) {
-            if(card.id === decklist[index]) { 
-                card.copys = decklist[index+1]
-                if (card.types.includes("Limbo")) {
-                    limboNumberCardsDeck = limboNumberCardsDeck+parseInt(decklist[index+1]);
-                    limboDeck = [...limboDeck, card];
-                    break;
-                }
-
-                if (card.types.includes("Mana")) {
-                    manaNumberCardsDeck = manaNumberCardsDeck+parseInt(decklist[index+1]);
-                    manaDeck = [...manaDeck, card];
-                    break;
-                }
-
-                if (!card.types.includes("Ficha")) {
-                    mainNumberCardsDeck = mainNumberCardsDeck+parseInt(decklist[index+1]);
-                    mainDeck = [...mainDeck, card];
-                    break;
-                }
-            } 
-          }
-        });
-
-        if(limboNumberCardsDeck <= 6 && manaNumberCardsDeck <= 6 && mainNumberCardsDeck <=40) {
-            setNumberOfCardsLimbo(limboNumberCardsDeck);
-            setDecklistLimbo(limboDeck);
-
-            setNumberOfCardsMana(manaNumberCardsDeck);
-            setDecklistMana(manaDeck);
+        if(deck.manaNumberCardsDeck <= 6) {
+            setNumberOfCardsMana(deck.manaNumberCardsDeck);
+            setDecklistMana(deck.manaDeck);
+        }
             
-            setNumberOfCardsMain(mainNumberCardsDeck);
-            setDecklistMain(sortListCards(mainDeck));
+        if(deck.mainNumberCardsDeck <=40){
+            setNumberOfCardsMain(deck.mainNumberCardsDeck);
+            setDecklistMain(sortListCards(deck.mainDeck));
         }
        
-      }
-    
+    }
 
     const clearDeckList = () => {
         setDecklistMain([]);
@@ -220,14 +174,21 @@ const Lab = () => {
         
     }
 
-    const exportDeck = () => {
+    const createCodeDeck = () => {
         let exportText = "";
         decklistMain.map( card => exportText = exportText+card.id+","+card.copys+",");
         decklistLimbo.map( card => exportText = exportText+card.id+","+card.copys+",");
         decklistMana.map( card => exportText = exportText+card.id+","+card.copys+",");
-        setDeckCode(exportText);
-        if(exportText !== ""){
-            handlerExportDeckCode()
+        return exportText;
+    }
+
+    const exportDeck = () => {
+        
+        const codeDeck = createCodeDeck();
+        setDeckCode(codeDeck);
+
+        if(codeDeck !== ""){
+            handlerModals(showExpDeckCode, setShowExpDeckCode);
         }  
     }
 
@@ -241,40 +202,7 @@ const Lab = () => {
 
         const data = await fetchDataDecklist(deckListIds);
         
-        createDeckList(decklist, data);
-
-    }
-
-    const sortListCards = (list: Card[]) => {
-
-        let units: Card[] = [];
-        let spells: Card[] = [];
-        let weapons: Card[] = [];
-        let entities: Card[] = [];
-
-        list.map(card => {
-            if (card.types.includes("Unidad")) {
-                units = [...units, card];
-                return;
-            }
-
-            if (card.types.includes("Conjuro")) {
-                spells = [...spells, card];
-                return;
-            }
-
-            if (card.types.includes("Arma")) {
-                weapons = [...weapons, card];
-                return;
-            }
-
-            if (card.types.includes("Ente")) {
-                entities = [...entities, card];
-                return;
-            }
-        });
-
-        return [...units, ...spells, ...weapons, ...entities];
+        setDeckFromCode(decklist, data);
 
     }
 
@@ -282,10 +210,15 @@ const Lab = () => {
         setDecklistMain(sortListCards(decklistMain));
     }
 
-    return (
-    <div className="bg-white grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
+    const shareDeck = () => {
+        setDeckCode(createCodeDeck());
+        handlerModals(showShareDeckCode, setShowShareDeckCode);
+    }
 
-        <div className="bg-white pt-3 pb-6 lg:px-10 md:px-10 px-6 border-r-2 border-indigo-500 min-h-screen">
+    return (
+    <div className="bg-slate-100 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
+
+        <div className="bg-slate-50 pt-3 pb-6 lg:px-10 md:px-10 px-6 border-r-2 border-indigo-500 min-h-screen">
             <CardFinderLab setCardsFilters={setCardsFilters}/>
            
             <Pagination totalCount={cardsTotal} limit={limit} pageChangeMethod={getCards} extendedForm={false}>
@@ -301,106 +234,66 @@ const Lab = () => {
 
         <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
             <div className="flex grid-cols-4 mt-6 mb-6 justify-end">
-                <button 
-                    className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
-                    onClick={clearDeckList}
-                    title="Crear Imagen del Mazo"
-                >
+                <ButtonToolsLab acction={shareDeck} title="Comparte tu mazo Mazo">
+                    <ShareIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
+                </ButtonToolsLab>
+                {/* <ButtonToolsLab acction={() => handlerModals(showImageDeckCode, setShowImageDeckCode)} title="Crear Imagen del Mazo">
                     <PhotoIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button>
-                <button
-                    className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
-                    onClick={exportDeck}
-                    title="Exportar Mazo"
-                >
+                </ButtonToolsLab> */}
+                <ButtonToolsLab acction={exportDeck} title="Exportar Mazo">
                     <ArrowUpTrayIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button>
-                <button 
-                    className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
-                    onClick={handlerImportDeckCode}
-                    title="Importar Mazo"
-                >
+                </ButtonToolsLab>
+                <ButtonToolsLab acction={() => handlerModals(showImpDeckCode, setShowImpDeckCode)} title="Importar Mazo">
                     <ArrowDownTrayIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button>
-                <button 
-                    className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
-                    onClick={setSortListCards}
-                    title="Ordenar Mazo"
-                >
+                </ButtonToolsLab>
+                <ButtonToolsLab acction={setSortListCards} title="Ordenar Mazo">
                     <ListBulletIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button>
-                <button 
-                    className="bg-primary bg-primary-h lg:h-10 md:h-10 h-6 lg:w-10 md:w-10 w-6"
-                    onClick={clearDeckList}
-                    title="Borrar Mazo"
-                >
+                </ButtonToolsLab>
+                <ButtonToolsLab acction={clearDeckList} title="Borrar Mazo">
                     <TrashIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </button>
+                </ButtonToolsLab>
             </div>
-            { decklistMain.length > 0 ? 
+            { (decklistMain.length > 0 || decklistLimbo.length > 0 || decklistMana.length > 0) ? 
                 <div className="pb-6">
-                <div className="px-6 border-dotted border-2 border-violet-500 rounded bg-black bg-opacity-25">
-                    <h3 className="my-2">{`Mazo Principal [ ${numberOfCardsMain} ] (Max 40 Cartas)`}</h3>
-                    <section 
-                        className={`grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-5 justify-items-center pb-6`}
-                    >
-                        {decklistMain.map((card, i) => 
-                            <div key={card._id} className="relative">
-                                <div className="absolute top-6 -right-3 z-10">
-                                    {card.copys && <div className={`${card.copys > 2 ? 'bg-red-600': 'bg-lime-600'} btn-lab text-xs leading-relaxed`}>{card.copys}</div>}
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.8}} onClick={() => addCardToDeck(card)}>+</div>
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.6}} onClick={() => reduceCardToDeck(card)}>-</div>
-                                    <div className="bg-cyan-700 btn-lab mt-1 cursor-pointer bg-primary-h" onClick={() => setCardDetailData(i)}><EyeIcon className="w-3 m-auto mt-1"/></div>
-                                </div>
-                                <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} border={true}/>
-                            </div>  
-                        )}
-                    </section>
-                </div>
-                <div className="px-6 border-dotted border-2 border-red-500 rounded mt-2 bg-black bg-opacity-25">
-                    <h3 className="my-2">{`Mazo Limbo [ ${numberOfCardsLimbo} ] (Max 6 Cartas)`}</h3>
-                    <section 
-                        className={`grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-5 justify-items-center pb-6`}
-                    >
-                        {decklistLimbo.map((card, i) => 
-                            <div key={card._id} className="relative">
-                                <div className="absolute top-6 -right-3 z-10">
-                                    {card.copys && <div className={`${card.copys > 2 ? 'bg-red-600': 'bg-lime-600'} btn-lab text-xs leading-relaxed`}>{card.copys}</div>}
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.8}} onClick={() => addCardToDeck(card)}>+</div>
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.6}} onClick={() => reduceCardToDeck(card)}>-</div>
-                                    <div className="bg-cyan-700 btn-lab mt-1 cursor-pointer bg-primary-h" onClick={() => setCardDetailData(i)}><EyeIcon className="w-3 m-auto mt-1"/></div>
-                                </div>
-                                <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} border={true}/>
-                            </div>  
-                        )}
-                    </section>
-                </div>
+                <ListCardsDeck 
+                    title="Mazo Principal" 
+                    decklist={decklistMain} 
+                    color={1}
+                    numberOfCards={numberOfCardsMain}
+                    addCard={addCardToDeck}
+                    reduceCard={reduceCardToDeck}
+                    setCardDetail={setCardDetailData}
+                    increaseNumber={0}
+                />
+                <ListCardsDeck 
+                    title="Mazo Limbo" 
+                    decklist={decklistLimbo} 
+                    color={2}
+                    numberOfCards={numberOfCardsLimbo}
+                    addCard={addCardToDeck}
+                    reduceCard={reduceCardToDeck}
+                    setCardDetail={setCardDetailData}
+                    increaseNumber={decklistMain.length}
+                />
                 { decklistMana.length > 0 && 
-                <div className="px-6 border-dotted border-2 border-blue-500 rounded mt-2 bg-black bg-opacity-25">
-                    <h3 className="my-2">{`Mazo Maná [ ${numberOfCardsMana} ] (Max 6 Cartas)`}</h3>
-                    <section 
-                        className={`grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-5 justify-items-center pb-6`}
-                    >
-                        {decklistMana.map((card, i) => 
-                            <div key={card._id} className="relative">
-                                <div className="absolute top-6 -right-3 z-10">
-                                    {card.copys && <div className={`${card.copys > 2 ? 'bg-red-600': 'bg-lime-600'} btn-lab text-xs leading-relaxed`}>{card.copys}</div>}
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.8}} onClick={() => addCardToDeck(card)}>+</div>
-                                    <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.6}} onClick={() => reduceCardToDeck(card)}>-</div>
-                                    <div className="bg-cyan-700 btn-lab mt-1 cursor-pointer bg-primary-h" onClick={() => setCardDetailData(i)}><EyeIcon className="w-3 m-auto mt-1"/></div>
-                                </div>
-                                <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} border={true}/>
-                            </div>  
-                        )}
-                    </section>
-                </div>}
+                    <ListCardsDeck 
+                        title="Mazo de Mana" 
+                        decklist={decklistMana} 
+                        color={3}
+                        numberOfCards={numberOfCardsMana}
+                        addCard={addCardToDeck}
+                        reduceCard={reduceCardToDeck}
+                        setCardDetail={setCardDetailData}
+                        increaseNumber={decklistMain.length+decklistLimbo.length}
+                    />
+                }
                 </div>
                 : 
-                <div className="m-auto lg:w-2/3 md:w-2/3 w-full mt-16 px-2 text-lg text-gray-100">
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                <div className="m-auto lg:w-2/3 md:w-2/3 w-full mt-16 px-2 text-lg text-gray-200">
+                    {/* <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes agregar cartas a tu mazo dando click sobre su imagen.</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button 
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -409,9 +302,9 @@ const Lab = () => {
                             >
                                 <PhotoIcon className="w-4 m-auto"/>
                             </button>
-                            para crear una Imagen de tu Mazo.</p>
+                            para Crear una Imagen de tu Mazo.</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -420,20 +313,20 @@ const Lab = () => {
                             >
                                 <ArrowUpTrayIcon className="w-4 m-auto"/>
                             </button>
-                             para Exportar el código de tu Mazo.</p>
+                             para Exportar el código de tu Mazo. (recuerda debes tener cartas en tu Mazo)</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button 
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
-                                onClick={handlerImportDeckCode}
+                                onClick={() => handlerModals(showImpDeckCode, setShowImpDeckCode)}
                                 title="Importar Mazo"
                             >
                                 <ArrowDownTrayIcon className="w-4 m-auto"/>
                             </button>
                             para Importar el código de tu Mazo.</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-25">
+                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button 
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -442,9 +335,9 @@ const Lab = () => {
                             >
                                 <ListBulletIcon className="w-4 m-auto"/>
                             </button>
-                            para Ordenar tu mazo.</p>
+                            para Ordenar tu mazo. (recuerda debes tener cartas en tu Mazo)</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-10 border-indigo-500 bg-black bg-opacity-25">
+                    <aside className="p-3 border-dotted border-2 mb-10 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button 
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -454,18 +347,24 @@ const Lab = () => {
                                 <TrashIcon className="w-4 m-auto"/>
                             </button>
                             para Limpiar tu mazo.</p>
-                    </aside>
+                    </aside> */}
                 </div>
             }
         </div>
         {showCardDetail && 
-            <CardDetail cards={decklistMain} close={handlerCardDetail} index={indexCards}/>
+            <CardDetail cards={[...decklistMain, ...decklistLimbo, ...decklistMana]} close={() => handlerModals(showCardDetail, setShowCardDetail)} index={indexCards}/>
         }
         {showExpDeckCode &&
-            <ModalExportDecklist code={deckCode} close={handlerExportDeckCode}/>
+            <ModalExportDecklist code={deckCode} close={() => handlerModals(showExpDeckCode, setShowExpDeckCode)}/>
         }
         {showImpDeckCode &&
-            <ModalImportDecklist close={handlerImportDeckCode} importDeck={importDeck}/>
+            <ModalImportDecklist close={() => handlerModals(showImpDeckCode, setShowImpDeckCode)} importDeck={importDeck}/>
+        }
+        {showImageDeckCode &&
+            <ModalImageDecklist close={() => handlerModals(showImageDeckCode, setShowImageDeckCode)} deckMain={decklistMain} deckLimbo={decklistLimbo} deckMana={decklistMana}/>
+        }
+        {showShareDeckCode &&
+            <ModalShareDecklist code={deckCode} close={() => handlerModals(showShareDeckCode, setShowShareDeckCode)}/>
         }
     </div>
   )

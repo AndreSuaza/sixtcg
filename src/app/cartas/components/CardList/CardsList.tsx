@@ -1,10 +1,9 @@
 'use client'
 
-import { CardFinder, CardView } from "@/components"
+import { CardFinder } from "@/components"
 import { Card } from "@/models"
 import { useEffect, useState } from "react";
 import { fetchDataCards } from "./Services/cardsList.service";
-import { CardDetail } from "../CardDetail/CardDetail";
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useRouter } from "next/navigation";
 import { Pagination } from "@/components/Pagination/Pagination";

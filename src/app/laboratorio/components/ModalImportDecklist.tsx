@@ -1,5 +1,5 @@
 import { Modal } from "@/components/Modal/Modal"
-import { DocumentDuplicateIcon, XMarkIcon } from "@heroicons/react/24/solid"
+import { XMarkIcon } from "@heroicons/react/24/solid"
 import { useState } from "react";
 
 interface Props {
@@ -22,7 +22,7 @@ export const ModalImportDecklist = ({close , importDeck}: Props) => {
   }
 
   return (
-    <Modal css="lg:w-1/3 md:w-1/2 w-full mx-4">
+    <Modal css="lg:w-1/3 md:w-1/2 w-full mx-4 bg-white">
         <div className="text-center"> 
               <h1 className="text-white font-bold text-2xl bg-primary p-3 mb-4">Ingresa el código de tu Mazo</h1>
               <p className="text-black px-6 mb-4">Pega el código de tu mazo y veras todas las cartas que contiene.</p>

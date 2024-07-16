@@ -1,6 +1,9 @@
+import { title } from "process";
+
 export interface Route {
     path: string;
     name: string;
+    title: string;
 }
 
 export const Routes = [
@@ -10,16 +13,19 @@ export const Routes = [
     // },
     {
         path: "/cartas",
-        name: "Listado De Cartas"
+        name: "Listado De Cartas",
+        title: "Ir al Listado De Cartas"
     },
     {
         path: "/productos",
-        name: "Productos"
+        name: "Productos",
+        title: "Ir a Productos"
     },
-    // {
-    //     path: "/laboratorio",
-    //     name: "Laboratorio"
-    // },
+    {
+        path: "/laboratorio",
+        name: "Laboratorio",
+        title: "Ir al Laboratorio de Mazos"
+    },
     // {
     //     path: "/events",
     //     name: "Eventos"
