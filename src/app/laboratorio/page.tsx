@@ -19,28 +19,28 @@ import { addCardToList, createDeckList, reduceCardToList, sortListCards } from "
 import { handlerModals } from "@/utils/utils";
 import { ListCardsDeck } from "./components/ListCardsDeck";
 import { ButtonToolsLab } from "./components/ButtonToolsLab";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: 'Soul In Xtinction - Laboratorio de Mazos',
-    description: 'Creador de Mazos de Souls In Xtinction',
-    openGraph: {
-      title: 'Souls In Xtinction Laboratorio de Mazos',
-      description: 'Encuentra aqui todo lo que necesitas para controlar el mundo de Souls In Xtinction',
-      url: 'https://soulsinxtinction.com/laboratorio',
-      siteName: 'Souls In Xtinction Laboratorio de Mazos',
-      images: [
-        {
-          url: 'https://soulsinxtinction.com/og.jpg',
-          width: 800,
-          height: 600,
-          alt: 'Laboratorio de Mazos Souls In Xtinction TCG',
-        }
-      ],
-      locale: 'en_ES',
-      type: 'website',
-    }
-  }
+// export const metadata: Metadata = {
+//     title: 'Soul In Xtinction - Laboratorio de Mazos',
+//     description: 'Creador de Mazos de Souls In Xtinction',
+//     openGraph: {
+//       title: 'Souls In Xtinction Laboratorio de Mazos',
+//       description: 'Encuentra aqui todo lo que necesitas para controlar el mundo de Souls In Xtinction',
+//       url: 'https://soulsinxtinction.com/laboratorio',
+//       siteName: 'Souls In Xtinction Laboratorio de Mazos',
+//       images: [
+//         {
+//           url: 'https://soulsinxtinction.com/og.jpg',
+//           width: 800,
+//           height: 600,
+//           alt: 'Laboratorio de Mazos Souls In Xtinction TCG',
+//         }
+//       ],
+//       locale: 'en_ES',
+//       type: 'website',
+//     }
+// }
 
 const Lab = () => {
 
