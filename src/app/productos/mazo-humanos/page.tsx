@@ -106,7 +106,7 @@ const HumansDeck = async () => {
                         </ul>
                         <h3 className="text-2xl bg-purple-500 text-white pl-4 my-2">7 Conjuros</h3>
                         <ul className="ml-4">
-                            <li>2 "Malir Sal"</li>
+                            <li>2 Implicación cuántica</li>
                             <li>2 Lo Deje Por Aquí!</li>
                             <li>1 Escudos gemelos</li>
                             <li>1 Pastel Podrido</li>

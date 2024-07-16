@@ -71,7 +71,7 @@ const DemoDeck = async () => {
                     <div className="mx-4">
                         <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">13 Unidades</h3>
                         <ul className="ml-4">
-                            <li>1 Squirt</li>
+                            <li>1 Jennika</li>
                             <li>1 Puerta Gélida</li>
                             <li>1 Koshe el Campeon</li>
                             <li>1 Bruja Invocadora</li>
