@@ -7,14 +7,14 @@ export interface Route {
 }
 
 export const Routes = [
-    // {
-    //     path: "/how-to-play",
-    //     name: "¿Como Jugar?"
-    // },
     {
         path: "/cartas",
         name: "Listado De Cartas",
         title: "Ir al Listado De Cartas"
+    },
+    {
+        path: "/como-jugar",
+        name: "¿Como Jugar?"
     },
     {
         path: "/productos",
