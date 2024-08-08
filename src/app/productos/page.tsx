@@ -20,7 +20,7 @@ const Products = async () => {
     <main className="content-center bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat">
       <Title title="Productos" subtitle="¡Juega ahora y lidera la batalla hacia la victoria!"/>  
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-20 md:mx-24 mx-4">
-        {/* {products.map((product) => <ProductView data={product} detail={true}/>)} */}
+        {products.map((product) => <ProductView data={product} detail={true}/>)}
       </div>
     </main>
   )
