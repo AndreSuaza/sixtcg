@@ -69,7 +69,7 @@ export const CardsList = ({initialState} : Props) => {
     if (filters.limits.length > 0) query += '&limits='+getFilterValues(filters.limits);
     
     setQueryParams(query);
-    router.push(`${path}?${query}`, {scroll:false});
+    //router.push(`${path}?${query}`, {scroll:false});
 
   };
 
