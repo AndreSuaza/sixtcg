@@ -75,7 +75,7 @@ export const CardsList = ({initialState} : Props) => {
 
   return (
     <>
-        <div id="cards" className="md:mx-24 mx-4 px-8 py-5 bg-white mb-4 rounded">
+        <div className="md:mx-24 mx-4 px-8 py-5 bg-white mb-4 rounded">
           <CardFinder submit={(filters:any) => searchCards(filters)}/>
         </div>
 
