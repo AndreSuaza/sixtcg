@@ -30,6 +30,7 @@ export interface Product {
     description: string;
     deleteAt?: any;
     images: any[];
+    show: string;
 }
 
 export interface Properties {
