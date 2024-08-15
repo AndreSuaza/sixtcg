@@ -131,7 +131,7 @@ export default function Home() {
         </div>
       </aside>
 
-      <section className='lg:p-10 md:p-10 p-2 text-2xl bg-[url("/home/wenddygo-descripcion.jpg")] bg-no-repeat lg:bg-contain md:bg-contain lg:bg-left md:bg-left bg-center grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 border-b-2 border-indigo-500'>
+      {/* <section className='lg:p-10 md:p-10 p-2 text-2xl bg-[url("/home/wenddygo-descripcion.jpg")] bg-no-repeat lg:bg-contain md:bg-contain lg:bg-left md:bg-left bg-center grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 border-b-2 border-indigo-500'>
         
         <p className="col-start-2 text-gray-200 p-6 text-center leading-relaxed bg-black bg-opacity-75">
 
@@ -182,12 +182,12 @@ export default function Home() {
 
       <section className={'bg-[url("/events/rey-rashomon.jpg")] banner bg-no-repeat bg-contain lg:bg-right bg-center'}>
         <div>
-          {/* <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span> */}
+          <span>म्रियमाणाः आत्मानः, क्रीडितुं विनोदं च कर्तुं संग्रहणीयः ताशक्रीडा</span>
           <h2 className="uppercase mb-2 md:text-4xl stroke lg:text-8xl">Souls Master Series</h2>
           <p className="uppercase text-2xl stroke lg:-4xl">Inicia el competitivo, lucha y gana</p>
           <p className="uppercase text-4xl stroke lg:text-6xl stroke text-primary">NOVIEMBRE 2024</p>
         </div>
-      </section>
+      </section> */}
 
       
 

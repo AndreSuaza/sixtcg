@@ -8,11 +8,6 @@ export interface Route {
 
 export const Routes = [
     {
-        path: "/cartas",
-        name: "Listado De Cartas",
-        title: "Ir al Listado De Cartas"
-    },
-    {
         path: "/como-jugar",
         name: "¿Como Jugar?"
     },
@@ -20,6 +15,16 @@ export const Routes = [
         path: "/productos",
         name: "Productos",
         title: "Ir a Productos"
+    },
+    // {
+    //     path: "/eventos",
+    //     name: "Eventos",
+    //     title: "Ir a los Eventos"
+    // },
+    {
+        path: "/cartas",
+        name: "Listado De Cartas",
+        title: "Ir al Listado De Cartas"
     },
     {
         path: "/laboratorio",
