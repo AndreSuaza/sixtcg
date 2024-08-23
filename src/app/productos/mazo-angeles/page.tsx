@@ -65,7 +65,8 @@ const AngelsDeck = async () => {
                         <ul className="py-2 px-4">
                             <li>46 Comunes</li>
                             <li>2 Cartas Secretas</li>
-                            <li>1 Manual de inicio - Tablero</li>
+                            <li>1 Manual de inicio</li>
+                            <li>1 Ficha de Ataque</li>
                         </ul>
                         </div>
                     </article>

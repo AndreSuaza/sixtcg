@@ -62,9 +62,10 @@ const SpiritsDeck = async () => {
 
                         <h4 className="text-gray-900 font-semibold">Mazo El Árbol de la vida contiene 50 cartas:</h4>
                         <ul className="py-2 px-4">
-                            <li>47 Comunes</li>
-                            <li>3 Cartas Secretas</li>
-                            <li>1 Manual de inicio - Tablero</li>
+                            <li>50 Comunes</li>
+                            <li>2 Cartas Secretas</li>
+                            <li>1 Manual de inicio</li>
+                            <li>1 Ficha de Ataque</li>
                         </ul>   
                     </div>
                 </article>
@@ -73,7 +74,7 @@ const SpiritsDeck = async () => {
                 <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-16">
                     <h2 className="text-4xl text-gray-900 lg:col-span-3 md:col-span-2 sm:col-span-1 ml-3">Contenido:</h2>
                     <div className="mx-4">
-                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">24 Unidades</h3>
+                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">22 Unidades</h3>
                         <ul className="ml-4">
                             <li>2 Jerbo</li>
                             <li>2 Copito de Nieve</li>
@@ -97,7 +98,7 @@ const SpiritsDeck = async () => {
                             <li>1 Escudo de Plasma</li>
                             <li>2 Equipo de Luciérnagas</li>
                         </ul>
-                        <h3 className="text-2xl bg-purple-500 text-white pl-4 my-2">15 Conjuros</h3>
+                        <h3 className="text-2xl bg-purple-500 text-white pl-4 my-2">13 Conjuros</h3>
                         <ul className="ml-4">
                             <li>2 Gema Efímera</li>
                             <li>2 Furia de la Naturaleza</li>

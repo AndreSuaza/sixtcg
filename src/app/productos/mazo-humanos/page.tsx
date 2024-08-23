@@ -65,7 +65,8 @@ const HumansDeck = async () => {
                     <ul className="py-2 px-4">
                         <li>46 Comunes</li>
                         <li>2 Cartas Secretas</li>
-                        <li>1 Manual de inicio - Tablero</li>
+                        <li>1 Manual de inicio</li>
+                        <li>1 Ficha de Ataque</li>
                     </ul>
                     </div>
                 </article>
@@ -74,7 +75,7 @@ const HumansDeck = async () => {
                 <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-16">
                     <h2 className="text-4xl text-gray-900 lg:col-span-3 md:col-span-2 sm:col-span-1 ml-3">Contenido:</h2>
                     <div className="mx-4">
-                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">24 Unidades</h3>
+                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">21 Unidades</h3>
                         <ul className="ml-4">
                             <li>2 Shadu el Aprendiz</li>
                             <li>2 Hachikō</li>

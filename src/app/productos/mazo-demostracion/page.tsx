@@ -60,7 +60,8 @@ const DemoDeck = async () => {
                         <h4 className="text-gray-900 font-semibold">Mazo Primer Estallido contiene 27 Cartas:</h4>
                         <ul className="py-2 px-4">
                             <li>27 Comunes</li>
-                            <li>1 Manual de inicio - Tablero</li>
+                            <li>1 Manual de inicio</li>
+                            <li>1 Ficha de Ataque</li>
                         </ul>
                     </div>
                 </article>
@@ -69,7 +70,7 @@ const DemoDeck = async () => {
                 <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-16">
                     <h2 className="text-4xl text-gray-900 lg:col-span-3 md:col-span-2 sm:col-span-1 ml-3">Contenido:</h2>
                     <div className="mx-4">
-                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">13 Unidades</h3>
+                        <h3 className="text-2xl bg-red-500 text-white pl-4 my-2">14 Unidades</h3>
                         <ul className="ml-4">
                             <li>1 Jennika</li>
                             <li>1 Puerta Gélida</li>
@@ -93,7 +94,7 @@ const DemoDeck = async () => {
                             <li>1 Municion 7.0</li>
                             <li>1 Hacha de Fuego</li>
                         </ul>
-                        <h3 className="text-2xl bg-purple-500 text-white pl-4 my-2">7 Conjuros</h3>
+                        <h3 className="text-2xl bg-purple-500 text-white pl-4 my-2">5 Conjuros</h3>
                         <ul className="ml-4">
                             <li>1 Disparo Lateral</li>
                             <li>1 Rompe Muros</li>

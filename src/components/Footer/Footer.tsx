@@ -7,8 +7,8 @@ export const Footer = () => {
     <footer className='sticky'>
           <div className='bg-primary pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1 bottom-0'>
             <div className='items-center mt-6'>
-              <Image
-                src="/logo.png"
+            <Image
+                src="/logo-texto.png"
                 width={500}
                 height={77}
                 alt="Souls in Xtincion"  
