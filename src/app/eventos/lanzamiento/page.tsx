@@ -1,5 +1,27 @@
 import { CardView, Title } from "@/components";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Gran torneo de lanzamiento Souls In Xtinction',
+  description: 'Torneo de lanzamiento del nuevo juego de cartas coleccionables Souls In Xtinction',
+  openGraph: {
+      title: 'Gran torneo de lanzamiento Souls In Xtinction',
+      description: 'Torneo de lanzamiento del nuevo juego de cartas coleccionables Souls In Xtinction',
+      url: 'https://soulsinxtinction.com/eventos/lanzamiento',
+      siteName: 'Gran torneo de lanzamiento Souls In Xtinction',
+      images: [
+          {
+          url: 'https://soulsinxtinction.com/events/lanzamiento-p.jpg',
+          width: 800,
+          height: 1200,
+          alt: 'Gran torneo de lanzamiento Souls In Xtinction',
+          }
+      ],
+      locale: 'en_ES',
+      type: 'website',
+  },
+}
 
 export default function Lanzamiento() {
   return (
