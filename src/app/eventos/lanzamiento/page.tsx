@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       siteName: 'Gran torneo de lanzamiento Souls In Xtinction',
       images: [
           {
-          url: 'https://soulsinxtinction.com/events/lanzamiento-p.jpg',
+          url: 'https://soulsinxtinction.com/events/lanzamiento-metadata.jpg',
           width: 800,
           height: 1200,
           alt: 'Gran torneo de lanzamiento Souls In Xtinction',
