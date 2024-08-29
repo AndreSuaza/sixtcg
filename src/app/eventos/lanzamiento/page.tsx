@@ -60,7 +60,7 @@ export default function Lanzamiento() {
                           
                         </div>
                         <h2 className="mb-6 py-10 text-gray-900 text-center text-6xl uppercase ">Premiación del Evento</h2> 
-                        <p className="text-4xl text-center">Gana y gana uno de estos cuatro increíbles mazos estructurados. </p>
+                        <p className="text-4xl text-center">Gana uno de estos cuatro increíbles mazos estructurados.</p>
                         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-2 my-10 md:mx-24 mx-4">
                           <Link href={'/productos/mazo-demonios'} target="_blank" title="Mazo Demonios" >
                           <Image 
