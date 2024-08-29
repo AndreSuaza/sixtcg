@@ -43,7 +43,7 @@ export default function Lanzamiento() {
                           ¡Te invitamos al gran lanzamiento de <b>Souls In Xtinction</b>! Un nuevo juego de cartas intercambiables donde la emoción, la estrategia y la aventura se unen en una experiencia épica.
                           </p>
                           <p className="mb-4 leading-10">
-                          El torneo es <b>totalmente gratis</b> y Por participar recibes un mazo de demostración.
+                          El torneo es <b>totalmente gratis</b> y por participar recibes un mazo de demostración.
                           </p>
                           <Image 
                             width={460} 
