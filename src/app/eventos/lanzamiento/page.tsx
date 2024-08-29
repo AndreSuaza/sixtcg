@@ -1,41 +1,51 @@
-import { CardView } from "@/components";
+import { CardView, Title } from "@/components";
+import Image from "next/image";
 
 export default function Lanzamiento() {
   return (
-    <section className="mt-10 lg:mx-20">
-      <div className="max-w-screen-xl mx-auto">
-      <div className="bg-[url('/events/rey-rashomon.jpg')] h-96 bg-no-repeat bg-right-bottom pt-10 relative border-b-2"
-          style={{backgroundSize: '50%'}}
-      >
-        <div className="absolute top-1/3 stroke">
-          <span className="text-xl uppercase px-8 ml-2">घटनाः</span>
-          <h1 className=" text-6xl uppercase px-8 -mt-2 lg:text-8xl">Rey del Rashomon</h1>
-          <p className="text-4xl uppercase mt-1 pb-4 px-8">Inicio del competitivo!</p>
-        </div>
-      </div>
-      <div className="bg-gray-50 text-zinc-600 text-lg pt-20 p-10 mx-10 flex-none font-light font-sans">
-        <article>
-          <h2 className="capitalize text-center text-primary text-4xl mb-20 font-medium lg:mx-20">Iniciamos el competivo de Soul in Xtincion con toda!</h2>
-          <p className="lg:mx-20 mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
-          <p className="lg:mx-20 mb-4">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
-          <p className="lg:mx-20 mb-4">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.</p>
-        
-
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-24 justify-items-center my-10">
-          <CardView img="/card.jpg" alt="carta" title="title carta"/>
-          <CardView img="/card.jpg" alt="carta" title="title carta"/>
-          <CardView img="/card.jpg" alt="carta" title="title carta"/>
-        </div>
-
-        <div className="text-center mb-10">
-          <button className="btn btn-lg">Inscribete</button>
-        </div>
-
-        <p className="lg:mx-20 mb-4">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.</p>
-
-        </article>
-      </div>
-      </div>
-    </section>
+    <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
+                <div className="bg-white px-10 py-10 mb-10">
+                  <Image 
+                            width={1300 } 
+                            height={400} 
+                            src={'/events/lanzamiento.jpg'} 
+                            alt="Gran Evento de Lanzamiento Souls In Xtinction" 
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
+                            placeholder="blur" 
+                            className="m-auto"
+                        />
+                    <article className="px-10 py-6 rounded mb-10 text-3xl">
+                        <div>
+                          <p className="mb-4 leading-10">
+                          ¡Te invitamos al gran lanzamiento de <b>Souls In Xtinction</b>! Un nuevo juego de cartas intercambiables donde la emoción, la estrategia y la aventura se unen en una experiencia épica.
+                          </p>
+                          <p className="mb-4 leading-10">
+                          Por participar recibes un mazo de demostración.
+                          </p>
+                          <Image 
+                            width={460} 
+                            height={500} 
+                            src={'/products/MD1.png'} 
+                            alt="Caja Mazo Demostración Souls In Xtinction" 
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
+                            placeholder="blur" 
+                            className="m-auto my-10"
+                          />
+                          <p className="mb-4 leading-10">
+                          Sé el primero en descubrir este increíble universo, construir tu mazo y desafiar a otros jugadores en intensos combates.
+                          </p>
+                          
+                        </div>
+                        <h2 className="mb-6 py-10 text-gray-900 text-center text-6xl uppercase ">puedes obtener la carta:</h2> 
+                        <CardView img={`/cards/P-003-9340.jpg`} alt="Devora Cobardes" title="Carta Promo Devora Cobardes"/>
+                        <p className="mb-4 mt-10 leading-10 text-center">
+                          Acompañamos en este gran evento  ¡No te lo pierdas! Prepárate para una experiencia inolvidable. 
+                        </p>
+                        <p className="mb-4 leading-10 text-center">
+                        <b>¡Nos vemos en el campo de batalla!</b>
+                        </p>
+                    </article>
+                </div>
+        </main>
   )
 }
