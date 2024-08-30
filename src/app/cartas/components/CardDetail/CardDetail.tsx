@@ -58,7 +58,7 @@ export const CardDetail = ({cards, close, index}: Props) => {
                       <th className="py-3">Fuerza</th>
                       <td className="py-3 font-light">{card?.force}</td>
                       <th className="py-3">Defensa</th>
-                      <td className="py-3 font-light">{card?.defence}</td>
+                      <td className="py-3 font-light">{card?.defense}</td>
                     </tr>
                     <tr className="border-b">
                       <th className="py-3">Arqueotipo</th>

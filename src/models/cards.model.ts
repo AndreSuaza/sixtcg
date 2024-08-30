@@ -5,7 +5,7 @@ export interface Card {
     code: string;
     cost: string;
     force: string;
-    defence: string;
+    defense: string;
     effect: string;
     img: string;
     limit: string;

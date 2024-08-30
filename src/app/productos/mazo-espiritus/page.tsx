@@ -67,6 +67,7 @@ const SpiritsDeck = async () => {
                             <li>1 Manual de inicio</li>
                             <li>1 Ficha de Ataque</li>
                         </ul>   
+                        <p>Tienes la posibilidad de que en 1 de cada 6 mazos de El Árbol de la vida encuentres 1 Copito de Nieve con <b>arte alternativo</b>.</p>
                     </div>
                 </article>
 

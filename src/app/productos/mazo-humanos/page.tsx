@@ -68,6 +68,7 @@ const HumansDeck = async () => {
                         <li>1 Manual de inicio</li>
                         <li>1 Ficha de Ataque</li>
                     </ul>
+                    <p>Tienes la posibilidad de que en 1 de cada 6 mazos de Despliegue de la Armada encuentres 1 Ariete con <b>arte alternativo</b>.</p>
                     </div>
                 </article>
 
