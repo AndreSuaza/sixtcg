@@ -112,19 +112,19 @@ export default function Home() {
       </section>
 
       <aside className="bg-primary text-center py-4 text-white">
-        <div className="grid lg:grid-cols-5 md:grid-cols-5 grid-cols-3 w-96 mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 w-96 mx-auto">
           <Link href={'https://www.facebook.com/soulsinxtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/facebook.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
-          <Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">
+          {/* <Link href={'https://www.tiktok.com/@soulsinxtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/tik-tok.svg' alt="tik-tok" title="Siguenos en Tik-Tok" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-          </Link>
+          </Link> */}
           <Link href={'https://www.instagram.com/soulsinxtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/instagram.svg' alt="instagram" title="Siguenos en Instagram" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
-          <Link href={'https://twitter.com/soulsinxti0'} target="_blank">
+          {/* <Link href={'https://twitter.com/soulsinxti0'} target="_blank">
             <Image width={40} height={40} src='/redes/twitterx.svg' alt="twitter" title="Siguenos en Twitter" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
-          </Link>
+          </Link> */}
           <Link href={'https://www.youtube.com/@SoulsInXtinction'} target="_blank">
             <Image width={40} height={40} src='/redes/youtube.svg' alt="youtube" title="Siguenos en Youtube" className="opacity-80 hover:opacity-100 cursor-pointer mx-auto"/>
           </Link>
