@@ -90,8 +90,10 @@ async function HowToPlay () {
             <div className="card-black">
               <p>Las cartas Limbo van cara arriba.</p>
               <p>Cada jugador comienza con 6 vidas y gana el jugador que logre reducir las vidas de su oponente a 0.</p>
+              <p>Un jugador solo puede tener un máximo de 9 cartas en mano al finalizar el turno</p>
               <p>Los jugadores lanzan una moneda para decidir quién comienza con la ficha de Ataque.</p>
               <p>Cada jugador roba 6 cartas de su mazo principal y solo una vez puede devolver las cartas que desee al Mazo, barajar y robar la misma cantidad.</p>
+              <p>Un mazo solo puede tener un máximo de 2 copias por carta</p>
             </div>
           </div>
           <div>
