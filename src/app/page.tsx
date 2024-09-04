@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Inicio Soul In Xtinction Nuevo juego de cartas intercambiables ',
-  description: 'Souls In Xtinction nuevo juego de cartas intercambiables con el que entrarás a un universo lleno de estrategia y emoción. Elige tu camino, escoge con cuidado tus cartas y forja tu propio destino hacia la victoria, enfrentándote a desafíos emocionantes y descubriendo nuevas formas de jugar con cada partida.',
+  description: 'Souls In Xtinction nuevo juego de cartas intercambiables Colombiano con el que entrarás a un universo lleno de estrategia y emoción. Elige tu camino, escoge con cuidado tus cartas y forja tu propio destino hacia la victoria, enfrentándote a desafíos emocionantes y descubriendo nuevas formas de jugar con cada partida.',
   openGraph: {
     title: 'Souls In Xtinction',
-    description: 'Entrarás a un universo lleno de estrategia y emoción',
+    description: 'Entrarás a un universo lleno de estrategia y emoción TCG Colombia',
     url: 'https://soulsinxtinction.com/',
     siteName: 'Souls In Xtinction',
     images: [
@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     locale: 'en_ES',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://soulsinxtinction.com/',
+  }
 }
 
 export default function Home() {

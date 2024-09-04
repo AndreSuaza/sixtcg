@@ -2,11 +2,36 @@ import { Title } from "@/components"
 import Image from "next/image"
 import Link from "next/link"
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Eventos Souls In Xtinction',
+  description: 'Conoce todos los eventos de Souls In Xtinction. ',
+  openGraph: {
+    title: 'Eventos Souls In Xtinction',
+    description: 'Conoce todos los eventos de Souls In Xtinction. ',
+    url: 'https://soulsinxtinction.com/eventos',
+    siteName: 'Souls In Xtinction',
+    images: [
+      {
+        url: 'https://soulsinxtinction.com/og.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Souls In Xtinction TCG',
+      }
+    ],
+    locale: 'en_ES',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://soulsinxtinction.com/eventos',
+  }
+}
 
 function Events() {
 
   return (
-    <section className=''>
+    <section className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat md:px-20">
       <Title title="Eventos" subtitle=""/>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 my-20 md:mx-24 mx-4">
         <div>
@@ -22,7 +47,7 @@ function Events() {
             className="m-auto border-solid border-2 border-indigo-500"
         />
         </Link>
-        <h2 className="mt-6">Gran Evento de Lanzamiento </h2>
+        <h2 className="mt-6 text-center text-4xl">Gran Evento de Lanzamiento </h2>
         
       </div>
       </div>

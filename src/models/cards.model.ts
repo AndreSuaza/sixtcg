@@ -56,3 +56,14 @@ export interface PropertiesFilter {
   keywords?: string[];
   others?: string[];
 }
+
+export interface Store {
+  _id: number;
+  name: string;
+  address: string;
+  city: string;
+  country: string;
+  facebook: string;
+  instagram: string;
+  iframe: string;
+}

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     ],
     locale: 'en_ES',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://soulsinxtinction.com/cartas',
   }
 }
 async function Cards () {

@@ -8,8 +8,27 @@ async function fetchProducts() {
 }
 
 export const metadata: Metadata = {
-  title: 'Soul In Xtinction - Productos',
+  title: 'Productos Soul In Xtinction',
   description: 'Encuentra todos los productos de Souls In Xtinction',
+  openGraph: {
+    title: 'Productos Soul In Xtinction',
+    description: 'Encuentra todos los productos de Souls In Xtinction',
+    url: 'https://soulsinxtinction.com/productos',
+    siteName: 'Souls In Xtinction',
+    images: [
+      {
+        url: 'https://soulsinxtinction.com/og.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Souls In Xtinction TCG',
+      }
+    ],
+    locale: 'en_ES',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://soulsinxtinction.com/productos',
+  }
 }
 
 const Products = async () => {

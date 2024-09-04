@@ -16,11 +16,11 @@ export const Routes = [
         name: "Productos",
         title: "Ir a Productos"
     },
-    // {
-    //     path: "/eventos",
-    //     name: "Eventos",
-    //     title: "Ir a los Eventos"
-    // },
+    {
+        path: "/eventos",
+        name: "Eventos",
+        title: "Ir a los Eventos"
+    },
     {
         path: "/cartas",
         name: "Listado De Cartas",
@@ -31,8 +31,10 @@ export const Routes = [
         name: "Laboratorio",
         title: "Ir al Laboratorio de Mazos"
     },
-    // {
-    //     path: "/events",
-    //     name: "Eventos"
-    // }
+    {
+        path: "/tiendas",
+        name: "Tiendas",
+        title: "Conoce nuestras tiendas oficiales"
+    },
+
 ]

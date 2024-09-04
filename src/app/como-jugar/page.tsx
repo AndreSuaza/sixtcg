@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -21,11 +22,14 @@ export const metadata: Metadata = {
     locale: 'en_ES',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://soulsinxtinction.com/como-jugar',
+  }
 }
 
 async function HowToPlay () {
   return (
-    <div className="bg-slate-50 text-gray-700">
+    <div className="bg-slate-50 text-gray-700 pb-10">
       <section className='bg-[url("/howtoplay/bakeneko.jpg")] w-full h-screen bg-black bg-no-repeat bg-cover relative md:bg-contain lg:bg-left bg-center text-white'>
           <div className="absolute w-full text-center right-0 lg:w-1/2 lg:mx-20 lg:top-1/3 md:top-1/3 top-2/3">
             <p className="uppercase stroke lg:text-6xl md:text-6xl text-2xl mb-10">Te dare un recorrido por Souls of Xtincion</p>
@@ -90,10 +94,10 @@ async function HowToPlay () {
             <div className="card-black">
               <p>Las cartas Limbo van cara arriba.</p>
               <p>Cada jugador comienza con 6 vidas y gana el jugador que logre reducir las vidas de su oponente a 0.</p>
-              <p>Un jugador solo puede tener un máximo de 9 cartas en mano al finalizar el turno</p>
+              <p>Un jugador solo puede tener un máximo de 9 cartas en mano al finalizar el turno.</p>
               <p>Los jugadores lanzan una moneda para decidir quién comienza con la ficha de Ataque.</p>
               <p>Cada jugador roba 6 cartas de su mazo principal y solo una vez puede devolver las cartas que desee al Mazo, barajar y robar la misma cantidad.</p>
-              <p>Un mazo solo puede tener un máximo de 2 copias por carta</p>
+              <p>Un mazo solo puede tener un máximo de 2 copias por carta.</p>
             </div>
           </div>
           <div>
@@ -269,6 +273,11 @@ async function HowToPlay () {
               <p>Para una vista detallada de las reglas avanzadas del juego, visita:</p>
             </div>
           </div>
+          
+          <Link href={"/reglas"} target="_blank" title="Reglas avanzadas Souls In Xtinction">
+          <p className="mb-0">Si ya dominaste las reglas básicas, es hora de llevar tu experiencia al siguiente nivel. Te invitamos a descubrir las <span className="text-primary">reglas avanzadas</span> que te permitirán explorar nuevas estrategias, habilidades y tácticas que transformarán tu manera de jugar. Sumérgete en el corazón de Souls In Xtinction y descubre todo lo que necesitas para convertirte en un verdadero maestro del juego.</p>
+          </Link>
+          
         </article>
       </div>
     </div>
