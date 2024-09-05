@@ -18,7 +18,7 @@ export const Footer = () => {
             
             <div className='flex justify-center mt-6'>
               <div className='mr-20'>
-                <h2 className='text-xl uppercase'>Menu</h2>
+                <h1 className='text-xl uppercase'>Menu</h1>
                 <ul className='my-2'>
                 {Routes.map((route) => (
                   <li className="mt-1">
@@ -32,7 +32,7 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className=''>
-                <h2 className='text-xl uppercase'>Redes</h2>
+                <h1 className='text-xl uppercase'>Redes</h1>
                 <ul>
 
                   <li className='mt-1'><Link href={'https://twitter.com/soulsinxti0'} target="_blank" title="Twitter Souls in Xtincion">Twitter</Link></li>
