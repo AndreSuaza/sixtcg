@@ -1,12 +1,11 @@
 'use client'
 
-import { findEvents } from "@/app/eventos/services/events.services";
+import { findEvents } from "./service/findEvents";
 import { EventSix } from "@/models";
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react";
 import { useEffect } from "react";
-import Markdown from 'markdown-to-jsx'
 
 export const EventsListComponent = () => {
 
@@ -74,7 +73,7 @@ export const EventsListComponent = () => {
         <Link href={event.url} target="_blank">
         <div className="p-6 bg-white rounded-r mr-6 lg:block hidden">
           <p className="mb-4 leading-10 pt-6">
-          <Markdown>{event.description}</Markdown>
+          {event.description}
           </p>  
         </div>
         </Link>

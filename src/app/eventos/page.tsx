@@ -31,13 +31,6 @@ export const metadata: Metadata = {
 
 const Events = async () => {
 
-
-
-
- 
-
-
-
   return (
     <section className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat md:px-20 w-full min-h-screen">
       <Title title="Eventos" subtitle=""/>
