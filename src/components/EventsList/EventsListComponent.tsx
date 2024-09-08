@@ -40,16 +40,22 @@ export const EventsListComponent = () => {
         
     
     <div key={event._id} className={`flex flex-grow mb-10 text-gray-900 bg-white lg:w-4/5 md:w-auto m-auto rounded text-2xl mt-20 ${!soon(event.date) && "opacity-80"}`}>
-        <Image 
-                        width={260} 
-                        height={100} 
-                        src={event.image} 
-                        alt={`${event.title} Souls In Xtinction`} 
-                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
-                        placeholder="blur" 
-                        className="rounded-l md:block hidden"
-                       
-                    />          
+        
+        <Link href={event.url} target="_blank">
+          <div className="w-[260px]">
+            <Image 
+                            width={260} 
+                            height={364} 
+                            src={event.image} 
+                            alt={`${event.title} Souls In Xtinction`} 
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
+                            placeholder="blur" 
+                            className="rounded-l md:block hidden"
+                          
+                        />
+          
+          </div>  
+        </Link>     
         <div className="p-6 lg:border-r-2 border-indigo-500 my-2 lg:min-h-[300px] md:h-auto lg:min-w-[300px]">
           { soon(event.date) && <div className="font-semibold text-pink-500" >Proximanmente!</div>}
           <p className="font-bold">{formatDate(event.date)}</p>
