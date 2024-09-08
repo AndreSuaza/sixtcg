@@ -67,3 +67,15 @@ export interface Store {
   instagram: string;
   iframe: string;
 }
+
+export interface EventSix {
+  _id: number;
+  date: Date;
+  title: string;
+  store: Store;
+  facebook: string;
+  instagram: string;
+  description : string;
+  image: string;
+  url: string;
+}

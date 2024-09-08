@@ -4,11 +4,11 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: 'Inicio Soul In Xtinction Nuevo juego de cartas intercambiables ',
-  description: 'Souls In Xtinction nuevo juego de cartas intercambiables Colombiano con el que entrarás a un universo lleno de estrategia y emoción.',
+  title: 'Inicio Soul In Xtinction TCG Nuevo juego de cartas intercambiables ',
+  description: 'Souls In Xtinction TCG nuevo juego de cartas intercambiables Colombiano con el que entrarás a un universo lleno de estrategia y emoción.',
   openGraph: {
     title: 'Souls In Xtinction',
-    description: 'Entrarás a un universo lleno de estrategia y emoción TCG Colombia',
+    description: 'Souls In Xtinction TCG, Entrarás a un universo lleno de estrategia y emoción TCG Colombia',
     url: 'https://soulsinxtinction.com/',
     siteName: 'Souls In Xtinction',
     images: [
