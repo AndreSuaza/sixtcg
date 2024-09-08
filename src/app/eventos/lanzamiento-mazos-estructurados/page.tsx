@@ -103,7 +103,7 @@ export default function LanzamientoMazos() {
                     </div>
                     <h2 className="mb-6 py-10 text-gray-900 text-center text-6xl uppercase ">Premios Épicos</h2> 
 
-                    <div className="flex flex-row">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-2">
                         <div className="m-4">
                           <p className="text-center mb-6"><b>Carta exclusiva Prime Wenddygo de Campeón para el ganador del evento.</b></p>
                           <div className="w-[250px] m-auto">

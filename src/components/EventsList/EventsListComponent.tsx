@@ -41,7 +41,7 @@ export const EventsListComponent = () => {
     
     <div key={event._id} className={`flex flex-grow mb-10 text-gray-900 bg-white lg:w-4/5 md:w-auto m-auto rounded text-2xl mt-20 ${!soon(event.date) && "opacity-80"}`}>
         
-        <Link href={event.url} target="_blank">
+        <Link className="md:block hidden" href={event.url} target="_blank">
           <div className="w-[260px]">
             <Image 
                             width={260} 
@@ -50,7 +50,7 @@ export const EventsListComponent = () => {
                             alt={`${event.title} Souls In Xtinction`} 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 
-                            className="rounded-l md:block hidden"
+                            className="rounded-l "
                           
                         />
           
@@ -78,7 +78,7 @@ export const EventsListComponent = () => {
         </div>
         <Link href={event.url} target="_blank">
         <div className="p-6 bg-white rounded-r mr-6 lg:block hidden">
-          <p className="mb-4 leading-10 pt-6">
+          <p className="mb-4 leading-10 pt-4">
           {event.description}
           </p>  
         </div>
