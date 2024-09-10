@@ -39,7 +39,7 @@ export const EventsListComponent = () => {
     {events.map((event) => 
         
     
-    <div key={event._id} className={`flex flex-grow mb-10 text-gray-900 bg-white lg:w-4/5 md:w-auto m-auto rounded text-2xl mt-20 ${!soon(event.date) && "opacity-80"}`}>
+    <div key={event._id} className={`flex flex-grow mb-10 text-gray-900 lg:w-4/5 md:w-auto m-auto rounded text-2xl mt-20 ${!soon(event.date) && "opacity-80"}`}>
         
         <Link className="md:block hidden" href={event.url} target="_blank">
           <div className="w-[260px]">
@@ -51,12 +51,11 @@ export const EventsListComponent = () => {
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 
                             className="rounded-l "
-                          
                         />
           
           </div>  
         </Link>     
-        <div className="p-6 lg:border-r-2 border-indigo-500 my-2 lg:min-h-[300px] md:h-auto lg:min-w-[300px]">
+        <div className="p-6 bg-white lg:min-h-[364px] md:h-auto lg:w-[400px]">
           { soon(event.date) && <div className="font-semibold text-pink-500" >Proximanmente!</div>}
           <p className="font-bold">{formatDate(event.date)}</p>
           <Link href={event.url} target="_blank">
@@ -76,13 +75,6 @@ export const EventsListComponent = () => {
             }
           </div>
         </div>
-        <Link href={event.url} target="_blank">
-        <div className="p-6 bg-white rounded-r mr-6 lg:block hidden">
-          <p className="mb-4 leading-10 pt-4">
-          {event.description}
-          </p>  
-        </div>
-        </Link>
       </div>
     )}
     </>
