@@ -95,14 +95,14 @@ export const LabComponent = () => {
     const reduceCardToDeck = (card:Card) => {
         
         if (card.types.includes("Limbo")) {
-            if(numberOfCardsLimbo < 6) {
+            if(numberOfCardsLimbo <= 6) {
                 reduceCardToList(decklistLimbo, card, setDecklistLimbo, setNumberOfCardsLimbo, numberOfCardsLimbo);
             }
             return;
         }
 
         if (card.types.includes("Mana")) {
-            if(numberOfCardsMana < 6) {
+            if(numberOfCardsMana <= 6) {
                 reduceCardToList(decklistMana, card, setDecklistMana, setNumberOfCardsMana, numberOfCardsMana);
             }
             return;
