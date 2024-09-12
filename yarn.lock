@@ -318,11 +318,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@netlify/plugin-nextjs@^5.7.1":
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-5.7.1.tgz#f097842708e3dffa2e0cd2368ffdb0a0aa94e4a6"
-  integrity sha512-32e2q8VqnyxfJixMypuupuHW+3F0XbP/uGNNB79Vn1asYh/oTbR9XBi4Cxnmgthy9hycaiMHm8SftGI+uWJmQw==
-
 "@next/env@13.4.19":
   version "13.4.19"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.4.19.tgz#46905b4e6f62da825b040343cbc233144e9578d3"
@@ -2599,6 +2594,11 @@ lru-cache@^10.2.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.4.3.tgz#410fc8a17b70e598013df257c2446b7f3383f119"
   integrity sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==
 
+markdown-to-jsx@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-7.5.0.tgz#42ece0c71e842560a7d8bd9f81e7a34515c72150"
+  integrity sha512-RrBNcMHiFPcz/iqIj0n3wclzHXjwS7mzjBNWecKKVhNTIxQepIix6Il/wZCn2Cg5Y1ow2Qi84+eJrryFRWBEWw==
+
 memoize-one@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-6.0.0.tgz#b2591b871ed82948aee4727dc6abceeeac8c1045"
@@ -3142,10 +3142,10 @@ react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@^18.3.1:
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
-  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
+react@18.2.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
+  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
 
