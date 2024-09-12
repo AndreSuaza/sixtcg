@@ -73,7 +73,7 @@ export const CardDetail = ({cards, close, index}: Props) => {
                       <td colSpan={4} className="pb-6 font-light">{card?.effect}</td>
                     </tr>
                     <tr>
-                      <th className="pt-2">Productos</th>
+                      <th className="pt-2" colSpan={4}>Productos donde puedes encontrar esta carta.</th>
                     </tr>
                     <tr>
                       <td className="w-full py-3 max-h-40" colSpan={4}>
