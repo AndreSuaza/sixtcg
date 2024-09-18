@@ -34,7 +34,7 @@ export default function Home() {
         <div className="content stroke">
           <Image 
             width={300} 
-            height={319} 
+            height={356} 
             src='/logo-six.png' 
             alt="Logo Souls In Xtinction" 
             title="Souls In Xtinction"
@@ -48,68 +48,68 @@ export default function Home() {
         </div>
         <div className="column-animation">
             <Link href={"/cartas?&text=Prime%20wenddygo"} target="_blank" title="Prime Wenddygo" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-001-0006.jpg' alt="Carta Prime Wenddygo" title="Prime Wenddygo"/>
               </Link>
             <Link href={"/cartas?&text=Zadkiel%20Misericordioso"} target="_blank" title="Zadkiel Misericordioso" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME2-025-6851.jpg' alt="Carta Zadkiel Misericordioso" title="Zadkiel Misericordioso"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME2-025-6851.jpg' alt="Carta Zadkiel Misericordioso" title="Zadkiel Misericordioso"/>
             </Link>
             <Link href={"/cartas?&text=Mark%20Exp-303"} target="_blank" title="Mark Ex-303" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME4-024-1331.jpg' alt="Carta Mark Ex-303" title="Mark Ex-303"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME4-024-1331.jpg' alt="Carta Mark Ex-303" title="Mark Ex-303"/>
             </Link>
         </div>
         <div className="column-animation animate-reverse">
             <Link href={"/cartas?&text=Volviendo%20a%20Casa"} target="_blank" title="Volviendo a Casa" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-008-3720.jpg' alt="Carta Volviendo a Casa" title="Volviendo a Casa"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-008-3720.jpg' alt="Carta Volviendo a Casa" title="Volviendo a Casa"/>
             </Link>
             <Link href={"/cartas?&text=Bahamoot%20Aniquilador"} target="_blank" title="Bahamoot Aniquilador" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME1-025-7116.jpg' alt="Carta Bahamoot Aniquilador" title="Bahamoot Aniquilador"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME1-025-7116.jpg' alt="Carta Bahamoot Aniquilador" title="Bahamoot Aniquilador"/>
             </Link>
             <Link href={"/cartas?&text=Devora%20Cobardes"} target="_blank" title="Devora Cobardes" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-003-9340.jpg' alt="Carta Devora Cobardes" title="Devora Cobardes"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-003-9340.jpg' alt="Carta Devora Cobardes" title="Devora Cobardes"/>
             </Link>
         </div>
         <div className="column-animation">
             <Link href={"/cartas?&text=Aleksandra"} target="_blank" title="Aleksandra" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-004-8477.jpg' alt="Carta Aleksandra" title="Aleksandra"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-004-8477.jpg' alt="Carta Aleksandra" title="Aleksandra"/>
             </Link>
             <Link href={"/cartas?&text=Dionea%20Matamoscas"} target="_blank" title="Dionea Matamoscas" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME3-025-9620.jpg' alt="Carta Dionea Matamoscas" title="Dionea Matamoscas"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME3-025-9620.jpg' alt="Carta Dionea Matamoscas" title="Dionea Matamoscas"/>
             </Link>
             <Link href={"/cartas?&text=Ariete"} target="_blank" title="Ariete" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-010-8971.jpg' alt="Carta Ariete" title="Ariete"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-010-8971.jpg' alt="Carta Ariete" title="Ariete"/>
             </Link>
         </div>
         <div className="column-animation animate-reverse hidden-sm">
             <Link href={"/cartas?&text=Copito"} target="_blank" title="Copito de Nieve" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-005-4137.jpg' alt="Carta Copito de Nieve" title="Copito de Nieve"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-005-4137.jpg' alt="Carta Copito de Nieve" title="Copito de Nieve"/>
             </Link>
             <Link href={"/cartas?&text=Sadhu%20Armormaster"} target="_blank" title="Sadhu Armormaster" rel="nofollow">
-                <Image className="animate-img" width={200} height={287} src='/home/ME4-025-5419.jpg' alt="Carta Sadhu Armormaster" title="Sadhu Armormaster"/>
+                <Image className="rounded" width={200} height={287} src='/home/ME4-025-5419.jpg' alt="Carta Sadhu Armormaster" title="Sadhu Armormaster"/>
             </Link>
             <Link href={"/cartas?&text=Angel&types=Ficha"} target="_blank" title="Ficha Ángel" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-009-0009.jpg' alt="Carta Ficha Ángel" title="Ficha Ángel"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-009-0009.jpg' alt="Carta Ficha Ángel" title="Ficha Ángel"/>
             </Link>
         </div>
         <div className="column-animation hidden-sm" title="Purificador de almas" rel="nofollow">
             <Link href={"/cartas?&text=purificador"} target="_blank">
-              <Image className="animate-img" width={200} height={287} src='/home/P-006-0349.jpg' alt="Carta Purificador de almas" title="Purificador de almas"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-006-0349.jpg' alt="Carta Purificador de almas" title="Purificador de almas"/>
             </Link>
             <Link href={"/cartas?&text=Arbol%20Mágico"} target="_blank" title="Arbol Mágico" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME3-022-6438.jpg' alt="Carta Arbol Mágico" title="Arbol Mágico"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME3-022-6438.jpg' alt="Carta Arbol Mágico" title="Arbol Mágico"/>
             </Link>
             <Link href={"/cartas?&text=Expulsión%20Divina"} target="_blank" title="Expulsión Divina" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME2-009-3219.jpg' alt="Carta Expulsión Divina" title="Expulsión Divina"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME2-009-3219.jpg' alt="Carta Expulsión Divina" title="Expulsión Divina"/>
             </Link>
         </div>
         <div className="column-animation animate-reverse hidden-sm">
             <Link href={"/cartas?&text=Mammon"} target="_blank" title="Mammon" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/P-007-6618.jpg' alt="Carta Mammon" title="Mammon"/>
+              <Image className="rounded" width={200} height={287} src='/home/P-007-6618.jpg' alt="Carta Mammon" title="Mammon"/>
             </Link>
             <Link href={"/cartas?&text=Triada"} target="_blank" title="Sátiro de la Triada" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/ME1-026-5513.jpg' alt="Carta Sátiro de la Triada" title="Sátiro de la Triada"/>
+              <Image className="rounded" width={200} height={287} src='/home/ME1-026-5513.jpg' alt="Carta Sátiro de la Triada" title="Sátiro de la Triada"/>
             </Link>
             <Link href={"/cartas?&types=Mana"} target="_blank" title="Mana Ente" rel="nofollow">
-              <Image className="animate-img" width={200} height={287} src='/home/MD-022-0066.jpg' alt="Carta Mana Ente" title="Mana Ente"/>
+              <Image className="rounded" width={200} height={287} src='/home/MD-022-0066.jpg' alt="Carta Mana Ente" title="Mana Ente"/>
             </Link>
         </div>
       </section>

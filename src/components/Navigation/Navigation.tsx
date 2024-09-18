@@ -11,7 +11,7 @@ export const Navigation = () => {
         <Image
           src="/logo.png"
           width={250}
-          height={38}
+          height={49}
           alt="Souls in Xtincion"  
           title='Souls in Xtincion logo' 
         />
