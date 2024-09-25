@@ -71,7 +71,7 @@ export const CardFinderPrices = ({submit}: Props) => {
                 multi={true}
             />
 
-          <button type="submit" className='btn'>
+          <button type="submit" className='btn h-10'>
             Buscar
           </button>
 
