@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Souls In Xtinction nuevo juego de cartas intercambiables Colombiano con el que entrarás a un universo lleno de estrategia y emoción.',
   openGraph: {
     title: 'Souls In Xtinction',
-    description: 'Entrarás a un universo lleno de estrategia y emoción TCG Colombia',
+    description: 'Nuevo juego de cartas intercambiables con el que entrarás a un universo lleno de estrategia y emoción.',
     url: 'https://soulsinxtinction.com/',
     siteName: 'Souls In Xtinction',
     images: [
