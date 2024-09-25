@@ -32,10 +32,10 @@ async function Vault () {
 
   return (
     <>
-    <main className="bg-[url('/boveda.jpg')] bg-no-repeat bg-center h-screen text-center grid ">
-        <div className="">    
-            <h1 className="uppercase text-7xl mb-4 mt-10">bienvenidos a la bóveda</h1>
-            <p className="text-4xl">Precios sugeridos al público para cada carta individualmente.</p>
+    <main className="bg-[url('/boveda.jpg')] bg-no-repeat bg-center h-5/6 text-center grid py-10">
+        <div className="mt-20">    
+            <h1 className="uppercase text-7xl mb-4 mt-10 font-bold">la bóveda</h1>
+            <p className="uppercase text-4xl mb-10">Precios sugeridos al público.</p>
         </div>
     </main>
     <section>
