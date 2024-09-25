@@ -33,7 +33,7 @@ const CardView = ({ img, alt, title, zoom = false, border = false }: Props) => {
       title={title}
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
       placeholder="blur" 
-      className="rounded-lg drop-shadow-md m-auto"
+      className="rounded-lg drop-shadow-md m-auto sm:w-screen p-2"
     />
     { zoom && 
       <div className="absolute bottom-0 right-0 mr-1 mt-1 bg-primary p-1 cursor-pointer opacity-100 hover:scale-125 ease-out duration-300" onClick={handlerCardDetail}>

@@ -15,6 +15,7 @@ export interface Card {
     products: Product[];
     archetypes: string[];
     keywords: string[];
+    price: number;
   }
   
 export interface Product {
