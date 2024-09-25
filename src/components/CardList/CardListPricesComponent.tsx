@@ -29,11 +29,11 @@ export const CardListPricesComponent = ({cards, detail=true, grid="5"}: Props) =
 
   return (
     <>
-    <section className={`grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 gap-10 my-8 justify-items-center relative`}>
+    <section className={`grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10 my-8 justify-items-center relative`}>
       {cards.map((card, i) => 
         <div key={card._id} className="cursor-pointer" onClick={() => setCardDetailData(i)}>
           <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`}/>
-          <p className="text-center mt-4 md:text-2xl text-4xl">${new Intl.NumberFormat().format(card.price)}</p>
+          <p className="text-center mt-4 text-2xl">${new Intl.NumberFormat().format(card.price)}</p>
         </div>  
       )}
     </section>

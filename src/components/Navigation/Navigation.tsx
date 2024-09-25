@@ -43,8 +43,18 @@ export const Navigation = () => {
             >
               {pathName.name}
             </Link>
+            
           </li>
           ))}
+          <li>
+            <Link
+              className="mr-4 uppercase text-lg transition font-bold duration-300 text-yellow-400"
+              title="Precios sugeridos al público"
+              href="/boveda"
+            >
+              Bóveda
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
