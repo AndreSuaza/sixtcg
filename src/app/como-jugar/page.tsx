@@ -42,11 +42,11 @@ async function HowToPlay () {
         <section className="grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 text-center">
           <div className="mx-auto">
             <h2 className="my-6">Aprende con Wizard</h2>
-          <iframe className="mx-auto md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[157px]" src="https://www.youtube.com/embed/NE6FF2iIkHU?si=grYNYcg2zciwoZuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className="mx-auto md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[157px]" src="https://www.youtube.com/embed/NE6FF2iIkHU?si=grYNYcg2zciwoZuW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
           <div className="mx-auto">
           <h2 className="my-6">Aprende con HerosBran</h2>
-          <iframe className="mx-auto md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[157px]" src="https://www.youtube.com/embed/hbVOkDLkFvM?si=iL869mpe89rplJiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className="mx-auto md:w-[560px] md:h-[315px] sm:w-[280px] sm:h-[157px]" src="https://www.youtube.com/embed/hbVOkDLkFvM?si=iL869mpe89rplJiw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </div>
         </section>
 
