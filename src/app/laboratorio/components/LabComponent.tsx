@@ -6,7 +6,7 @@ import { fetchDataCards } from "../../cartas/components/CardList/Services/cardsL
 import { CardFinderLab } from "./CardFinderLab";
 import { Card } from "@/models";
 import { CardView } from "@/components";
-import { ArrowDownTrayIcon, ArrowUpTrayIcon, EyeIcon, ListBulletIcon, PhotoIcon, ShareIcon, TrashIcon } from "@heroicons/react/24/solid";
+import { ArrowDownTrayIcon, ArrowUpTrayIcon, EyeIcon, HandRaisedIcon, ListBulletIcon, PhotoIcon, ShareIcon, TrashIcon } from "@heroicons/react/24/solid";
 import { CardDetail } from "../../cartas/components/CardDetail/CardDetail";
 import { ModalExportDecklist } from "./ModalExportDecklist";
 import { ModalImportDecklist } from "./ModalImportDecklist";
@@ -19,6 +19,7 @@ import { addCardToList, createDeckList, reduceCardToList, sortListCards } from "
 import { handlerModals } from "@/utils/utils";
 import { ListCardsDeck } from "./ListCardsDeck";
 import { ButtonToolsLab } from "./ButtonToolsLab";
+import { ModalHandDeck } from "./ModalHandDeck";
 
 export const LabComponent = () => {
 
@@ -38,6 +39,7 @@ export const LabComponent = () => {
     const [showImpDeckCode, setShowImpDeckCode] = useState(false);
     const [showImageDeckCode, setShowImageDeckCode] = useState(false);
     const [showShareDeckCode, setShowShareDeckCode] = useState(false);
+    const [showHandDeck, setShowHandDeck] = useState(false);
 
     const searchParams = useSearchParams();
 
@@ -193,6 +195,10 @@ export const LabComponent = () => {
         handlerModals(showShareDeckCode, setShowShareDeckCode);
     }
 
+    const handDeck = () => {
+        handlerModals(showHandDeck, setShowHandDeck);
+    }
+
     return (
     <div className="bg-slate-100 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
 
@@ -212,6 +218,9 @@ export const LabComponent = () => {
 
         <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
             <div className="flex grid-cols-4 mt-6 mb-6 justify-end">
+                <ButtonToolsLab acction={handDeck} title="Prueba Manos de tu mazo">
+                    <HandRaisedIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
+                </ButtonToolsLab>
                 <ButtonToolsLab acction={shareDeck} title="Comparte tu mazo Mazo">
                     <ShareIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
                 </ButtonToolsLab>
@@ -343,6 +352,9 @@ export const LabComponent = () => {
         }
         {showShareDeckCode &&
             <ModalShareDecklist code={deckCode} close={() => handlerModals(showShareDeckCode, setShowShareDeckCode)}/>
+        }
+        {showHandDeck &&
+            <ModalHandDeck deck={decklistMain} close={() => handlerModals(showHandDeck, setShowHandDeck)}/>
         }
     </div>
   )
