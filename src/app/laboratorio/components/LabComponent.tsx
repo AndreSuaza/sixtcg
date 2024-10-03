@@ -218,21 +218,21 @@ export const LabComponent = () => {
 
         <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
             <div className="flex grid-cols-4 mt-6 mb-6 justify-end">
-                <ButtonToolsLab acction={handDeck} title="Prueba Manos de tu mazo">
-                    <HandRaisedIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </ButtonToolsLab>
                 <ButtonToolsLab acction={shareDeck} title="Comparte tu mazo Mazo">
                     <ShareIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
+                </ButtonToolsLab>
+                <ButtonToolsLab acction={handDeck} title="Prueba Manos de tu mazo">
+                    <HandRaisedIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
                 </ButtonToolsLab>
                 {/* <ButtonToolsLab acction={() => handlerModals(showImageDeckCode, setShowImageDeckCode)} title="Crear Imagen del Mazo">
                     <PhotoIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
                 </ButtonToolsLab> */}
-                <ButtonToolsLab acction={exportDeck} title="Exportar Mazo">
+                {/* <ButtonToolsLab acction={exportDeck} title="Exportar Mazo">
                     <ArrowUpTrayIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
                 </ButtonToolsLab>
                 <ButtonToolsLab acction={() => handlerModals(showImpDeckCode, setShowImpDeckCode)} title="Importar Mazo">
                     <ArrowDownTrayIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
-                </ButtonToolsLab>
+                </ButtonToolsLab> */}
                 <ButtonToolsLab acction={setSortListCards} title="Ordenar Mazo">
                     <ListBulletIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
                 </ButtonToolsLab>
@@ -277,10 +277,10 @@ export const LabComponent = () => {
                 </div>
                 : 
                 <div className="m-auto lg:w-2/3 md:w-2/3 w-full mt-16 px-2 text-lg text-gray-200">
-                    {/* <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
-                        <p>Puedes agregar cartas a tu mazo dando click sobre su imagen.</p>
+                    <aside className="p-3 border-dotted border-2 mb-2 border-indigo-500 bg-black bg-opacity-75">
+                        <p>Agrega cartas a tu mazo dando click sobre su imagen.</p>
                     </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
+                    {/* <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button 
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -290,8 +290,8 @@ export const LabComponent = () => {
                                 <PhotoIcon className="w-4 m-auto"/>
                             </button>
                             para Crear una Imagen de tu Mazo.</p>
-                    </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
+                    </aside> */}
+                    {/* <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
                         <p>Puedes pulsar en el botón 
                             <button
                                 className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
@@ -312,29 +312,40 @@ export const LabComponent = () => {
                                 <ArrowDownTrayIcon className="w-4 m-auto"/>
                             </button>
                             para Importar el código de tu Mazo.</p>
-                    </aside>
-                    <aside className="p-3 border-dotted border-2 mb-1 border-indigo-500 bg-black bg-opacity-75">
-                        <p>Puedes pulsar en el botón 
-                            <button 
-                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
-                                onClick={setSortListCards}
-                                title="Ordenar Mazo"
-                            >
-                                <ListBulletIcon className="w-4 m-auto"/>
-                            </button>
-                            para Ordenar tu mazo. (recuerda debes tener cartas en tu Mazo)</p>
-                    </aside>
-                    <aside className="p-3 border-dotted border-2 mb-10 border-indigo-500 bg-black bg-opacity-75">
-                        <p>Puedes pulsar en el botón 
-                            <button 
-                                className="bg-primary bg-primary-h h-6 w-6 mx-2 rounded"
-                                onClick={clearDeckList}
-                                title="Borrar Mazo"
-                            >
-                                <TrashIcon className="w-4 m-auto"/>
-                            </button>
-                            para Limpiar tu mazo.</p>
                     </aside> */}
+                    
+                    <aside className="p-3 border-dotted border-2 mb-2 border-indigo-500 bg-black bg-opacity-75 flex flex-row">
+                        <div 
+                            className="bg-primary bg-primary-h h-6 w-6 rounded mr-2 mt-1 px-1"
+                        >
+                            <ShareIcon className="w-4 m-auto mt-1"/>
+                        </div>
+                        <p>Comparte tu mazo con tus amigos.</p>
+                    </aside>
+                    <aside className="p-3 border-dotted border-2 mb-2 border-indigo-500 bg-black bg-opacity-75 flex flex-row">
+                            <div 
+                                className="bg-primary bg-primary-h h-6 w-6 rounded mr-2 mt-1 px-1"
+                            >
+                                <HandRaisedIcon className="w-4 m-auto mt-1"/>
+                            </div>
+                            <p>Prueba la primera mano de tu mazo.</p>
+                    </aside> 
+                    <aside className="p-3 border-dotted border-2 mb-2 border-indigo-500 bg-black bg-opacity-75 flex flex-row">
+                            <div 
+                                className="bg-primary bg-primary-h h-6 w-6 rounded mr-2 mt-1 px-1"
+                            >
+                                <ListBulletIcon className="w-4 m-auto mt-1"/>
+                            </div>
+                            <p>Ordenar tu mazo. (recuerda debes tener cartas en tu Mazo)</p>
+                    </aside>
+                    <aside className="p-3 border-dotted border-2 mb-10 border-indigo-500 bg-black bg-opacity-75 flex flex-row">
+                            <div 
+                                className="bg-primary bg-primary-h h-6 w-6 rounded mr-2 mt-1 px-1"
+                            >
+                                <TrashIcon className="w-4 m-auto mt-1"/>
+                            </div>
+                            <p>Limpia tu mazo.</p>
+                    </aside> 
                 </div>
             }
         </div>
