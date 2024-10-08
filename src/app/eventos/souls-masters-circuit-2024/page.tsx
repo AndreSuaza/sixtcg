@@ -42,11 +42,11 @@ export default function Lanzamiento() {
                     <div className="mb-10 text-primary font-bold uppercase">Llega el Souls Master Circuit</div>
                     <h1 className="font-bold text-gray-700 px-10 leading-normal mb-10">El Inicio del Competitivo de Souls In Xtinction</h1>
                     <p className="text-lg capitalize">nuevo juego de cartas coleccionables</p>
-                    <div className="flex flex-row justify-center gap-4 mt-20">
+                    {/* <div className="flex flex-row justify-center gap-4 mt-20">
                       <Link href={'https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.soulsinxtinction.com%2Feventos%F2lanzamiento'} target="_blank">
                         <Image width={50} height={50} src='/redes/facebookP.svg' alt="facebook" title="Siguenos en Facebook" className="opacity-100 hover:opacity-80 cursor-pointer mx-auto"/>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <article className="lg:w-4/5 md:w-auto py-6 rounded mb-10 font-sans text-xl px-4">
@@ -61,7 +61,7 @@ export default function Lanzamiento() {
                       <p className="mb-4 leading-10 font-bold">¿Eres tú el próximo Soul Master?</p>
                       <p className="mb-4 leading-10">El primer lugar se llevará un premio en efectivo de <b>$1,000,000 de pesos en efectivo.</b> Además, habrá premios especiales para los jugadores que logren posicionarse en el top del evento. Con cada victoria, los jugadores acumularán puntos en el ranking global, lo que les permitirá competir por grandes recompensas y el prestigioso título de Soul Master.</p>
                       <h3 className="text-2xl my-6 font-bold uppercase">¿Cuándo y dónde?</h3>
-                      
+
                       <p><b>Dia:</b> 1 Diciembre 2024 </p>
                       <p><b>Lugar:</b> TCG Collectibles, Cra. 13a #127-8 en la Ciudad de Bogotá.</p>
                       <p><b>Costo:</b> $48:000 </p>
