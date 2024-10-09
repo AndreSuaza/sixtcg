@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 
 export default function Lanzamiento() {
   return (
-    <main className="bg-gray-50 md:px-20 md:text-2xl text-xl text-gray-700 pb-10">
+    <main className="bg-gray-50 lg:px-20 md:text-2xl text-xl text-gray-700 pb-10">
             <div className="lg:w-5/6 md:w-screen mx-auto">
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-2 mb-10">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-2 mb-10">
                   <Image 
                       width={800} 
                       height={800} 
@@ -58,15 +58,74 @@ export default function Lanzamiento() {
                       El <b>Souls Master Circuit</b> es más que un torneo, es una experiencia que pondrá a prueba la habilidad, la estrategia y la capacidad de los jugadores para adaptarse a las mecánicas únicas del juego. En este torneo, los participantes tendrán la oportunidad de demostrar su destreza con las cartas más poderosas, usando combinaciones letales y elaboradas para superar a sus oponentes.
                       </p>
                       
-                      <p className="mb-4 leading-10 font-bold">¿Eres tú el próximo Soul Master?</p>
-                      <p className="mb-4 leading-10">El primer lugar se llevará un premio en efectivo de <b>$1,000,000 de pesos en efectivo.</b> Además, habrá premios especiales para los jugadores que logren posicionarse en el top del evento. Con cada victoria, los jugadores acumularán puntos en el ranking global, lo que les permitirá competir por grandes recompensas y el prestigioso título de Soul Master.</p>
-                      <h3 className="text-2xl my-6 font-bold uppercase">¿Cuándo y dónde?</h3>
+                      <h2 className="text-4xl font-bold mb-6">Premiación del Evento</h2>
+
+                      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3 mb-6">
+                        <div className="p-4  bg-slate-100 rounded-md">
+                          <h3 className="text'2xl font-bold mb-2">Primer lugar</h3>
+                          <ol className="list-disc mb-2">
+                            <li className="ml-6 mb-2">$1'000.000 pesos en efectivo. </li>
+                            <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">Entrada VIP al Souls Masters Champions </li>
+                            <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
+                            <li className="ml-6 mb-2">1 Mana Gold Secret Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">45 puntos Souls Master </li>
+                          </ol>
+                        </div>
+                        <div className="p-4  bg-slate-100 rounded-md">
+                          
+                        <h3 className="text'2xl font-bold mb-2">Segundo lugar</h3>
+                        <ol className="list-disc mb-2">
+                          <li className="ml-6 mb-2">1 caja Génesis del Caos </li>
+                          <li className="ml-6 mb-2">2 cajas leyendas peludas</li>
+                          <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
+                          <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">35 puntos Souls Master </li>
+                        </ol>
+                        </div>
+                        <div className="p-4  bg-slate-100 rounded-md">
+                          <h3 className="text'2xl font-bold mb-2">Tercero y Cuarto lugar</h3>
+                          <ol className="list-disc mb-2">
+                            <li className="ml-6 mb-2">12 Sobres Génesis del Caos</li>
+                            <li className="ml-6 mb-2">1 Caja leyendas peludas</li>
+                            <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
+                            <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">25 puntos Souls Master </li>
+                          </ol>
+                        </div>
+                        <div className="p-4 bg-slate-100 rounded-md">
+                        <h3 className="text'2xl font-bold mb-2">Quinto al Octavo Lugar</h3>
+                        <ol className="list-disc mb-2">
+                          <li className="ml-6 mb-2">6 Sobres Génesis del Caos </li>
+                          <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">15 puntos Souls Master</li>
+                        </ol>
+                        </div>
+                      </div>
+
+                      <h2 className="text-4xl font-bold mb-6">Información del evento</h2>
 
                       <p><b>Dia:</b> 1 Diciembre 2024 </p>
                       <p><b>Lugar:</b> TCG Collectibles, Cra. 13a #127-8 en la Ciudad de Bogotá.</p>
-                      <p><b>Costo:</b> $48:000 </p>
-                      <p className="mb-4 "><b>Hora:</b>  10:00 am</p>
-                      
+                      <p><b>Hora:</b>  10:00 am</p>
+                      <p><b>Costo:</b> $48:000</p> 
+
+                      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3 my-6">
+                        <div className="p-4 bg-slate-100">
+                          <h3 className="text'2xl font-bold mb-2">Por participar recibes:</h3>
+                          <ol className="list-disc mb-2">
+                          <li className="ml-6 mb-2">1 Sobre de Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">1 Sobres Génesis del Caos</li>
+                          <li className="ml-6 mb-2">1 Sobre maestro</li>
+                          <li className="ml-6 mb-2">1 Mana Ultra</li>
+                          <li className="ml-6 mb-2">5 Puntos Souls Master</li>
+                          </ol>
+                        </div>
+                      </div>
+
                       <p className="mb-4 leading-10"><b>El Souls Master Circuit</b> será el escenario perfecto para que los jugadores demuestren sus habilidades y se enfrenten a otros guerreros de almas en un campo de batalla épico. Prepárate para el inicio de esta nueva era del competitivo de <i>Souls In Xtinction.</i></p>
                       <p className="mb-4 leading-10"><b>¡Inscripciones abiertas ahora!</b> No pierdas la oportunidad de ser parte de este histórico evento que definirá el futuro de los jugadores más legendarios.</p>
                       
