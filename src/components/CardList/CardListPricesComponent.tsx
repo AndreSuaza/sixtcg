@@ -33,7 +33,10 @@ export const CardListPricesComponent = ({cards, detail=true, grid="5"}: Props) =
       {cards.map((card, i) => 
         <div key={card._id} className="cursor-pointer" onClick={() => setCardDetailData(i)}>
           <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`}/>
-          <p className="text-center mt-4 text-2xl">${new Intl.NumberFormat().format(card.price)}</p>
+          { card.price != 0 ? 
+              <p className="text-center mt-4 text-2xl">${new Intl.NumberFormat().format(card.price)}</p> 
+            : <p className="text-center mt-4 text-2xl uppercase text-yellow-500 opacity-50">próximamente</p> 
+          }
         </div>  
       )}
     </section>
