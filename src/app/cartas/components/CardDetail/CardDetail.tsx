@@ -35,6 +35,21 @@ export const CardDetail = ({cards, close, index}: Props) => {
     ]
   }
 
+  const rarityCard = (rarity: string) => {
+    switch (rarity) {
+      case 'Ultra':
+        return 'text-blue-600';
+
+      case 'Secreta':
+        return 'text-fuchsia-600';
+    
+      case 'Secreta Dorada':
+        return 'text-yellow-500';
+      default:
+        return '';
+    }
+  }
+
   return (
     <Modal>
         <div className="pb-10 mx-auto text-black relative">
@@ -43,7 +58,7 @@ export const CardDetail = ({cards, close, index}: Props) => {
           </div>
           <div className="md:pl-10 px-4 md:flex gap-1">
             <div className="md:w-3/5">
-              <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Detalle de ${card.name}`} zoom={false}/>
+              <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Detalle de ${card.name}`} zoom={false} rarity={card.rarity}/>
             </div>
             <div className="md:w-3/5 md:pr-10 ml-2">
               <table className="table-auto text-left w-full">
@@ -65,6 +80,10 @@ export const CardDetail = ({cards, close, index}: Props) => {
                       <td className="py-3 font-light">{card?.archetypes.map((archetype: string, i: any) => {return i > 0 ? ', '+archetype : archetype})}</td>
                       <th className="py-3">Palabras Clave</th>
                       <td className="py-3 font-light">{card?.keywords.map((keyword: string, i: any) => {return i > 0 ? ', '+keyword : keyword})}</td>
+                    </tr>
+                    <tr className="border-b">
+                      <th className="py-3">Rareza</th>
+                      <td className={`py-3 font-light ${rarityCard(card.rarity)}`} >{card?.rarity}</td>
                     </tr>
                     <tr>
                       <th className="pt-2">Efecto</th>

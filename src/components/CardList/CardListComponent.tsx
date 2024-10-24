@@ -32,7 +32,7 @@ export const CardListComponent = ({cards, detail=true, grid="5"}: Props) => {
     <section className={`grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 my-8 justify-items-center relative`}>
       {cards.map((card, i) => 
         <div key={card._id} className="cursor-pointer" onClick={() => setCardDetailData(i)}>
-          <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`}/>
+          <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} rarity={card.rarity}/>
         </div>  
       )}
     </section>

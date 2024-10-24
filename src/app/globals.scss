@@ -370,3 +370,100 @@ body {
     @apply mt-10 py-10 px-10 bg-gray-200 text-gray-700
   }
 }
+
+
+@keyframes brillarBordeUltra {
+  0% {
+    box-shadow: 0 0 1px rgba(0, 17, 255, 0.5), 
+                0 0 2px rgba(0, 17, 255, 0.3), 
+                0 0 3px rgba(0, 17, 255, 0.2), 
+                0 0 4px rgba(0, 17, 255, 0.4),
+                0 0 5px rgba(0, 17, 255, 0.6);
+    border-color: rgba(0, 17, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 1px rgba(0, 17, 255, 0.8), 
+                0 0 2px rgba(0, 17, 255, 0.6), 
+                0 0 3px rgba(0, 17, 255, 0.8), 
+                0 0 4px rgba(0, 17, 255, 1), 
+                0 0 5px rgba(0, 17, 255, 1.2);
+    border-color: rgba(0, 17, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 1px rgba(0, 17, 255, 0.5), 
+                0 0 2px rgba(0, 17, 255, 0.3), 
+                0 0 3px rgba(0, 17, 255, 0.2), 
+                0 0 4px rgba(0, 17, 255, 0.4),
+                0 0 5px rgba(0, 17, 255, 0.6);
+    border-color: rgba(0, 17, 255, 0.7);
+  }
+}
+
+.carta-brillante-ultra {
+  position: relative;
+  animation: brillarBordeUltra 3s infinite ease-in-out;
+}
+
+@keyframes brillarBordeSecreta {
+  0% {
+    box-shadow: 0 0 1px rgba(250, 0, 251, 0.5), 
+                0 0 2px rgba(255, 0, 251, 0.3), 
+                0 0 3px rgba(250, 0, 251, 0.2), 
+                0 0 4px rgba(250, 0, 251, 0.4),
+                0 0 5px rgba(250, 0, 251, 0.6);
+    border-color: rgba(250, 0, 251, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 1px rgba(250, 0, 251, 0.8), 
+                0 0 2px rgba(250, 0, 251, 0.6), 
+                0 0 3px rgba(250, 0, 251, 0.8), 
+                0 0 4px rgba(250, 0, 251, 1), 
+                0 0 5px rgba(250, 0, 251, 1.2);
+    border-color: rgba(250, 0, 251, 1);
+  }
+  100% {
+    box-shadow: 0 0 1px rgba(250, 0, 251, 0.5), 
+                0 0 2px rgba(250, 0, 251, 0.3), 
+                0 0 3px rgba(250, 0, 251, 0.2), 
+                0 0 4px rgba(250, 0, 251, 0.4),
+                0 0 5px rgba(250, 0, 251, 0.6);
+    border-color: rgba(250, 0, 251, 0.7);
+  }
+}
+
+.carta-brillante-secreta {
+  position: relative;
+  animation: brillarBordeSecreta 3s infinite ease-in-out;
+}
+
+@keyframes brillarBordeGold {
+  0% {
+    box-shadow: 0 0 1px rgba(251, 243, 0, 0.5), 
+                0 0 2px rgba(251, 243, 0, 0.3), 
+                0 0 3px rgba(251, 243, 0, 0.2), 
+                0 0 4px rgba(251, 243, 0, 0.4),
+                0 0 5px rgba(251, 243, 0, 0.6);
+    border-color: rgba(251, 243, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 1px rgba(251, 243, 0, 0.8), 
+                0 0 2px rgba(251, 243, 0, 0.6), 
+                0 0 3px rgba(251, 243, 0, 0.8), 
+                0 0 4px rgba(251, 243, 0, 1), 
+                0 0 5px rgba(251, 243, 0, 1.2);
+    border-color: rgba(251, 243, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 1px rgba(251, 243, 0, 0.5), 
+                0 0 2px rgba(251, 243, 0, 0.3), 
+                0 0 3px rgba(251, 243, 0, 0.2), 
+                0 0 4px rgba(251, 243, 0, 0.4),
+                0 0 5px rgba(251, 243, 0, 0.6);
+    border-color: rgba(251, 243, 0, 0.7);
+  }
+}
+
+.carta-brillante-gold {
+  position: relative;
+  animation: brillarBordeGold 3s infinite ease-in-out;
+}

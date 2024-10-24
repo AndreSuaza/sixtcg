@@ -43,7 +43,7 @@ export const ProductsByCard = ({productsByCard}: Props) => {
             </Link>
             
             : 
-            <div>
+            <div key={product.code}>
                 <Image 
                     width={300} 
                     height={300} 

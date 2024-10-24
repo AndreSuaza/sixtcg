@@ -8,14 +8,14 @@ interface Props {
     img: string; 
     alt: string;
     title: string;
+    rarity: string;
     zoom?: boolean;
-    border?: boolean;
 }
 
-const CardView = ({ img, alt, title, zoom = false, border = false }: Props) => {
+const CardView = ({ img, alt, title, zoom = false, rarity }: Props) => {
 
   const [cardDetail, setCardDetail] = useState(false);
-
+  
   const handlerCardDetail = () => {
     if(zoom) {
       setCardDetail(!cardDetail);
@@ -24,7 +24,8 @@ const CardView = ({ img, alt, title, zoom = false, border = false }: Props) => {
 
   return (
     <>
-    <div className={`relative ${border && 'border-2 border-white rounded-2xl'}`}>
+    <div className={
+      `relative rounded-2xl`}>
     <Image 
       width={500} 
       height={718} 
@@ -33,7 +34,7 @@ const CardView = ({ img, alt, title, zoom = false, border = false }: Props) => {
       title={title}
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
       placeholder="blur" 
-      className="rounded-2xl drop-shadow-md m-auto sm:w-screen p-2"
+      className="rounded-2xl drop-shadow-md m-auto sm:w-screen"
     />
     { zoom && 
       <div className="absolute bottom-0 right-0 mr-1 mt-1 bg-primary p-1 cursor-pointer opacity-100 hover:scale-125 ease-out duration-300" onClick={handlerCardDetail}>

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         siteName: 'Mazo Angeles Souls In Xtinction',
         images: [
             {
-            url: 'https://soulsinxtinction.com/productos/mar.jpg',
+            url: 'https://soulsinxtinction.com/og.jpg',
             width: 800,
             height: 600,
             alt: 'Mazo Angeles Souls In Xtinction TCG',
@@ -132,7 +132,7 @@ const AngelsDeck = async () => {
                         </Link>
                         {cards.map((card, i) => 
                         <div key={card.id} className="cursor-pointer">
-                            <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true}/>
+                            <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true} rarity={card.rarity}/>
                         </div>  
                         )}
                     </section>

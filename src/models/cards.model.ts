@@ -10,6 +10,7 @@ export interface Card {
     img: string;
     limit: string;
     deleteAt?: any;
+    rarity: string;
     copys?: number;
     types: string[];
     products: Product[];
