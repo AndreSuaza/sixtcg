@@ -121,7 +121,7 @@ export default function Lanzamiento() {
                     </div>
                     <p className="text-center mb-10">Y además esta poderosa carta en su arte alternativo</p>
                     <div className="w-[250px] m-auto">
-                    <CardView img={`/cards/P-003-9340.jpg`} alt="Devora Cobardes" title="Carta Promo Devora Cobardes"/>
+                    <CardView img={`/cards/P-003-9340.jpg`} alt="Devora Cobardes" title="Carta Promo Devora Cobardes" rarity="Secreta Dorada"/>
 
                     </div>
                     <p className="mb-4 mt-10 leading-10 text-center">

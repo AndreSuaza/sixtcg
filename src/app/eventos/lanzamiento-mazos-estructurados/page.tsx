@@ -107,13 +107,13 @@ export default function LanzamientoMazos() {
                         <div className="m-4">
                           <p className="text-center mb-6"><b>Carta exclusiva Prime Wenddygo de Campeón para el ganador del evento.</b></p>
                           <div className="w-[250px] m-auto">
-                            <CardView img={`/cards/PC-001-0006.jpg`} alt="Prime Wenddygo de campeón" title="Carta Promo Prime Wenddygo de campeón"/>
+                            <CardView img={`/cards/PC-001-0006.jpg`} alt="Prime Wenddygo de campeón" title="Carta Promo Prime Wenddygo de campeón" rarity="Secreta Dorada"/>
                           </div>
                         </div>
                         <div className="m-4">
                           <p className="text-center mb-6"><b>7 cartas especiales de Prime Wenddygo para los jugadores del Top 8.</b></p>
                           <div className="w-[250px] m-auto">
-                            <CardView img={`/cards/P-001-0006.jpg`} alt="Prime Wenddygo" title="Carta Promo Prime Wenddygo"/>
+                            <CardView img={`/cards/P-001-0006.jpg`} alt="Prime Wenddygo" title="Carta Promo Prime Wenddygo" rarity="Secreta"/>
                           </div>
                         </div>
                     </div>
