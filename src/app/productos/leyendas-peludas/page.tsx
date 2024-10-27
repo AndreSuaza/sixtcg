@@ -74,7 +74,7 @@ const AngelsDeck = async () => {
 
                     <h2 className="text-center mb-10">En Leyendas peludas puedes escoger 1 de 4 Figuras cada una con sus respectivas cartas.</h2>
                     <section className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-1 mx-16">
-                        <div className="grid grid-cols-2">
+                        <div className="lg:grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mb-6">
                             <Image 
                                 width={200} 
                                 height={200} 
@@ -94,7 +94,7 @@ const AngelsDeck = async () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2">
+                        <div className="lg:grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mb-6">
                             <Image 
                                 width={200} 
                                 height={200} 
@@ -114,7 +114,7 @@ const AngelsDeck = async () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2">
+                        <div className="lg:grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mb-6">
                             <Image 
                                 width={200} 
                                 height={200} 
@@ -134,7 +134,7 @@ const AngelsDeck = async () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2">
+                        <div className="lg:grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mb-6">
                             <Image 
                                 width={200} 
                                 height={200} 
