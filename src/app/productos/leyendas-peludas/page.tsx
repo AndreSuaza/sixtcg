@@ -189,9 +189,6 @@ const AngelsDeck = async () => {
                     <div className="mx-4">
                         <h3 className="text-2xl bg-gray-500 text-white pl-4 my-2">4 Armas</h3>
                         <ul className="ml-4">
-                            <li>1 Armadura reluciente</li>
-                            <li>1 Bola de demolición</li>
-                            <li>1 Espada Arbórea</li>
                             <li>1 Collar de puas</li>
                         </ul>
                         <h3 className="text-2xl bg-black text-white pl-4 my-2">1 Alma</h3>
