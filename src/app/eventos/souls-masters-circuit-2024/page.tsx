@@ -68,7 +68,7 @@ export default function Lanzamiento() {
                             <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
                             <li className="ml-6 mb-2">Entrada VIP al Souls Masters Champions </li>
                             <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
-                            <li className="ml-6 mb-2">1 Mana Gold Secret Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">1 Alma Gold Secret Souls Masters Circuit</li>
                             <li className="ml-6 mb-2">45 puntos Souls Master </li>
                           </ol>
                         </div>
@@ -80,7 +80,7 @@ export default function Lanzamiento() {
                           <li className="ml-6 mb-2">2 cajas leyendas peludas</li>
                           <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
                           <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
-                          <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">1 Alma Gold secret Souls Masters Circuit</li>
                           <li className="ml-6 mb-2">35 puntos Souls Master </li>
                         </ol>
                         </div>
@@ -91,7 +91,7 @@ export default function Lanzamiento() {
                             <li className="ml-6 mb-2">1 Caja leyendas peludas</li>
                             <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
                             <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
-                            <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                            <li className="ml-6 mb-2">1 Alma Gold secret Souls Masters Circuit</li>
                             <li className="ml-6 mb-2">25 puntos Souls Master </li>
                           </ol>
                         </div>
@@ -100,7 +100,7 @@ export default function Lanzamiento() {
                         <ol className="list-disc mb-2">
                           <li className="ml-6 mb-2">6 Sobres Génesis del Caos </li>
                           <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
-                          <li className="ml-6 mb-2">1 Mana Gold secret Souls Masters Circuit</li>
+                          <li className="ml-6 mb-2">1 Alma Gold secret Souls Masters Circuit</li>
                           <li className="ml-6 mb-2">15 puntos Souls Master</li>
                         </ol>
                         </div>
@@ -120,7 +120,7 @@ export default function Lanzamiento() {
                           <li className="ml-6 mb-2">1 Sobre de Souls Masters Circuit</li>
                           <li className="ml-6 mb-2">1 Sobre Génesis del Caos</li>
                           <li className="ml-6 mb-2">1 Sobre maestro</li>
-                          <li className="ml-6 mb-2">1 Mana Ultra</li>
+                          <li className="ml-6 mb-2">1 Alma Ultra</li>
                           <li className="ml-6 mb-2">5 Puntos Souls Master</li>
                           </ol>
                         </div>
