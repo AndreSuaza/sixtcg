@@ -76,7 +76,7 @@ export default function Lanzamiento() {
                           
                         <h3 className="text'2xl font-bold mb-2">Segundo lugar</h3>
                         <ol className="list-disc mb-2">
-                          <li className="ml-6 mb-2">1 caja Génesis del Caos </li>
+                          <li className="ml-6 mb-2">2 caja Génesis del Caos </li>
                           <li className="ml-6 mb-2">2 cajas leyendas peludas</li>
                           <li className="ml-6 mb-2">Tapete de juego Souls Masters Circuit</li>
                           <li className="ml-6 mb-2">1 Purificador de Almas Gold Secret AA</li>
