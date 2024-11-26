@@ -39,7 +39,7 @@ export default function Lanzamiento() {
                       className=""
                   />
                   <div className="text-center mt-4 pt-10">
-                    <div className="mb-10 text-primary font-bold uppercase">Llega el Souls Master Circuit</div>
+                    <div className="mb-10 text-primary font-bold uppercase">Llega el Souls Masters Circuit</div>
                     <h1 className="font-bold text-gray-700 px-10 leading-normal mb-10">El Inicio del Competitivo de Souls In Xtinction</h1>
                     <p className="text-lg capitalize">nuevo juego de cartas coleccionables</p>
                     {/* <div className="flex flex-row justify-center gap-4 mt-20">
@@ -52,10 +52,10 @@ export default function Lanzamiento() {
                 <article className="lg:w-4/5 md:w-auto py-6 rounded mb-10 font-sans text-xl px-4">
                     <div>
                       <p className="mb-4 leading-10">
-                      La espera ha terminado. <i>Souls In Xtinction</i> entra oficialmente en la arena competitiva con el lanzamiento del <b>Souls Master Circuit</b>, un torneo épico donde los mejores jugadores se enfrentarán por el honor y la supremacía. Este evento no solo es una competencia, sino el primer paso para consolidar a <i>Souls In Xtinction</i> como un fenómeno en el universo de los juegos de cartas coleccionables.
+                      La espera ha terminado. <i>Souls In Xtinction</i> entra oficialmente en la arena competitiva con el lanzamiento del <b>Souls Masters Circuit</b>, un torneo épico donde los mejores jugadores se enfrentarán por el honor y la supremacía. Este evento no solo es una competencia, sino el primer paso para consolidar a <i>Souls In Xtinction</i> como un fenómeno en el universo de los juegos de cartas coleccionables.
                       </p>
                       <p className="mb-4 leading-10">
-                      El <b>Souls Master Circuit</b> es más que un torneo, es una experiencia que pondrá a prueba la habilidad, la estrategia y la capacidad de los jugadores para adaptarse a las mecánicas únicas del juego. En este torneo, los participantes tendrán la oportunidad de demostrar su destreza con las cartas más poderosas, usando combinaciones letales y elaboradas para superar a sus oponentes.
+                      El <b>Souls Masters Circuit</b> es más que un torneo, es una experiencia que pondrá a prueba la habilidad, la estrategia y la capacidad de los jugadores para adaptarse a las mecánicas únicas del juego. En este torneo, los participantes tendrán la oportunidad de demostrar su destreza con las cartas más poderosas, usando combinaciones letales y elaboradas para superar a sus oponentes.
                       </p>
                       
                       <h2 className="text-4xl font-bold mb-6">Premiación del Evento</h2>
@@ -121,12 +121,12 @@ export default function Lanzamiento() {
                           <li className="ml-6 mb-2">1 Sobre Génesis del Caos</li>
                           <li className="ml-6 mb-2">1 Sobre maestro</li>
                           <li className="ml-6 mb-2">1 Alma Ultra</li>
-                          <li className="ml-6 mb-2">5 Puntos Souls Master</li>
+                          <li className="ml-6 mb-2">5 Puntos Souls Masters</li>
                           </ol>
                         </div>
                       </div>
 
-                      <p className="mb-4 leading-10"><b>El Souls Master Circuit</b> será el escenario perfecto para que los jugadores demuestren sus habilidades y se enfrenten a otros guerreros de almas en un campo de batalla épico. Prepárate para el inicio de esta nueva era del competitivo de <i>Souls In Xtinction.</i></p>
+                      <p className="mb-4 leading-10"><b>El Souls Masters Circuit</b> será el escenario perfecto para que los jugadores demuestren sus habilidades y se enfrenten a otros guerreros de almas en un campo de batalla épico. Prepárate para el inicio de esta nueva era del competitivo de <i>Souls In Xtinction.</i></p>
                       <p className="mb-4 leading-10"><b>¡Inscripciones abiertas ahora!</b> No pierdas la oportunidad de ser parte de este histórico evento que definirá el futuro de los jugadores más legendarios.</p>
                       
                     </div>
