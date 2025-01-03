@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction Precios de cartas individuales',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Listado de Cartas Souls In Xtinction TCG',
@@ -32,7 +32,7 @@ async function Vault () {
 
   return (
     <>
-    <main className="bg-[url('/boveda.jpg')] bg-no-repeat bg-center h-5/6 text-center grid py-10">
+    <main className="bg-[url('/boveda.webp')] bg-no-repeat bg-center h-5/6 text-center grid py-10">
         <div className="mt-20">    
             <h1 className="uppercase text-7xl mb-4 mt-10 font-bold">la bóveda</h1>
             <p className="uppercase text-4xl mb-10">Precios sugeridos al público.</p>

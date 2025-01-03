@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         siteName: 'Mazo Demonios Souls In Xtinction',
         images: [
             {
-            url: 'https://soulsinxtinction.com/og.jpg',
+            url: 'https://soulsinxtinction.com/og.webp',
             width: 800,
             height: 600,
             alt: 'Mazo Demonios Souls In Xtinction TCG',
@@ -37,7 +37,7 @@ const DemonsDeck = async () => {
 
     return (
 
-        <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
+        <main className="bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
 
             <Title title="Mazo Demonios" subtitle="Arte de la Destrucción"/>
 
@@ -47,7 +47,7 @@ const DemonsDeck = async () => {
                         <Image 
                             width={460} 
                             height={500} 
-                            src={'/products/ME1.png'} 
+                            src={'/products/ME1.webp'} 
                             alt="Caja Mazo Demonios - Souls In Xtinction" 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 
@@ -137,7 +137,7 @@ const DemonsDeck = async () => {
                         </Link>
                         {cards.map((card, i) => 
                         <div key={card.id} className="cursor-pointer">
-                            <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true} rarity={card.rarity}/>
+                            <CardView img={`/cards/${card.code}-${card.id}.webp`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true} rarity={card.rarity}/>
                         </div>  
                         )}
                     </section>

@@ -33,7 +33,7 @@ export const ProductsByCard = ({productsByCard}: Props) => {
                 <Image 
                     width={300} 
                     height={300} 
-                    src={ product.images?.length > 0 ? `/products/${product.images[0].url}` : `/estructur-1.jpg`} 
+                    src={ product.images?.length > 0 ? `/products/${product.images[0].url}.webp` : `/estructur-1.webp`} 
                     alt={product.name} 
                     className="rounded-t m-auto"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -47,7 +47,7 @@ export const ProductsByCard = ({productsByCard}: Props) => {
                 <Image 
                     width={300} 
                     height={300} 
-                    src={ product.images?.length > 0 ? `/products/${product.images[0].url}` : `/estructur-1.jpg`} 
+                    src={ product.images?.length > 0 ? `/products/${product.images[0].url}.webp` : `/estructur-1.webp`} 
                     alt={product.name} 
                     className="rounded-t m-auto"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="

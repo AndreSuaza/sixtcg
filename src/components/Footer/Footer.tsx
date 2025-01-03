@@ -8,12 +8,13 @@ export const Footer = () => {
           <div className='bg-primary pb-8 pt-4 px-20 grid md:grid-cols-3 grid-cols-1 bottom-0'>
             <div className='items-center mt-6'>
             <Image
-                src="/logo-texto.png"
+                src="/logo-texto.webp"
                 width={500}
                 height={77}
                 alt="Souls in Xtincion"  
                 title="Souls in Xtincion logo"
               />
+            <p>Para más información, consultas o colaboraciones, no dudes en escribirnos a: <b>contacto@soulsinxtinction.com</b>. ¡Estamos aquí para ayudarte!</p>
             </div>
             
             <div className='flex justify-center mt-6'>

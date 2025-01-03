@@ -9,7 +9,7 @@ export const Navigation = () => {
     <div className="flex-1 flex justify-between items-center">
       <Link href="/" className="flex text-lg font-semibold" title='Ir al inicio de Souls in Xtincion'>
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           width={250}
           height={49}
           alt="Souls in Xtincion"  

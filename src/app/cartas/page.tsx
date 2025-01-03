@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction Listado de Cartas',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Listado de Cartas Souls In Xtinction TCG',
@@ -34,7 +34,7 @@ async function Cards () {
 
   return (
 
-    <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat mb-10">
+    <main className="bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat mb-10">
       <Title title="Listado de Cartas" subtitle="Encuentra aqui todo lo que necesitas para controlar el mundo de Souls In Xtinction"/>  
       <CardsList initialState={cards}/>
     </main>

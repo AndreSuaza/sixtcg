@@ -16,7 +16,7 @@ export default function Error({
   }, [error])
  
   return (
-    <div className="min-h-screen bg-[url('/404.jpg')] bg-contain bg-no-repeat bg-center pt-40">
+    <div className="min-h-screen bg-[url('/404.webp')] bg-contain bg-no-repeat bg-center pt-40">
         <div className="m-auto text-center">
             <h1 className="text-8xl mb-10">404: ¡Alma Perdida!</h1>
             <h3 className="text-4xl mb-2">Parece que el alma que buscas se ha extinguido...</h3>

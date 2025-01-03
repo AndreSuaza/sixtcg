@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Souls In Xtinction TCG',

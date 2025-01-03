@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         siteName: 'Leyendas Peludas',
         images: [
             {
-            url: 'https://soulsinxtinction.com/og.jpg',
+            url: 'https://soulsinxtinction.com/og.webp',
             width: 800,
             height: 600,
             alt: 'Leyendas Peludas Souls In Xtinction TCG',
@@ -37,7 +37,7 @@ const AngelsDeck = async () => {
 
     return (
         
-        <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
+        <main className="bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
 
             <Title title="Leyendas Peludas" subtitle="Producto Especial"/>
 
@@ -47,7 +47,7 @@ const AngelsDeck = async () => {
                         <Image 
                             width={500} 
                             height={407} 
-                            src={'/products/LP.png'} 
+                            src={'/products/LP.webp'} 
                             alt="Caja Mazo Angeles Souls In Xtinction" 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 
@@ -78,7 +78,7 @@ const AngelsDeck = async () => {
                             <Image 
                                 width={200} 
                                 height={200} 
-                                src={'/products/f-gato.jpg'} 
+                                src={'/products/f-gato.webp'} 
                                 alt="Figura Perro Souls In Xtinction" 
                                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                                 placeholder="blur" 
@@ -98,7 +98,7 @@ const AngelsDeck = async () => {
                             <Image 
                                 width={200} 
                                 height={200} 
-                                src={'/products/f-pollo.jpg'} 
+                                src={'/products/f-pollo.webp'} 
                                 alt="Figura Perro Souls In Xtinction" 
                                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                                 placeholder="blur" 
@@ -118,7 +118,7 @@ const AngelsDeck = async () => {
                             <Image 
                                 width={200} 
                                 height={200} 
-                                src={'/products/f-perro.jpg'} 
+                                src={'/products/f-perro.webp'} 
                                 alt="Figura Perro Souls In Xtinction" 
                                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                                 placeholder="blur" 
@@ -138,7 +138,7 @@ const AngelsDeck = async () => {
                             <Image 
                                 width={200} 
                                 height={200} 
-                                src={'/products/f-conejo.jpg'} 
+                                src={'/products/f-conejo.webp'} 
                                 alt="Figura Perro Souls In Xtinction" 
                                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                                 placeholder="blur" 
@@ -219,7 +219,7 @@ const AngelsDeck = async () => {
                     </Link>
                     {cards.map((card, i) => 
                     <div key={card.id} className="cursor-pointer">
-                        <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true} rarity={card.rarity}/>
+                        <CardView img={`/cards/${card.code}-${card.id}.webp`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} zoom={true} rarity={card.rarity}/>
                     </div>  
                     )}
                 </section>

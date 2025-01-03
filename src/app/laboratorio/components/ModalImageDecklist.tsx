@@ -15,7 +15,7 @@ interface Props {
 export const ModalImageDecklist = ({close, deckMain, deckLimbo, deckMana}: Props) => {
 
   return (
-    <Modal css="w-full h-full bg-black bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat">
+    <Modal css="w-full h-full bg-black bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat">
         <h1 className="text-white font-bold text-2xl bg-primary p-3 mb-4">Mazo</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5">
           <div className="lg:col-span-2 md:col-span-2 col-span-1"> 

@@ -209,14 +209,14 @@ export const LabComponent = () => {
             <section className={`grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3 my-8 justify-items-center relative`}>
                 {cards.map((card, i) => 
                     <div key={card._id} className="cursor-pointer" onClick={() => addCardToDeck(card)}>
-                    <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} rarity={card.rarity}/>
+                    <CardView img={`/cards/${card.code}-${card.id}.webp`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} rarity={card.rarity}/>
                     </div>  
                 )}
             </section>
             </Pagination>
         </div>
 
-        <div className="bg-[url('/bg-cardlist.jpg')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
+        <div className="bg-[url('/bg-cardlist.webp')] lg:bg-contain md:bg-contain bg-no-repeat bg-black lg:col-span-2 md:col-span-2 lg:px-6 md:px-6 px-2 lg:w-2/3 md:w-2/3 w-1/2 h-screen overflow-y-auto fixed top-0 right-0 pt-16">
             <div className="flex grid-cols-4 mt-6 mb-6 justify-end">
                 <ButtonToolsLab acction={shareDeck} title="Comparte tu mazo Mazo">
                     <ShareIcon className="lg:w-6 md:w-6 w-4 m-auto"/>
