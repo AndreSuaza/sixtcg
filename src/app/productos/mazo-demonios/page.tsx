@@ -47,7 +47,7 @@ const DemonsDeck = async () => {
                         <Image 
                             width={460} 
                             height={500} 
-                            src={'/products/ME1.webp'} 
+                            src={'/products/ME1S.webp'} 
                             alt="Caja Mazo Demonios - Souls In Xtinction" 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 

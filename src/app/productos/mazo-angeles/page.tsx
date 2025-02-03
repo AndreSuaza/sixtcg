@@ -47,7 +47,7 @@ const AngelsDeck = async () => {
                         <Image 
                             width={460} 
                             height={500} 
-                            src={'/products/ME2.webp'} 
+                            src={'/products/ME2S.webp'} 
                             alt="Caja Mazo Angeles Souls In Xtinction" 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 

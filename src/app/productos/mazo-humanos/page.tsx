@@ -47,7 +47,7 @@ const HumansDeck = async () => {
                     <Image 
                         width={460} 
                         height={500} 
-                        src={'/products/ME4.webp'} 
+                        src={'/products/ME4S.webp'} 
                         alt="Caja Mazo Humanos Souls In Xtinction" 
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                         placeholder="blur" 

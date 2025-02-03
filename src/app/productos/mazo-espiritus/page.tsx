@@ -46,7 +46,7 @@ const SpiritsDeck = async () => {
                     <Image 
                         width={460} 
                         height={500} 
-                        src={'/products/ME3.webp'} 
+                        src={'/products/ME3S.webp'} 
                         alt="Caja Mazo Espirítus Souls In Xtinction" 
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                         placeholder="blur" 

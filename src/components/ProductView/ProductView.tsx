@@ -30,7 +30,7 @@ export const ProductView = ({data, detail=false}: Props) => {
       <Image 
         width={300} 
         height={300} 
-        src={ data.images?.length > 0 ? `/products/${data.images[0].url}` : `/estructur-1.webp`} 
+        src={ data.images?.length > 0 ? `/products/${data.images[0].url}.webp ` : `/estructur-1.webp`} 
         alt={data.name} 
         className="rounded-t m-auto"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
