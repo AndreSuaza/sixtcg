@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       siteName: 'Gran torneo de lanzamiento Souls In Xtinction',
       images: [
           {
-          url: 'https://soulsinxtinction.com/events/lanzamiento-metadata.jpg',
+          url: 'https://soulsinxtinction.com/events/lanzamiento-metadata.webp',
           width: 800,
           height: 1200,
           alt: 'Gran torneo de lanzamiento Souls In Xtinction',
@@ -32,7 +32,7 @@ export default function LanzamientoMazos() {
                   <Image 
                       width={600 } 
                       height={837} 
-                      src={'/events/lanzamiento-me-p.jpg'} 
+                      src={'/events/lanzamiento-me-p.webp'} 
                       alt="Lanzamiento Mazos Estructurados Souls In Xtinction" 
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                       placeholder="blur" 
@@ -60,7 +60,7 @@ export default function LanzamientoMazos() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME1.jpg`} 
+                        src={ `/products/ME1.webp`} 
                         alt="Mazo Demonios - Arte de la Destrucción"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -71,7 +71,7 @@ export default function LanzamientoMazos() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME2.jpg`} 
+                        src={ `/products/ME2.webp`} 
                         alt="Mazo Angeles - Amanecer Celestia"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -82,7 +82,7 @@ export default function LanzamientoMazos() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME3.jpg`} 
+                        src={ `/products/ME3.webp`} 
                         alt="Mazo Espirítus - El Árbol de la Vida"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -93,7 +93,7 @@ export default function LanzamientoMazos() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME4.jpg`} 
+                        src={ `/products/ME4.webp`} 
                         alt="Mazo Humanos - Depliegue de la Armada"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -107,13 +107,13 @@ export default function LanzamientoMazos() {
                         <div className="m-4">
                           <p className="text-center mb-6"><b>Carta exclusiva Prime Wenddygo de Campeón para el ganador del evento.</b></p>
                           <div className="w-[250px] m-auto">
-                            <CardView img={`/cards/PC-001-0006.jpg`} alt="Prime Wenddygo de campeón" title="Carta Promo Prime Wenddygo de campeón" rarity="Secreta Dorada"/>
+                            <CardView img={`/cards/PC-001-0006.webp`} alt="Prime Wenddygo de campeón" title="Carta Promo Prime Wenddygo de campeón" rarity="Secreta Dorada"/>
                           </div>
                         </div>
                         <div className="m-4">
                           <p className="text-center mb-6"><b>7 cartas especiales de Prime Wenddygo para los jugadores del Top 8.</b></p>
                           <div className="w-[250px] m-auto">
-                            <CardView img={`/cards/P-001-0006.jpg`} alt="Prime Wenddygo" title="Carta Promo Prime Wenddygo" rarity="Secreta"/>
+                            <CardView img={`/cards/P-001-0006.webp`} alt="Prime Wenddygo" title="Carta Promo Prime Wenddygo" rarity="Secreta"/>
                           </div>
                         </div>
                     </div>

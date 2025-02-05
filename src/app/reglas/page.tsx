@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: 'Reglas Avanzadas Souls In Xtinction',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Souls In Xtinction TCG',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 async function Rules () {
     return (
-      <main className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
+      <main className="bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat  md:px-20  md:text-2xl text-xl text-gray-700 ">
 
       <Title title="Reglas avanzadas" subtitle="Encuentra todo lo que tienes que saber sobre Souls In Xtinction"/>
 

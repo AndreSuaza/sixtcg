@@ -39,7 +39,7 @@ export const ListCardsDeck = ({title, decklist, color, numberOfCards, addCard, r
                         <div className="bg-black btn-lab mt-1 cursor-pointer bg-primary-h text-2xl" style={{lineHeight: 0.6}} onClick={() => reduceCard(card)}>-</div>
                         <div className="bg-cyan-700 btn-lab mt-1 cursor-pointer bg-primary-h" onClick={() => setCardDetail(i+increaseNumber)}><EyeIcon className="w-3 m-auto mt-1"/></div>
                     </div>
-                    <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} border={true} rarity={card.rarity}/>
+                    <CardView img={`/cards/${card.code}-${card.id}.webp`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} border={true} rarity={card.rarity}/>
                 </div>  
             )}
         </section>

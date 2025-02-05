@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       siteName: 'Gran torneo de lanzamiento Souls In Xtinction',
       images: [
           {
-          url: 'https://soulsinxtinction.com/events/lanzamiento-metadata.jpg',
+          url: 'https://soulsinxtinction.com/events/lanzamiento-metadata.webp',
           width: 800,
           height: 1200,
           alt: 'Gran torneo de lanzamiento Souls In Xtinction',
@@ -32,7 +32,7 @@ export default function Lanzamiento() {
                   <Image 
                       width={600} 
                       height={837} 
-                      src={'/events/lanzamiento-p.jpg'} 
+                      src={'/events/lanzamiento-p.webp'} 
                       alt="Gran Evento de Lanzamiento Souls In Xtinction" 
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                       placeholder="blur" 
@@ -60,7 +60,7 @@ export default function Lanzamiento() {
                       <Image 
                         width={300} 
                         height={500} 
-                        src={'/products/MD1.png'} 
+                        src={'/products/MD1.webp'} 
                         alt="Caja Mazo Demostración Souls In Xtinction" 
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                         placeholder="blur" 
@@ -78,7 +78,7 @@ export default function Lanzamiento() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME1.jpg`} 
+                        src={ `/products/ME1.webp`} 
                         alt="Mazo Demonios - Arte de la Destrucción"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -89,7 +89,7 @@ export default function Lanzamiento() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME2.jpg`} 
+                        src={ `/products/ME2.webp`} 
                         alt="Mazo Angeles - Amanecer Celestia"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -100,7 +100,7 @@ export default function Lanzamiento() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME3.jpg`} 
+                        src={ `/products/ME3.webp`} 
                         alt="Mazo Espirítus - El Árbol de la Vida"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -111,7 +111,7 @@ export default function Lanzamiento() {
                       <Image 
                         width={600} 
                         height={600} 
-                        src={ `/products/ME4.jpg`} 
+                        src={ `/products/ME4.webp`} 
                         alt="Mazo Humanos - Depliegue de la Armada"
                         className="rounded-t m-auto"
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -121,7 +121,7 @@ export default function Lanzamiento() {
                     </div>
                     <p className="text-center mb-10">Y además esta poderosa carta en su arte alternativo</p>
                     <div className="w-[250px] m-auto">
-                    <CardView img={`/cards/P-003-9340.jpg`} alt="Devora Cobardes" title="Carta Promo Devora Cobardes" rarity="Secreta Dorada"/>
+                    <CardView img={`/cards/P-003-9340.webp`} alt="Devora Cobardes" title="Carta Promo Devora Cobardes" rarity="Secreta Dorada"/>
 
                     </div>
                     <p className="mb-4 mt-10 leading-10 text-center">

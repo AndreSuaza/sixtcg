@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Souls In Xtinction TCG',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 async function HowToPlay () {
   return (
     <div className="bg-slate-50 text-gray-700 pb-10">
-      <section className='bg-[url("/howtoplay/bakeneko.jpg")] w-full h-screen bg-black bg-no-repeat bg-cover relative md:bg-contain lg:bg-left bg-center text-white'>
+      <section className='bg-[url("/howtoplay/bakeneko.webp")] w-full h-screen bg-black bg-no-repeat bg-cover relative md:bg-contain lg:bg-left bg-center text-white'>
           <div className="absolute w-full text-center xl:right-0 lg:right-40 md:right-40 sm:right-0 lg:w-1/2 lg:mx-20 lg:top-1/3 md:top-1/3 top-2/3">
             <p className="uppercase stroke lg:text-6xl md:text-6xl text-2xl mb-10">Te dare un recorrido por Souls of Xtincion</p>
             <h1 className="mx-20 text-4xl stroke">Aprende Cómo jugar y reglas básicas.</h1>
@@ -60,7 +60,7 @@ async function HowToPlay () {
                 <Image 
                     width={500} 
                     height={718} 
-                    src={'/howtoplay/mazo-principal.png'} 
+                    src={'/howtoplay/mazo-principal.webp'} 
                     alt="Retiro mazo principal Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -72,7 +72,7 @@ async function HowToPlay () {
                 <Image 
                     width={500} 
                     height={718} 
-                    src={'/howtoplay/mazo-mana.png'} 
+                    src={'/howtoplay/mazo-mana.webp'} 
                     alt="Retiro mazo Maná Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -84,7 +84,7 @@ async function HowToPlay () {
                 <Image 
                     width={500} 
                     height={718} 
-                    src={'/howtoplay/mazo-limbo.png'} 
+                    src={'/howtoplay/mazo-limbo.webp'} 
                     alt="Retiro mazo limbo Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -96,7 +96,7 @@ async function HowToPlay () {
                 <Image 
                     width={500} 
                     height={718} 
-                    src={'/howtoplay/ficha-ataque.png'} 
+                    src={'/howtoplay/ficha-ataque.webp'} 
                     alt="Ficha de Ataque Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -120,7 +120,7 @@ async function HowToPlay () {
             <Image 
                     width={822 } 
                     height={426} 
-                    src={'/howtoplay/playmat-video.png'} 
+                    src={'/howtoplay/playmat-video.webp'} 
                     alt="Tablero Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -149,7 +149,7 @@ async function HowToPlay () {
               <Image 
                     width={628} 
                     height={222} 
-                    src={'/howtoplay/fase-mana-1.png'} 
+                    src={'/howtoplay/fase-mana-1.webp'} 
                     alt="Imagen Poner Mana Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -158,7 +158,7 @@ async function HowToPlay () {
               <Image 
                     width={628} 
                     height={296} 
-                    src={'/howtoplay/fase-mana-2.png'} 
+                    src={'/howtoplay/fase-mana-2.webp'} 
                     alt="Imagen de la Fase de Mana de Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -171,7 +171,7 @@ async function HowToPlay () {
             <Image 
                     width={885} 
                     height={775} 
-                    src={'/howtoplay/carta-ds.png'} 
+                    src={'/howtoplay/carta-ds.webp'} 
                     alt="Componentes de una carta Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -184,7 +184,7 @@ async function HowToPlay () {
                 <Image 
                     width={460} 
                     height={500} 
-                    src={'/howtoplay/unidad.png'} 
+                    src={'/howtoplay/unidad.webp'} 
                     alt="Carta de Unidad Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -195,7 +195,7 @@ async function HowToPlay () {
                 <Image 
                     width={460} 
                     height={500} 
-                    src={'/howtoplay/conjuro.png'} 
+                    src={'/howtoplay/conjuro.webp'} 
                     alt="Carta de Conjuro Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -206,7 +206,7 @@ async function HowToPlay () {
                 <Image 
                     width={460} 
                     height={500} 
-                    src={'/howtoplay/arma.png'} 
+                    src={'/howtoplay/arma.webp'} 
                     alt="Carta de Arma Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -217,7 +217,7 @@ async function HowToPlay () {
                 <Image 
                     width={460} 
                     height={500} 
-                    src={'/howtoplay/ente.png'} 
+                    src={'/howtoplay/ente.webp'} 
                     alt="Carta de Ente Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -241,7 +241,7 @@ async function HowToPlay () {
             <Image 
                     width={552} 
                     height={231} 
-                    src={'/howtoplay/pago-mana.png'} 
+                    src={'/howtoplay/pago-mana.webp'} 
                     alt="Como se paga el maná en  Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -251,7 +251,7 @@ async function HowToPlay () {
             <Image 
                     width={662} 
                     height={374} 
-                    src={'/howtoplay/ataque.png'} 
+                    src={'/howtoplay/ataque.webp'} 
                     alt="Paso de ataque en Souls In Xtinction" 
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                     placeholder="blur" 
@@ -261,7 +261,7 @@ async function HowToPlay () {
             <Image 
                   width={662} 
                   height={374} 
-                  src={'/howtoplay/bloqueo.png'} 
+                  src={'/howtoplay/bloqueo.webp'} 
                   alt="Paso de bloqueo en Souls In Xtinction" 
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                   placeholder="blur" 

@@ -131,7 +131,7 @@ export const CardFinderLab = ({setCardsFilters}: Props) => {
                 <MultiSelect
                     name="archetypes"
                     options={archetypes}
-                    placeholder="Arqueotipo"
+                    placeholder="Arquetipo"
                     className="text-primary"
                     multi={true}
                 />

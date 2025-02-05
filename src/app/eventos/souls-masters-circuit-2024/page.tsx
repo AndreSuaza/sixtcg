@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       siteName: 'Inicio del competitivo en Souls In Xtinction',
       images: [
           {
-          url: 'https://soulsinxtinction.com/events/souls-masters-circuit-2024.jpg',
+          url: 'https://soulsinxtinction.com/events/souls-masters-circuit-2024.webp',
           width: 800,
           height: 800,
           alt: 'Souls Masters Circuit 2024',
@@ -32,7 +32,7 @@ export default function Lanzamiento() {
                   <Image 
                       width={800} 
                       height={800} 
-                      src={'/events/souls-masters-circuit-2024.jpg'} 
+                      src={'/events/souls-masters-circuit-2024.webp'} 
                       alt="Souls Masters Circuit 2024" 
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                       placeholder="blur" 

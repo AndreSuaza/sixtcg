@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Souls In Xtinction',
     images: [
       {
-        url: 'https://soulsinxtinction.com/og.jpg',
+        url: 'https://soulsinxtinction.com/og.webp',
         width: 800,
         height: 600,
         alt: 'Souls In Xtinction TCG',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const Events = async () => {
 
   return (
-    <section className="bg-[url('/bg-cardlist.jpg')] bg-contain bg-no-repeat md:px-20 w-full min-h-screen">
+    <section className="bg-[url('/bg-cardlist.webp')] bg-contain bg-no-repeat md:px-20 w-full min-h-screen">
       <Title title="Eventos" subtitle=""/>
 
       <div className="mx-4">

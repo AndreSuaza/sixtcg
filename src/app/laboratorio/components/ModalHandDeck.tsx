@@ -30,7 +30,7 @@ export const ModalHandDeck = ({deck, close}: Props) => {
                 <div className="grid lg:grid-cols-6 md:grid-cols-6 grid-cols-3">
                 {hand.map((card, i) => 
                     <div key={card._id}>
-                        <CardView img={`/cards/${card.code}-${card.id}.jpg`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} rarity={card.rarity}/>
+                        <CardView img={`/cards/${card.code}-${card.id}.webp`} alt={card.name} title={`Click para ver al detalle a ${card.name}`} rarity={card.rarity}/>
                     </div>  
                 )}
                 </div>

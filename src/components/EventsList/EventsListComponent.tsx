@@ -46,7 +46,7 @@ export const EventsListComponent = () => {
             <Image 
                             width={260} 
                             height={364} 
-                            src={event.image} 
+                            src={`${event.image}.webp`} 
                             alt={`${event.title} Souls In Xtinction`} 
                             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
                             placeholder="blur" 
