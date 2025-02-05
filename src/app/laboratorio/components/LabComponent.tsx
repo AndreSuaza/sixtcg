@@ -156,9 +156,9 @@ export const LabComponent = () => {
 
     const createCodeDeck = () => {
         let exportText = "";
-        decklistMain.map( card => exportText = exportText+card.id+","+card.copys+",");
-        decklistLimbo.map( card => exportText = exportText+card.id+","+card.copys+",");
-        decklistMana.map( card => exportText = exportText+card.id+","+card.copys+",");
+        decklistMain.map( card => exportText = exportText+card.id+"%2C"+card.copys+"%2C");
+        decklistLimbo.map( card => exportText = exportText+card.id+"%2C"+card.copys+"%2C");
+        decklistMana.map( card => exportText = exportText+card.id+"%2C"+card.copys+"%2C");
         return exportText;
     }
 

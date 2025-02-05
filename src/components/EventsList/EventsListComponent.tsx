@@ -56,7 +56,7 @@ export const EventsListComponent = () => {
           </div>  
         </Link>     
         <div className="p-6 bg-white lg:min-h-[364px] md:h-auto lg:w-[400px]">
-          { soon(event.date) && <div className="font-semibold text-pink-500" >Proximanmente!</div>}
+          { soon(event.date) && <div className="font-semibold text-pink-500" >Proximamente!</div>}
           <p className="font-bold">{formatDate(event.date)}</p>
           <Link href={event.url} target="_blank">
           <h2 className=" mb-10 text-4xl text-primary">{event.title}</h2>
