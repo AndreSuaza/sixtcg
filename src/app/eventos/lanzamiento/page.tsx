@@ -59,7 +59,7 @@ export default function Lanzamiento() {
                       </p>
                       <Image 
                         width={300} 
-                        height={500} 
+                        height={300} 
                         src={'/products/MD1.webp'} 
                         alt="Caja Mazo Demostración Souls In Xtinction" 
                         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMTvt4EgAFcwKFsn71ygAAAABJRU5ErkJggg=="
@@ -76,8 +76,8 @@ export default function Lanzamiento() {
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-2 my-10 md:mx-24 mx-4">
                       <Link href={'/productos/mazo-demonios'} target="_blank" title="Mazo Demonios" >
                       <Image 
-                        width={600} 
-                        height={600} 
+                        width={300} 
+                        height={300} 
                         src={ `/products/ME1.webp`} 
                         alt="Mazo Demonios - Arte de la Destrucción"
                         className="rounded-t m-auto"
@@ -87,8 +87,8 @@ export default function Lanzamiento() {
                       </Link>
                       <Link href={'/productos/mazo-angeles'} target="_blank" title="Mazo Angeles" >
                       <Image 
-                        width={600} 
-                        height={600} 
+                        width={300} 
+                        height={300} 
                         src={ `/products/ME2.webp`} 
                         alt="Mazo Angeles - Amanecer Celestia"
                         className="rounded-t m-auto"
@@ -98,8 +98,8 @@ export default function Lanzamiento() {
                       </Link>
                       <Link href={'/productos/mazo-espiritus'} target="_blank" title="Mazo Espirítus" >
                       <Image 
-                        width={600} 
-                        height={600} 
+                        width={300} 
+                        height={300} 
                         src={ `/products/ME3.webp`} 
                         alt="Mazo Espirítus - El Árbol de la Vida"
                         className="rounded-t m-auto"
@@ -109,8 +109,8 @@ export default function Lanzamiento() {
                       </Link>
                       <Link href={'/productos/mazo-humanos'} target="_blank" title="Mazo Humanos" >
                       <Image 
-                        width={600} 
-                        height={600} 
+                        width={300} 
+                        height={300} 
                         src={ `/products/ME4.webp`} 
                         alt="Mazo Humanos - Depliegue de la Armada"
                         className="rounded-t m-auto"
