@@ -12,8 +12,8 @@ export const Routes = [
         name: "¿Como Jugar?"
     },
     {
-        path: "/productos",
-        name: "Products",
+        path: "/products",
+        name: "Productos",
         title: "Ir a Productos"
     },
     {
