@@ -12,7 +12,7 @@ export const Routes = [
         name: "¿Como Jugar?"
     },
     {
-        path: "/products",
+        path: "/product0s",
         name: "Productos",
         title: "Ir a Productos"
     },
