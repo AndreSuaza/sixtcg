@@ -1,13 +1,13 @@
-'use client'
+"use client"
 
 import { CardFinder } from "@/components"
 import { Card } from "@/models"
 import { useEffect, useState } from "react";
-import { fetchDataCards } from "./Services/cardsList.service";
-import { usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { Pagination } from "@/components/Pagination/Pagination";
 import { CardListComponent } from "@/components/CardList/CardListComponent";
+import { fetchDataCards } from "@/app/boveda/components/CardPriceList/Services/cardPriceList";
 
 interface Props {
     initialState: Card[];

@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { Card } from "@/models"
+import { Card } from "@/models";
 import { useEffect, useState } from "react";
-import { fetchDataCards } from "./Services/cardPriceList";
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from "next/navigation";
 import { Pagination } from "@/components/Pagination/Pagination";
 import { CardFinderPrices } from "@/components/CardFinder/CardFinderPrices";
-import { CardListPricesComponent } from '../../../../components/CardList/CardListPricesComponent';
-import Products from '../../../productos/page';
+import { fetchDataCards } from "@/app/cartas/components/CardList/Services/cardsList.service";
+import { CardListPricesComponent } from "@/components/CardList/CardListPricesComponent";
+
 
 interface Props {
     initialState: Card[];
