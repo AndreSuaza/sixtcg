@@ -13,7 +13,7 @@ export const Routes = [
     },
     {
         path: "/productos",
-        name: "Productos",
+        name: "Products",
         title: "Ir a Productos"
     },
     {
