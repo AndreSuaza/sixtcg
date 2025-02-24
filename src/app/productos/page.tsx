@@ -2,36 +2,36 @@
 
 import { ProductView } from "@/components/ProductView/ProductView"
 import { findProducts } from "./Services/Products.services";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { Title } from "@/components";
 
 async function fetchProducts() {
   return await findProducts();
 }
 
-export const metadata: Metadata = {
-  title: 'Productos Soul In Xtinction',
-  description: 'Encuentra todos los productos de Souls In Xtinction',
-  openGraph: {
-    title: 'Productos Soul In Xtinction',
-    description: 'Encuentra todos los productos de Souls In Xtinction',
-    url: 'https://soulsinxtinction.com/productos',
-    siteName: 'Souls In Xtinction',
-    images: [
-      {
-        url: 'https://soulsinxtinction.com/og.webp',
-        width: 800,
-        height: 600,
-        alt: 'Souls In Xtinction TCG',
-      }
-    ],
-    locale: 'en_ES',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://soulsinxtinction.com/productos',
-  }
-}
+// export const metadata: Metadata = {
+//   title: 'Productos Soul In Xtinction',
+//   description: 'Encuentra todos los productos de Souls In Xtinction',
+//   openGraph: {
+//     title: 'Productos Soul In Xtinction',
+//     description: 'Encuentra todos los productos de Souls In Xtinction',
+//     url: 'https://soulsinxtinction.com/productos',
+//     siteName: 'Souls In Xtinction',
+//     images: [
+//       {
+//         url: 'https://soulsinxtinction.com/og.webp',
+//         width: 800,
+//         height: 600,
+//         alt: 'Souls In Xtinction TCG',
+//       }
+//     ],
+//     locale: 'en_ES',
+//     type: 'website',
+//   },
+//   alternates: {
+//     canonical: 'https://soulsinxtinction.com/productos',
+//   }
+// }
 
 const Products = async () => {
 
