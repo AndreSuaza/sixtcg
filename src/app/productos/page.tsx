@@ -1,3 +1,5 @@
+"use client"
+
 import { ProductView } from "@/components/ProductView/ProductView"
 import { findProducts } from "./Services/Products.services";
 import { Metadata } from "next";
